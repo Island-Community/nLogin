@@ -3,7 +3,7 @@
 ---
 
 <p align="center">
-  <img src="deobf.jpg" width="400" alt="deobf" />&nbsp;&nbsp;<img src="hack.jpg" width="400" alt="hack" />
+  <img src="deobf.jpg" height="300" alt="deobf" />&nbsp;&nbsp;<img src="hack.jpg" height="300" alt="hack" />
 </p>
 
 
