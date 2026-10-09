@@ -1,0 +1,10 @@
+package com.nickuc.login.model;
+
+public enum PremiumState {
+   PREMIUM_STATE,
+   ACTIVE_PREMIUMSTATE,
+   PENDING_PREMIUMSTATE,
+   CURRENT_PREMIUMSTATE,
+   PRIMARY_PREMIUMSTATE,
+   MAIN_PREMIUMSTATE;
+}

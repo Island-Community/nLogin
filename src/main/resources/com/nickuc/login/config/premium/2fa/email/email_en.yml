@@ -1,0 +1,91 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |  For a better understanding of this file see our documentation:                              | #
+# |   ==> https://docs.nickuc.com/nlogin/                                                        | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+# Set the version of the file.
+language-version: 2
+
+# Defines whether the email can be used as a second factor.
+enable: false
+
+authentication:
+  # Email
+  email: "yourserver@domain.com"
+  # From
+  from: "Your Server"
+  # User
+  user: ""
+  # Password
+  password: ""
+
+  # Charset
+  charset: "UTF-8"
+  # Mimetype
+  mimetype: "text/html"
+
+  # SMTP host
+  host: "smtp.gmail.com"
+  # SMTP port
+  port: 587
+
+  # Encryption
+  #
+  # - Options available:
+  #  |=> AUTO
+  #  |=> TLS
+  #  |=> SSL
+  encryption: AUTO
+
+  # Debug mode
+  debug: false
+
+linking:
+  # Defines whether the link should be recommended to players.
+  recommend: true
+
+  # Defines if 2FA will be enabled upon completing the linking.
+  enable-2fa: true
+
+  required:
+    # Sets whether linking an email will be required to authenticate.
+    enable: false
+
+    # Sets whether premium players will also need to link an email to authenticate themselves.
+    enable-for-premium: true
+
+    # Sets whether Bedrock players will also need to link an email to authenticate themselves.
+    enable-for-bedrock: true
+
+account:
+  # Sets the maximum number of accounts that can have the same email linked.
+  limit: 1
+
+  # Defines whether a new password should be created after the account recovery process.
+  # - If this option is disabled, a random password will be set.
+  force-password-update: false
+
+  # Defines the list of allowed domains.
+  # - If no domain is defined, all domains will be allowed.
+  allowed-domains: []
+
+  # Defines the list of denied domains.
+  denied-domains:
+    - "https://raw.githubusercontent.com/disposable-email-domains/disposable-email-domains/refs/heads/main/disposable_email_blocklist.conf"

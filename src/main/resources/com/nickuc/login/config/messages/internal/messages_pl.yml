@@ -1,0 +1,269 @@
+update:
+  stable: '&aStabilna'
+  latest: '&bNajnowsza'
+
+notification:
+  setup:
+    select-language:
+    - ''
+    - ' &eWykryliśmy, że używasz języka &6{0}&e.'
+    - ''
+    - ' &6Czy chcesz używać tego języka dla nLogin?'
+    - ''
+    - ' &c‼ &eTo wpływa na język wszystkich graczy!'
+    - ''
+    permission-required:
+    - ''
+    - ' &eAby skonfigurować nLogin, musisz zostać &cadministratorem&e.'
+    - ''
+    - ' &6Dodaj uprawnienie &f"{0}" &6do swojego pluginu uprawnień.'
+    - ''
+    - ' &c‼ &eKonfiguracja będzie kontynuowana, gdy tylko uprawnienie zostanie dodane.'
+    - ''
+    welcome-message:
+    - ''
+    - ' &aDziękujemy bardzo za wybranie nLogin! :)'
+    - ''
+    - ' &6Dla własnego bezpieczeństwa przeczytaj poniższą wiadomość:'
+    - '  &cNigdy nie pobieraj nLogin z nieznanych źródeł.'
+    - '  &cZmodyfikowana wersja może zawierać złośliwe oprogramowanie.'
+    - ''
+    - ' &aZaufane źródła:'
+    - '  &7Strona: &fnickuc.com'
+    - '  &7GitHub: &fgithub.com/nickuc-com'
+    - '  &7Instalator OpeNLogin (z &fSpigot &7lub &fGitHub&7)'
+    - ''
+    - ' &aOficjalne wsparcie:'
+    - '  &7Dokumentacja: &fdocs.nickuc.com/nlogin/'
+    - '  &7Discord: &fnickuc.com/discord'
+    - '  &7Email: &fsupport@nickuc.com'
+    - ''
+    configure-version-channel:
+    - ''
+    - ' &6Wybierz preferowany kanał wersji.'
+    - ''
+    - ' &c‼ &eMożesz to później zmienić, uruchamiając &f{0}&e.'
+    - ''
+    configure-auto-or-manual-updates:
+    - ''
+    - ' &6Wybierz preferowaną metodę aktualizacji.'
+    - ''
+    - ' &c‼ &eMożesz to później zmienić, uruchamiając &f{0}&e.'
+    - ''
+    configure-password-algorithm:
+    - ''
+    - ' &6Wybierz preferowany typ szyfrowania haseł.'
+    - ''
+    - ' &c‼ &eMożesz później ręcznie zmienić tę opcję w &fconfig.yml&e.'
+    - ''
+    enable-dialogs:
+    - ''
+    - ' &6Czy chcesz używać menu (dialogs) jako interfejsu uwierzytelniania?'
+    - ''
+    - ' &eDialogs zastępują uwierzytelnianie oparte na komendach dostosowywalnymi menu.'
+    - ''
+    - ' &c‼ &eTa funkcja działa tylko dla klientów korzystających z wersji 1.21.6 lub nowszej.'
+    - ''
+    configure-dialogs:
+    - ''
+    - ' &6Wybierz preferowany sposób wyświetlania dialogs.'
+    - ''
+    - ' &c‼ &eMożesz ręcznie zmienić tę opcję w &fconfig.yml&e.'
+    - ''
+    configure-bungeeguard:
+    - ''
+    - ' &6Czy chcesz skonfigurować BungeeGuard+ na serwerze?'
+    - ''
+    - ' &c‼ &eZaleca się instalację BungeeGuard+ w następujących okolicznościach:'
+    - '  &8⋆ &eUżywasz dowolnego proxy opartego na BungeeCord.'
+    - '  &8⋆ &eUżywasz Velocity, ale forwarding &f"MODERN" &enie może być użyty.'
+    - ''
+    - ' &c‼ &eBędziesz musiał zainstalować plik JAR BungeeGuard+ na wszystkich serwerach.'
+    - ''
+    start-premium-configuration:
+    - ''
+    - ' &aGratulacje z okazji zakupu &6⭐ nLogin Premium'
+    - ''
+    - ' &6Oto nowo odblokowane funkcje:'
+    - ''
+    - '  &8⋆ &eAutomatyczne logowanie &7dla użytkowników z premium Minecraft.'
+    - '  &8⋆ &eDwuetapowe &7uwierzytelnianie przez Discord i Email.'
+    - '  &8⋆ &eSesje logowania &7przy logowaniu z adresu IP.'
+    - '  &8⋆ &eWyższy priorytet &7wsparcia technicznego.'
+    - '  &8⋆ &eOznaczenie klienta &7w grupie Discord.'
+    - ''
+    configure-username-appendix:
+    - ''
+    - ' &6Czy chcesz włączyć dopisek dla graczy premium/offline?'
+    - ''
+    - ' &c‼ &eAby uzyskać więcej informacji o tej funkcji, odwiedź: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    configure-username-appendix-legacy-versions:
+    - ''
+    - ' &6Dopisek dla graczy premium/offline nie może zostać dodany automatycznie dla wersji 1.18.2 lub niższych.'
+    - ''
+    - ' &eBędziesz musiał ręcznie skonfigurować dwa różne adresy IP dla graczy premium i offline.'
+    - ''
+    - ' &c‼ &eAby uzyskać więcej informacji o tej funkcji, odwiedź: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    enable-restrict-premium-nicknames:
+    - ''
+    - ' &6Ograniczyć rejestrację graczy offline używających nazw premium? &e(dla nowych kont)'
+    - ''
+    - ' &c‼ &eGracze offline nie będą mogli używać &fnazwy premium (np. Notch)&e, nawet jeśli nazwa jest dostępna do rejestracji.'
+    - ''
+    enable-challenge-premium-nicknames:
+    - ''
+    - ' &6Wykrywać, czy gracze używają konta premium? &e(na podstawie nazwy)'
+    - ''
+    - ' &c‼ &eGracze offline mogą otrzymać niedostosowywalny komunikat &f"Invalid session" &epodczas pierwszego logowania na serwer.'
+    - ''
+    enable-premium-question:
+    - ''
+    - ' &6Wykrywać, czy gracze używają konta premium? &e(za pomocą interaktywnego pytania)'
+    - ''
+    - ' &c‼ &eTa opcja jest zalecana, jeśli chcesz mieć pewność, że gracze premium otrzymują Mojang UUID.'
+    - ''
+    skip-premium-register:
+    - ''
+    - ' &6Pominąć prośbę o rejestrację hasła dla &bgraczy premium&6?'
+    - ''
+    - ' &c‼ &eZaleca się wyłączenie tej opcji, jeśli hasło graczy jest używane w integracji internetowej (np. strona serwera).'
+    - ''
+    skip-bedrock-register:
+    - ''
+    - ' &6Pominąć prośbę o rejestrację hasła dla &cgraczy Bedrock&6?'
+    - ''
+    - ' &c‼ &eZaleca się wyłączenie tej opcji, jeśli hasło graczy jest używane w integracji internetowej (np. strona serwera).'
+    - ''
+    nantibot-recommendation:
+    - ''
+    - ' &6Zalecamy zainstalowanie &fnAntiBot&6, aby zapobiec'
+    - ' &6atakom botów na twój serwer.'
+    - ''
+    - ' &c‼ &eAby uzyskać więcej informacji o tym pluginie, &6kliknij tutaj&e.'
+    - ''
+    nchat-recommendation:
+    - ''
+    - ' &6Zalecamy zainstalowanie &fnChat&6,'
+    - ' &6pluginu czatu, który całkowicie zastępuje Legendchat.'
+    - ''
+    - ' &c‼ &eAby uzyskać więcej informacji o tym pluginie, &6kliknij tutaj&e.'
+    - ''
+    recommend-spawn-set:
+    - ''
+    - ' &6Współrzędne graczy &cNIE BĘDĄ &6chronione przed zalogowaniem.'
+    - ''
+    - ' &c‼ &eUstaw bezpieczny punkt odrodzenia za pomocą komendy &f{0}&e.'
+    - ''
+    finish-configuration:
+    - ''
+    - ' &6Potwierdź, aby wyjść z trybu konfiguracji i zapisać wszystkie zmiany.'
+    - ''
+    - ' &c‼ &eWszyscy gracze zostaną rozłączeni po potwierdzeniu.'
+    - ''
+  update-available-confirmation:
+  - ''
+  - ' &eDostępna jest nowa wersja nLogin{0} {1}'
+  - ''
+  - ' &6Czy chcesz potwierdzić aktualizację?'
+  - ''
+  update-available-restart:
+  - ''
+  - ' &eDostępna jest nowa wersja nLogin{0} {1}'
+  - ''
+  - ' &6Uruchom ponownie serwer, aby zastosować aktualizację.'
+  - ''
+  premium-fail:
+  - ''
+  - ' &c✖ &cTwoja licencja &fnLogin v{0} &cnie została pomyślnie aktywowana.'
+  - '  &cSpróbuj ponownie pobrać plik JAR ze strony:'
+  - '  &b{1}'
+  - ''
+  - ' &c‼ &cJeśli problem będzie się powtarzał, zalecamy kontakt z deweloperem.'
+  - '  &7Aby wyświetlić listę kontaktów, użyj komendy {2}'
+  - ''
+  premium-expired:
+  - ''
+  - ' &c✖ &cTwoja licencja &fnLogin v{0} &cnie została pomyślnie aktywowana.'
+  - '  &cOdnów swoją licencję na stronie: &b{1}'
+  - ''
+  premium-recommendation:
+  - ''
+  - ' &7Chcesz, żeby logowanie było praktyczne?'
+  - ' &7Zdobądź teraz wersję premium nLogin'
+  - ' &7i włącz automatyczne logowanie dla swoich użytkowników.'
+  - ''
+  - ' [&aKliknij tutaj, aby dowiedzieć się więcej.]'
+  - ''
+  button:
+    start-setup:
+      text: '&a[✔ Rozpocznij konfigurację]'
+      hover: '&7Kliknij tutaj, aby rozpocząć konfigurację pluginu.'
+    stable:
+      text: '&a[Wersja stabilna]'
+      hover: |-
+        &7Kanał &astabilny &7ma mniej błędów, ale też mniej funkcji.
+
+        &6Rekomendacja: &fdla serwerów udostępnianych publicznie.
+    latest:
+      text: '&6[Najnowsza wersja]'
+      hover: |-
+        &7Kanał &6najnowszej wersji &7ma najnowsze wersje.
+
+        &6Rekomendacja: &fdla serwerów chcących najnowsze funkcje
+    automatic:
+      text: '&a[Automatyczne aktualizacje]'
+      hover: '&7Do aktualizacji nie będzie wymagane żadne potwierdzenie.'
+    manual:
+      text: '&9[Ręczne potwierdzenie]'
+      hover: '&7Będziesz musiał potwierdzić aktualizację powiadomieniem podobnym do tego.'
+    safer:
+      text: '&a[Bezpieczniejszy]'
+      hover: '&7Do ochrony haseł zostanie użyty bezpieczniejszy algorytm.'
+    faster:
+      text: '&c[Szybszy]'
+      hover: '&7Do ochrony haseł zostanie użyty mniej bezpieczny algorytm.'
+    pre-login:
+      text: '&a[Pokaż przed]'
+      hover: '&7Dialogs będą wyświetlane &aprzed wejściem &7na serwer.'
+    after-login:
+      text: '&9[Pokaż po]'
+      hover: '&7Dialogs będą wyświetlane &9po wejściu &7na serwer.'
+    install:
+      text: '&a[⬇ Zainstaluj]'
+      hover: '&7Kliknij tutaj, aby automatycznie zainstalować plugin.'
+    skip:
+      text: '&7[✖ Pomiń]'
+      hover: null
+
+title:
+  setup:
+    welcome-message-1:
+      title: '&6Cześć, @player!'
+      subtitle: '&eWitamy w nLogin!'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-2:
+      title: ''
+      subtitle: '&aPrzeczytaj ostrzeżenie przed kontynuowaniem.'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-3:
+      title: ''
+      subtitle: '&fKliknij przycisk {0}&f, aby kontynuować.'
+      delays:
+        fadeIn: 10
+        stay: 80
+        fadeOut: 10
+  update-available:
+    title: ''
+    subtitle: '&aDostępna jest nowa wersja.'
+    delays:
+      fadeIn: 10
+      stay: 80
+      fadeOut: 10

@@ -1,0 +1,269 @@
+update:
+  stable: '&a稳定版'
+  latest: '&b最新版'
+
+notification:
+  setup:
+    select-language:
+    - ''
+    - ' &e我们检测到你正在使用 &6{0} &e语言。'
+    - ''
+    - ' &6你想在 nLogin 中使用这个语言吗？'
+    - ''
+    - ' &c‼ &e这将影响所有玩家的语言！'
+    - ''
+    permission-required:
+    - ''
+    - ' &e要配置 nLogin，你需要成为&c管理员&e。'
+    - ''
+    - ' &6请将权限 &f"{0}" &6添加到你的权限插件中。'
+    - ''
+    - ' &c‼ &e权限添加后，设置将继续进行。'
+    - ''
+    welcome-message:
+    - ''
+    - ' &a非常感谢你选择 nLogin！ :)'
+    - ''
+    - ' &6为了你的安全，请阅读以下信息：'
+    - '  &c切勿从未知来源下载 nLogin。'
+    - '  &c修改过的版本可能包含恶意软件。'
+    - ''
+    - ' &a受信任的来源：'
+    - '  &7官网: &fnickuc.com'
+    - '  &7GitHub: &fgithub.com/nickuc-com'
+    - '  &7OpeNLogin 安装程序（来自 &fSpigot &7或 &fGitHub&7）'
+    - ''
+    - ' &a官方支持：'
+    - '  &7文档: &fdocs.nickuc.com/nlogin/'
+    - '  &7Discord: &fnickuc.com/discord'
+    - '  &7邮箱: &fsupport@nickuc.com'
+    - ''
+    configure-version-channel:
+    - ''
+    - ' &6选择你偏好的版本渠道。'
+    - ''
+    - ' &c‼ &e你之后可以通过运行 &f{0} &e来更改此设置。'
+    - ''
+    configure-auto-or-manual-updates:
+    - ''
+    - ' &6选择你偏好的更新方式。'
+    - ''
+    - ' &c‼ &e你之后可以通过运行 &f{0} &e来更改此设置。'
+    - ''
+    configure-password-algorithm:
+    - ''
+    - ' &6选择密码的首选加密类型。'
+    - ''
+    - ' &c‼ &e你之后可以在 &fconfig.yml &e中手动更改此选项。'
+    - ''
+    enable-dialogs:
+    - ''
+    - ' &6你想使用菜单（对话框）作为身份验证界面吗？'
+    - ''
+    - ' &e对话框会用可自定义的菜单取代基于命令的身份验证。'
+    - ''
+    - ' &c‼ &e此功能仅适用于使用 1.21.6 或更高版本的客户端。'
+    - ''
+    configure-dialogs:
+    - ''
+    - ' &6选择你偏好的对话框显示方式。'
+    - ''
+    - ' &c‼ &e你可以在 &fconfig.yml &e中手动更改此选项。'
+    - ''
+    configure-bungeeguard:
+    - ''
+    - ' &6你想在服务器上配置 BungeeGuard+ 吗？'
+    - ''
+    - ' &c‼ &e在以下情况下，建议安装 BungeeGuard+：'
+    - '  &8⋆ &e你使用任何基于 BungeeCord 的代理。'
+    - '  &8⋆ &e你使用 Velocity，但无法使用 &f"MODERN" &e转发方式。'
+    - ''
+    - ' &c‼ &e你需要在所有服务器上安装 BungeeGuard+ 的 JAR 文件。'
+    - ''
+    start-premium-configuration:
+    - ''
+    - ' &a恭喜你购买了 &6⭐ nLogin Premium'
+    - ''
+    - ' &6以下是新解锁的功能：'
+    - ''
+    - '  &8⋆ &e自动登录 &7适用于使用正版 Minecraft 的用户。'
+    - '  &8⋆ &e通过 Discord 和邮箱进行&e两步&7验证。'
+    - '  &8⋆ &e使用 IP 地址登录时的&e登录会话&7。'
+    - '  &8⋆ &e更高优先级的&e支持处理&7。'
+    - '  &8⋆ &e在 Discord 群组中的&e客户标签&7。'
+    - ''
+    configure-username-appendix:
+    - ''
+    - ' &6你想为正版/离线玩家启用附加后缀吗？'
+    - ''
+    - ' &c‼ &e有关此功能的更多信息，请访问：&bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    configure-username-appendix-legacy-versions:
+    - ''
+    - ' &6对于 1.18.2 及以下版本，无法自动为正版/离线玩家添加附加后缀。'
+    - ''
+    - ' &e你需要为正版和离线玩家手动配置两个不同的 IP。'
+    - ''
+    - ' &c‼ &e有关此功能的更多信息，请访问：&bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    enable-restrict-premium-nicknames:
+    - ''
+    - ' &6是否限制离线玩家使用正版昵称进行注册？ &e（适用于新账户）'
+    - ''
+    - ' &c‼ &e即使该名称可供注册，离线玩家也将无法使用&f正版昵称（例如 Notch）&e。'
+    - ''
+    enable-challenge-premium-nicknames:
+    - ''
+    - ' &6是否检测玩家是否正在使用正版账户？ &e（通过昵称）'
+    - ''
+    - ' &c‼ &e离线玩家在首次登录服务器时，可能会收到一条无法自定义的消息，提示 &f"Invalid session"&e。'
+    - ''
+    enable-premium-question:
+    - ''
+    - ' &6是否检测玩家是否正在使用正版账户？ &e（通过交互式提问）'
+    - ''
+    - ' &c‼ &e如果你想确保正版玩家获得 Mojang UUID，建议启用此选项。'
+    - ''
+    skip-premium-register:
+    - ''
+    - ' &6是否跳过&b正版玩家&6的密码注册请求？'
+    - ''
+    - ' &c‼ &e如果玩家的密码会用于网页集成（例如服务器网站），建议禁用此选项。'
+    - ''
+    skip-bedrock-register:
+    - ''
+    - ' &6是否跳过&cBedrock 玩家&6的密码注册请求？'
+    - ''
+    - ' &c‼ &e如果玩家的密码会用于网页集成（例如服务器网站），建议禁用此选项。'
+    - ''
+    nantibot-recommendation:
+    - ''
+    - ' &6我们建议安装 &fnAntiBot &6，以防止'
+    - ' &6你的服务器受到机器人攻击。'
+    - ''
+    - ' &c‼ &e有关此插件的更多信息，请&6点击这里&e。'
+    - ''
+    nchat-recommendation:
+    - ''
+    - ' &6我们建议安装 &fnChat&6，'
+    - ' &6这是一款完全替代 Legendchat 的聊天插件。'
+    - ''
+    - ' &c‼ &e有关此插件的更多信息，请&6点击这里&e。'
+    - ''
+    recommend-spawn-set:
+    - ''
+    - ' &6登录前，玩家坐标&c不会&6受到保护。'
+    - ''
+    - ' &c‼ &e请使用命令 &f{0} &e设置一个安全的出生点。'
+    - ''
+    finish-configuration:
+    - ''
+    - ' &6确认退出设置模式并保存所有更改。'
+    - ''
+    - ' &c‼ &e确认后，所有玩家都将被断开连接。'
+    - ''
+  update-available-confirmation:
+  - ''
+  - ' &e有新的 nLogin 版本可用{0} {1}'
+  - ''
+  - ' &6你想确认更新吗？'
+  - ''
+  update-available-restart:
+  - ''
+  - ' &e有新的 nLogin 版本可用{0} {1}'
+  - ''
+  - ' &6请重启你的服务器以应用更新。'
+  - ''
+  premium-fail:
+  - ''
+  - ' &c✖ &c你的 &fnLogin v{0} &c许可证未能成功激活。'
+  - '  &c请尝试在官网重新下载 JAR 文件：'
+  - '  &b{1}'
+  - ''
+  - ' &c‼ &c如果问题仍然存在，我们建议你联系开发者。'
+  - '  &7要查看联系方式列表，请使用命令 {2}'
+  - ''
+  premium-expired:
+  - ''
+  - ' &c✖ &c你的 &fnLogin v{0} &c许可证未能成功激活。'
+  - '  &c请通过网站续订你的许可证：&b{1}'
+  - ''
+  premium-recommendation:
+  - ''
+  - ' &7想让你的登录更加便捷吗？'
+  - ' &7现在获取 nLogin 的正版版本'
+  - ' &7并为你的用户启用自动登录。'
+  - ''
+  - ' [&a点击这里了解更多信息。]'
+  - ''
+  button:
+    start-setup:
+      text: '&a[✔ 开始设置]'
+      hover: '&7点击这里开始插件的设置。'
+    stable:
+      text: '&a[稳定版]'
+      hover: |-
+        &7&a稳定渠道&7的漏洞较少，但功能也较少。
+
+        &6建议：&f适用于已公开发布的服务器。
+    latest:
+      text: '&6[最新版]'
+      hover: |-
+        &7&6最新版渠道&7始终提供最新的版本。
+
+        &6建议：&f适用于想要最新功能的服务器。
+    automatic:
+      text: '&a[自动更新]'
+      hover: '&7更新时将不需要任何确认。'
+    manual:
+      text: '&9[手动确认]'
+      hover: '&7你需要通过类似此消息的通知来确认更新。'
+    safer:
+      text: '&a[更安全]'
+      hover: '&7将使用更安全的算法来保护密码。'
+    faster:
+      text: '&c[更快速]'
+      hover: '&7将使用安全性较低的算法来保护密码。'
+    pre-login:
+      text: '&a[登录前显示]'
+      hover: '&7对话框将在&a进入&7服务器之前显示。'
+    after-login:
+      text: '&9[登录后显示]'
+      hover: '&7对话框将在&9进入&7服务器之后显示。'
+    install:
+      text: '&a[⬇ 安装]'
+      hover: '&7点击这里自动安装该插件。'
+    skip:
+      text: '&7[✖ 跳过]'
+      hover: null
+
+title:
+  setup:
+    welcome-message-1:
+      title: '&6你好，@player！'
+      subtitle: '&e欢迎使用 nLogin！'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-2:
+      title: ''
+      subtitle: '&a请在继续之前阅读警告信息。'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-3:
+      title: ''
+      subtitle: '&f点击 {0} &f按钮以继续。'
+      delays:
+        fadeIn: 10
+        stay: 80
+        fadeOut: 10
+  update-available:
+    title: ''
+    subtitle: '&a有新版本可用。'
+    delays:
+      fadeIn: 10
+      stay: 80
+      fadeOut: 10

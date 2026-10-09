@@ -1,0 +1,500 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |              List of translation authors: https://crowdin.com/project/nlogin/members         | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+pending:
+  login: '&eコマンド &7/login <パスワード>&e を使用してください。'
+  register: '&eコマンド &7/register <パスワード> <パスワード>&e を使用してください。'
+  action-bar:
+    singular: '&c{login///register}まで残り{0}秒です。'
+    plural: '&c{login///register}まで残り{0}秒です。'
+
+success:
+  login: '&aログインに成功しました。'
+  register: '&a登録に成功しました。'
+  session: '&aログインセッションが継続されました。'
+  premium: '&aユニークアカウントとして自動的にログインされました。'
+  bedrock: '&aBedrockアカウントからアクセスしているため、自動的にログインされました。'
+  change-password: '&aパスワードが正常に変更されました。'
+  reload: '&eプラグインが正常にリロードされました。'
+  kick:
+    unregister: '&a登録が解除されました。'
+    marked-offline: '&7アカウントが &6オフライン&7 としてマークされました。再接続してください。'
+    challenge-premium: '&7&apremiumアカウント&7 を使用していることを確認するため、再度ログインしてください。'
+
+error:
+  not-registered: '&cこのニックネームはまだ登録されていません。'
+  offline: '&c対象のプレイヤーはオフラインです。'
+  address-limit: '&cIPごとのアカウント制限に達しました。'
+  database: '&c申し訳ありませんが、このデータベース操作を完了できませんでした。詳細はコンソールを確認してください。'
+  command:
+    usage: '&c{0} を使用する必要があります。'
+    no-permission: '&cこのコマンドを実行する権限がありません。'
+    player-required: '&cこのコマンドはコンソールでは無効です。'
+    console-required: '&cこのコマンドはコンソールでのみ使用できます。'
+    account-collision:
+    - '&fニックネーム &a{0}&f を持つアカウントが複数存在します:'
+    - '&8⋆ &7{1} {2}'
+    - ''
+    - '&c‼ &e目的のアカウントタイプに対応するニックネームを使用していることを確認し、もう一度コマンドを実行してください。'
+    arguments:
+      password: パスワード
+      current-password: 現在のパスワード
+      new-password: 新しいパスワード
+  already:
+    login: '&cすでにログインしています。'
+    login-other: '&cこのプレイヤーはすでにログインしています。'
+    registered: '&cこのニックネームはすでに登録されています。'
+    premium: '&cアカウントはすでにプレミアムとしてマークされています。'
+  password:
+    same-as-current: '&c入力されたパスワードは現在のパスワードと同じです。'
+    too-large: '&c入力されたパスワードが長すぎます。'
+    too-small: '&c入力されたパスワードが短すぎます。'
+    not-secure: '&c提供されたパスワードはセキュリティ要件を満たしていません。数字、大文字、小文字、特殊記号を含めてください。'
+    do-not-match: '&cパスワードが一致しません。'
+    require-confirmation: '&cパスワードを確認する必要があります。'
+    incorrect: '&cパスワードが間違っています。もう一度お試しください。'
+  kick:
+    incorrect-password: '&cパスワードが間違っています。'
+    wait-server-start: |-
+      &cサーバーが完全に起動していません。
+      &cしばらく待ってから接続してください。
+    account-blocked: |-
+      &cあなたのアドレスは不正アクセスの疑いでブロックされました。&r
+      &r&c残りのブロック時間: {0}
+    account-unregistered: |-
+      &cこのサーバーでは新規アカウントの登録を受け付けていません。
+
+      &c詳細については、サーバースタッフにお問い合わせください。
+    invalid-nickname: '&cニックネームが無効です。スペース、記号、無効な文字を削除してください。'
+    bedrock-nickname: '&c選択されたニックネーム &f("{0}") &cはBedrockプレイヤーに制限されています。'
+    bedrock-unlinked: |-
+      &c選択されたニックネーム &f("{0}") &cはプレミアムJavaプレイヤーに制限されています。
+
+      &eこのアカウントにアクセスするには、&f/linkaccount &eコマンドを使用してJavaアカウントとBedrockアカウントをリンクしてください。
+    transferred-nickname: |-
+      &c選択された名前 &f("{0}") &cは予約され、同じUUIDを使用するアカウントに転送されました。
+
+      &e別のニックネームを使用して入場してください。
+    already-online: '&cこのプレイヤーはすでにオンラインです。'
+    unknown-hostname: |-
+      &4[nLogin] 使用されているホスト名 &f({0}) &4は設定で定義されていません。
+      &r
+      &r&cこれが有効なIPの場合、設定セクション &f"premium.username-appender"&c の適切なカテゴリに追加してください。
+      &r
+      &r&e詳細については、ユーザー名アペンダーのチュートリアルを参照してください:
+      &r&bhttps://docs.nickuc.com/nlogin/username-appender
+    premium-not-logged: |-
+      &7ユーザー名 &6{0} &7は確認済みの &aプレミアムアカウント&7 に関連付けられていますが、セッションの有効期限が&c切れました&7。
+
+      &eこのアカウントの所有者である場合は、Minecraftを再起動して再度ログインしてください。
+    premium-challenge: |-
+      &e前回のログイン試行時、アカウントを認証できませんでした。
+
+      &f&aプレミアム&fアカウントを使用している場合は、Minecraftを再起動して再度ログインしてください。
+
+      &fアカウントが&cオフライン&fの場合は、確認を完了するために再度ログインしてください。
+    timeout:
+      login: '&cログインに時間がかかりすぎました。'
+      register: '&c登録に時間がかかりすぎました。'
+
+notification:
+  all-viewed: '&aすべての通知を確認しました。'
+  premium-question:
+  - ''
+  - ' &eプレミアムアカウントを使用していますか？'
+  - ' &7(承認後、再参加が必要です。)'
+  - ''
+  premium-transfer-question:
+  - ''
+  - ' &eニックネーム &f@player&e ではすでにオフラインアカウントが登録されています。'
+  - ''
+  - ' &6このアカウントのデータを転送しますか、それとも新しいアカウントを作成しますか？'
+  - ''
+  - ' &c‼ &eアカウントの所有権を確認するために認証が必要です。'
+  - ''
+  premium-transfer-confirmation:
+  - ''
+  - ' &6&f@player &6からプレミアムアカウントへのデータ転送を確認しますか？'
+  - ''
+  - ' &c‼ &e転送を確認すると、サーバーから切断されます。'
+  - ''
+  password-update:
+  - ''
+  - ' &eパスワードをリセットする必要があります。'
+  - ''
+  - ' &7以下のコマンドでパスワードを変更してください:'
+  - ' &f/changepass <現在のパスワード> <新しいパスワード>'
+  - ''
+  button:
+    confirm-read:
+      text: '&a[✔ 既読を確認]'
+      hover: null
+    yes-btn:
+      text: '&a[✔ はい]'
+      hover: null
+    no-btn:
+      text: '&c[✖ いいえ]'
+      hover: null
+    new-account:
+      text: '&a[新しいアカウント]'
+      hover: null
+    transfer-data:
+      text: '&9[データを転送]'
+      hover: null
+
+2fa:
+  not-registered: '&c{0} アカウントが登録されていません。'
+  already-registered: '&cすでに {0} を登録しています。'
+  register-limit: '&c同じ {0} を持つアカウントの制限に達しました。'
+  unregistered: '&e{0} の登録が解除されました。'
+  incorrect-code: '&cコードが間違っています。もう一度お試しください。'
+  rate-limit: '&c制限を超えました。{0} 分待ってから再試行してください。'
+  confirmed-account: '&a{0} アカウントが正常に登録されました。'
+  confirmation-message-sent: |-
+    &7確認コードが &6{0}&7 に送信されました。
+    &8(&f{1}&8)。
+  command-delay: '&cこのコマンドを再度実行する前にしばらく待ってください。'
+  help-command:
+  - ''
+  - ' &fステータス: [&a{2} 登録済み//&c{2} 未登録]&f。'
+  - ''
+  - ' [&8⋆ &7/{0} add: &f{1} を登録します。]'
+  - ' [&8⋆ &7/{0} remove: &f{1} を削除します。]'
+  - ' [&8⋆ &7/{0} recover: &fアカウントを回復します。]'
+  - ' [&8⋆ &7/{0} 2fa: &f二要素認証を有効/無効にします。]'
+  - ''
+  recover-command:
+  - ''
+  - ' &e回復方法を選択してください:'
+  - ' [&8⋆ &7{0}: &f/{1} recover'
+  - ''
+  switch:
+    enabled: '&a二要素認証機能が有効になりました。'
+    disabled: '&c二要素認証機能が無効になりました。'
+  recover:
+    not-equal: '&c提供された {0} は登録されたものと同じではありません。'
+    message-sent: '&a回復メッセージが関連アカウントに送信されました。'
+    change-password: '&aパスワードが自動的に &f''{0}''&a に変更されました。'
+  discord:
+    account-linked: |-
+      &aDiscordでの設定が正常に更新されました。
+      &f{0} &aアカウントにリンクされました。
+    confirm-account:
+    - ''
+    - ' &7リンクを完了するには、Discordアカウントを確認する必要があります。'
+    - ' &b{0} &7に参加し、'
+    - ' &f{1} &7ボットのDMでコマンドを入力してください。'
+    - ''
+    - ' [&aここをクリックしてトークン付きのコマンドを取得します。]'
+    - ''
+    warn-message:
+    - ''
+    - ' &7コマンド &f/discord add &7を実行して'
+    - ' &9Discord&7を登録してください。これにより、'
+    - ' &7ハッキングのリスクが減少します。'
+    - ''
+    discord-required:
+    - ''
+    - ' &7現在のサーバーでは、登録を完了するために'
+    - ' &aDiscordアカウント&7 のリンクが必要です。'
+    - ''
+    - ' &f/discord add&6 を実行してください。'
+    - ''
+    address-changed:
+    - ''
+    - ' &7アカウントログインを確認する必要があります。'
+    - ' &7登録されたDiscordにセキュリティメッセージが送信されました。'
+    - ''
+    - ' &aメッセージボタンをクリックして身元を確認してください。'
+    - ''
+    dm:
+      configure:
+        too-recent:
+          title: 新しいアカウント
+          description: アカウントが最近作成されたため、Discordをリンクできません。
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        invalid:
+          title: 無効なコード
+          description: 申し訳ありませんが、入力されたトークンは無効であるか存在しません。
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        success:
+          title: Discordがリンクされました
+          description: Discordが正常にリンクされました。
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+      verify:
+        title: アカウント認証を確認してください。
+        description: |-
+          @player アカウントにアクセスするために認証確認が必要です。
+
+          あなたでない場合は、操作を拒否し、すぐにパスワードを変更してください。
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: 許可
+        deny: 拒否
+      recover:
+        title: パスワード回復が要求されました。
+        description: |-
+          @player アカウントからパスワード回復が要求されました。
+
+          あなたでない場合は、操作を拒否し、すぐにパスワードを変更してください。
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: 許可
+        deny: 拒否
+      new-password:
+        title: '@player の新しいパスワード'
+        description: |-
+          アカウントの新しいパスワードが生成されました:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+      password-changed:
+        title: '@player のパスワードが変更されました'
+        description: |-
+          パスワードが次のように変更されました:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+  email:
+    invalid-email: '&c入力されたメールアドレスが無効です。'
+    not-allowed: '&c選択されたメールのドメインは許可されていません。'
+    server-email: '&cサーバーのメールアドレスは使用できません。'
+    warn-message:
+    - ''
+    - ' &7コマンド &f/email associate &7を実行して'
+    - ' &9メール&7 を登録してください。これにより、'
+    - ' &7ハッキングのリスクが減少します。'
+    - ''
+    email-required:
+    - ''
+    - ' &7現在のサーバーでは、登録を完了するために'
+    - ' &a有効なメール&7 のリンクが必要です。'
+    - ''
+    - ' &6&f/email add <メールアドレス>&6 を実行してください。'
+    - ''
+    address-changed:
+    - ''
+    - ' &7アカウントログインを確認する必要があります。'
+    - ' &7登録されたメールにセキュリティメッセージが送信されました。'
+    - ''
+    - ' &a認証を完了するには、コマンド &f/email <コード> &aを使用してください。'
+    - ''
+    smtp:
+      configure:
+        subject: '@player アカウントの確認'
+        content:
+        - <h1>
+        - ' こんにちは、@player!'
+        - </h1>
+        - <p>
+        - ' メール登録プロセスを完了するには、コマンド <strong>"/email @code"</strong> を使用してください。'
+        - </p>
+        - <p>
+        - ' あなたでない場合は、このメッセージを無視してください。'
+        - </p>
+      verify:
+        subject: '@player アカウントのログイン確認'
+        content:
+        - <h1>
+        - ' こんにちは、@player!'
+        - </h1>
+        - <p>
+        - ' サーバーで認証するには、コマンド <strong>"/email @code"</strong> を使用してください。'
+        - </p>
+        - <p>
+        - ' あなたでない場合は、<strong>すぐに</strong>パスワードを変更してください。'
+        - </p>
+      recover:
+        subject: '@player アカウントの回復'
+        content:
+        - <h1>
+        - ' こんにちは、@player!'
+        - </h1>
+        - <p>
+        - ' アカウントを回復するには、コマンド <strong>"/email <新しいパスワード> @code"</strong> を使用してください。'
+        - </p>
+        - <p>
+        - ' あなたでない場合は、このメッセージを無視してください。'
+        - </p>
+      new-password:
+        subject: '@player の新しいパスワード'
+        content:
+        - <h1>
+        - ' こんにちは、@player!'
+        - </h1>
+        - <p>
+        - ' アカウントの新しいパスワードが生成されました: {0}'
+        - </p>
+      password-changed:
+        subject: '@player のパスワードが変更されました'
+        content:
+        - <h1>
+        - ' こんにちは、@player!'
+        - </h1>
+        - <p>
+        - ' パスワードが次のように変更されました: {0}'
+        - </p>
+
+bedrock:
+  forms:
+    login:
+      title: 認証
+      content:
+      - ようこそ、@player!
+      - 'ログインするには、以下のフィールドにパスワードを入力してください:'
+      - ''
+      - '[パスワード//パスワードを入力してください]'
+      - ''
+    register:
+      title: 登録
+      content:
+      - ようこそ、@player!
+      - サーバーでプレイするには、パスワードを作成する必要があります。
+      - 以下のフィールドに希望のパスワードを入力してください。
+      - ''
+      - '[パスワード//パスワードを入力してください]'
+      - '[確認//パスワードを確認してください]'
+      - ''
+
+dialogs:
+  login:
+    title: '&#ffdb60パスワードを入力してください'
+    body:
+    - '&6ようこそ、&f@player&6さん！'
+    - ''
+    - '&#ffdb60サーバーにログインするには、パスワードを入力してください。'
+    - ''
+    inputs:
+      password: パスワード
+    buttons:
+      login: ログイン
+      recover: パスワードを忘れた
+      cancel: ログアウト
+  register:
+    title: '&#ffdb60パスワードを作成'
+    body:
+    - '&6ようこそ、&f@player&6さん！'
+    - ''
+    - '&#ffdb60サーバーにログインするには&bパスワードを作成&#ffdb60する必要があります。'
+    - ''
+    - '&#ffdb60続行するには、以下のフィールドに入力してください。'
+    - ''
+    inputs:
+      password1: パスワード
+      password2: 確認
+    buttons:
+      register: アカウントを作成
+      cancel: ログアウト
+
+title:
+  before-login:
+    title: '&a&lようこそ！'
+    subtitle: '&7入力: /login <パスワード>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  before-register:
+    title: '&a&lようこそ！'
+    subtitle: '&7入力: /register <パスワード> <パスワード確認>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  after-login:
+    title: ''
+    subtitle: '&aログインに成功しました！'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  after-register:
+    title: ''
+    subtitle: '&a登録に成功しました！'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  incorrect-password:
+    title: ''
+    subtitle: '&cパスワードが間違っています！'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-login:
+    title: ''
+    subtitle: '&cすでにログインしています！'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-registered:
+    title: ''
+    subtitle: '&cすでに登録されています！'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  passwords-dont-match:
+    title: ''
+    subtitle: '&cパスワードが一致しません！'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  session-login:
+    title: ''
+    subtitle: '&eログインセッションが継続されました。'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  premium-login:
+    title: ''
+    subtitle: '&eアカウントがユニークであるため、ログインに成功しました。'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  bedrock-login:
+    title: ''
+    subtitle: '&eBedrock経由でアクセスし、ログインに成功しました。'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  security-warning:
+    title: ''
+    subtitle: '&c新しいセキュリティ警告がチャットに送信されました'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  unconfirmed-message:
+    title: ''
+    subtitle: '&c‼ &eチャットに未確認のメッセージがあります'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6

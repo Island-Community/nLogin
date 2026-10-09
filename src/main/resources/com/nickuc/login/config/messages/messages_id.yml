@@ -1,0 +1,500 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |              List of translation authors: https://crowdin.com/project/nlogin/members         | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+pending:
+  login: '&eGunakan perintah &7/login <kata sandi>&e.'
+  register: '&eGunakan perintah &7/register <kata sandi> <kata sandi>&e.'
+  action-bar:
+    singular: '&cAnda memiliki {0} detik untuk {login///register}.'
+    plural: '&cAnda memiliki {0} detik untuk {login///register}.'
+
+success:
+  login: '&aAnda telah berhasil login.'
+  register: '&aAnda telah berhasil mendaftar.'
+  session: '&aSesi login anda telah dilanjutkan.'
+  premium: '&aAnda secara otomatis masuk karena akun anda unik.'
+  bedrock: '&aAnda secara otomatis masuk, karena anda mengakses dari akun Bedrock.'
+  change-password: '&aKata sandi anda berhasil diubah.'
+  reload: '&ePlugin telah berhasil dimuat ulang.'
+  kick:
+    unregister: '&aAnda telah berhasil membatalkan pendaftaran.'
+    marked-offline: '&7Akun Anda telah ditandai sebagai &6offline&7, silakan bergabung kembali.'
+    challenge-premium: '&7Untuk mengonfirmasi bahwa Anda menggunakan &aakun premium&7, silakan masuk kembali.'
+
+error:
+  not-registered: '&cNama panggilan ini belum terdaftar.'
+  offline: '&cPemain yang diinginkan sedang offline.'
+  address-limit: '&cAnda telah mencapai batas akun per IP.'
+  database: '&cMaaf, kami tidak dapat menyelesaikan operasi ini. Silakan coba lagi. [SQL GAGAL]'
+  command:
+    usage: '&cAnda harus menggunakan {0}.'
+    no-permission: '&cAnda tidak memiliki izin untuk menjalankan perintah ini.'
+    player-required: '&cPerintah ini telah dinonaktifkan melalui konsol.'
+    console-required: '&cPerintah ini hanya dapat dijalankan melalui konsol.'
+    account-collision:
+    - '&fLebih dari satu akun memiliki nama &a{0}&f:'
+    - '&8⋆ &7{1} {2}'
+    - ''
+    - '&c‼ &eJalankan perintah lagi, pastikan menggunakan nama yang sesuai dengan jenis akun yang diinginkan.'
+    arguments:
+      password: kata sandi
+      current-password: password saat ini
+      new-password: password baru
+  already:
+    login: '&cAnda sudah masuk.'
+    login-other: '&cPemain ini sudah login.'
+    registered: '&cNama panggilan ini sudah terdaftar.'
+    premium: '&cAkun Anda sudah ditandai sebagai premium.'
+  password:
+    same-as-current: '&cKata sandi yang dimasukkan sama dengan saat ini.'
+    too-large: '&cKata sandi yang dimasukkan terlalu besar.'
+    too-small: '&cKata sandi yang dimasukkan terlalu kecil.'
+    not-secure: '&cPassword yang diberikan tidak memenuhi persyaratan keamanan. Harap sertakan angka, huruf besar dan kecil, serta simbol khusus.'
+    do-not-match: '&cKata sandi tidak sama.'
+    require-confirmation: '&cAnda harus mengkonfirmasi kata sandi Anda.'
+    incorrect: '&cKata sandi salah. Tolong, coba lagi.'
+  kick:
+    incorrect-password: '&cAnda memasukkan kata sandi yang salah.'
+    wait-server-start: |-
+      &cServer belum dinyalakan dengan baik.
+      &cTunggu beberapa saat untuk terhubung.
+    account-blocked: |-
+      &cAlamat anda telah diblokir oleh dugaan invasi.&r
+      &r&cSisa waktu pembuangan: {0}
+    account-unregistered: |-
+      &cServer ini tidak menerima pendaftaran akun baru.
+
+      &cUntuk informasi lebih lanjut, silakan hubungi staf server.
+    invalid-nickname: '&cNama panggilan Anda tidak valid, hapus spasi, simbol, dan karakter yang tidak valid dari nama Anda.'
+    bedrock-nickname: '&cNickname yang dipilih &f("{0}") &cdibatasi untuk pemain Bedrock.'
+    bedrock-unlinked: |-
+      &cNama yang dipilih &f("{0}") &cdibatasi untuk pemain Java premium.
+
+      &eUntuk mengakses akun ini, tautkan akun Java dengan akun Bedrock Anda menggunakan perintah &f/linkaccount&e.
+    transferred-nickname: |-
+      &cNama yang dipilih &f("{0}") &cdipesan dan dialihkan ke akun yang menggunakan UUID yang sama.
+
+      &eUntuk masuk, silakan gunakan nickname lain.
+    already-online: '&cPemain ini sudah online.'
+    unknown-hostname: |-
+      &4[nLogin] Hostname yang digunakan &f({0}) &4tidak didefinisikan dalam konfigurasi.
+      &r
+      &r&cJika ini adalah IP yang valid, silakan tambahkan ke kategori yang paling sesuai di bagian config &f"premium.username-appender"&c.
+      &r
+      &r&eUntuk informasi lebih lanjut, lihat tutorial username appender:
+      &r&bhttps://docs.nickuc.com/nlogin/username-appender
+    premium-not-logged: |-
+      &7Nama pengguna &6{0} &7dikaitkan dengan &aakun premium&7 yang terverifikasi, tetapi sesi Anda telah &ckedaluwarsa&7.
+
+      &eJika Anda pemilik akun ini, mulai ulang Minecraft dan login kembali.
+    premium-challenge: |-
+      &ePada percobaan login terakhir Anda, kami tidak dapat mengautentikasi akun Anda.
+
+      &fJika Anda menggunakan akun &apremium&f, mulai ulang Minecraft Anda dan login kembali.
+
+      &fJika akun Anda &coffline&f, silakan login kembali untuk menyelesaikan verifikasi.
+    timeout:
+      login: '&cAnda terlalu lama untuk login.'
+      register: '&cAnda terlalu lama untuk mendaftar.'
+
+notification:
+  all-viewed: '&aSemua notifikasi telah dilihat.'
+  premium-question:
+  - ''
+  - ' &eApakah Anda menggunakan akun premium??'
+  - ' &7(setelah menerima, Anda harus masuk kembali.)'
+  - ''
+  premium-transfer-question:
+  - ''
+  - ' &eAkun offline sudah terdaftar dengan nama &f@player&e.'
+  - ''
+  - ' &6Apakah Anda ingin mentransfer data dari akun ini atau membuat akun baru?'
+  - ''
+  - ' &c‼ &eAnda perlu melakukan autentikasi untuk mengonfirmasi kepemilikan akun.'
+  - ''
+  premium-transfer-confirmation:
+  - ''
+  - ' &6Apakah Anda ingin mengonfirmasi transfer data dari &f@player &6ke akun premium Anda?'
+  - ''
+  - ' &c‼ &eSetelah mengonfirmasi transfer, Anda akan terputus dari server.'
+  - ''
+  password-update:
+  - ''
+  - ' &ePassword Anda perlu direset.'
+  - ''
+  - ' &7Silakan ubah password Anda dengan perintah di bawah ini:'
+  - ' &f/changepass <password saat ini> <password baru>'
+  - ''
+  button:
+    confirm-read:
+      text: '&a[✔ Konfirmasi telah membaca]'
+      hover: null
+    yes-btn:
+      text: '&a[✔ Ya]'
+      hover: null
+    no-btn:
+      text: '&c[✖ Tidak]'
+      hover: null
+    new-account:
+      text: '&a[Akun Baru]'
+      hover: null
+    transfer-data:
+      text: '&9[Transfer Data]'
+      hover: null
+
+2fa:
+  not-registered: '&cAnda tidak memiliki {0} akun.'
+  already-registered: '&cAnda sudah mendaftarkan keamanan tambahan {0}.'
+  register-limit: '&cAnda telah melewati batas akun dengan {0} yang sama.'
+  unregistered: '&e{0} Anda telah berhasil dihapus.'
+  incorrect-code: '&cKode salah, Silahkan coba lagi.'
+  rate-limit: '&cBatas terlampaui, Mohon tunggu {0} menit untuk mencoba lagi.'
+  confirmed-account: '&aAkun {0} Anda telah berhasil terdaftar.'
+  confirmation-message-sent: |-
+    &7Kode konfirmasi telah dikirim ke &6{0} &7Anda.
+    &8(&f{1}&8).
+  command-delay: '&cTunggu beberapa saat sebelum menjalankan perintah ini lagi.'
+  help-command:
+  - ''
+  - ' &fStatus: [&a{2} Terdaftar//&c{2} Todak terdaftar]&f.'
+  - ''
+  - ' [&8⋆ &7/{0} add: &fDaftarkan {1} Anda.]'
+  - ' [&8⋆ &7/{0} remove: &fHapus {1} Anda.]'
+  - ' [&8⋆ &7/{0} recover: &fPulihkan akun Anda.]'
+  - ' [&8⋆ &7/{0} 2fa: &fMengaktifkan/menonaktifkan two-factor.]'
+  - ''
+  recover-command:
+  - ''
+  - ' &ePilih metode pemulihan:'
+  - ' [&8⋆ &7{0}: &f/{1} recover]'
+  - ''
+  switch:
+    enabled: '&aFitur two-factor telah diaktifkan.'
+    disabled: '&cFitur two-factor telah dinonaktifkan.'
+  recover:
+    not-equal: '&c{0} yang diberikan tidak sama dengan yang terdaftar.'
+    message-sent: '&aPesan pemulihan telah dikirim ke akun terkait Anda.'
+    change-password: '&aKata sandi Anda secara otomatis diubah menjadi &f''{0}''&a.'
+  discord:
+    account-linked: |-
+      &aKonfigurasi di Discord berhasil diperbarui.
+      &aAnda telah ditautkan dengan akun &f{0}
+    confirm-account:
+    - ''
+    - ' &7Untuk menyelesaikan penautan, Anda perlu mengonfirmasi akun Discord Anda.'
+    - ' &7Bergabunglah ke &b{0} &7dan ketik'
+    - ' &7perintah di DM bot &f{1}'
+    - ''
+    - ' [&aKlik di sini untuk mendapatkan perintah dengan token.]'
+    - ''
+    warn-message:
+    - ''
+    - ' &7Lakukan perintah &f/discord add &7untuk mendaftarkan'
+    - ' &7Discord&7 Anda. Dengan melakukan itu, Anda'
+    - ' &7mengurangi kemungkinan diretas.'
+    - ''
+    discord-required:
+    - ''
+    - ' &7Server saat ini mengharuskan Anda untuk menghubungkan'
+    - ' &aakun Discord &7untuk menyelesaikan pendaftaran.'
+    - ''
+    - ' &6Silakan jalankan &f/discord add&6.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Anda perlu mengonfirmasi login akun Anda.'
+    - ' &7Pesan keamanan telah dikirim ke Discord terdaftar Anda.'
+    - ''
+    - ' &aKlik tombol pesan untuk mengonfirmasi identitas Anda.'
+    - ''
+    dm:
+      configure:
+        too-recent:
+          title: Akun terlalu baru
+          description: Anda tidak dapat menghubungkan Discord karena akun Anda dibuat terlalu baru.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        invalid:
+          title: Kode tidak valid
+          description: Maaf, token yang Anda masukkan tidak valid atau tidak ada.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        success:
+          title: Discord terhubung
+          description: Discord Anda telah berhasil terhubung.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+      verify:
+        title: Konfirmasi autentikasi akun Anda.
+        description: |-
+          Konfirmasi autentikasi diperlukan untuk mengakses akun @player Anda.
+
+          Jika ini bukan Anda, tolak operasi dan segera ubah password Anda.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Izinkan
+        deny: Tolak
+      recover:
+        title: Permintaan pemulihan password.
+        description: |-
+          Permintaan pemulihan password telah diajukan dari akun @player Anda.
+
+          Jika ini bukan Anda, tolak operasi dan segera ubah password Anda.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Izinkan
+        deny: Tolak
+      new-password:
+        title: Password baru untuk @player
+        description: |-
+          Password baru telah dibuat untuk akun Anda:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+      password-changed:
+        title: Password diubah untuk @player
+        description: |-
+          Password Anda telah diubah menjadi:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+  email:
+    invalid-email: '&cEmail yang dimasukkan tidak valid.'
+    not-allowed: '&cDomain email yang dipilih tidak diizinkan.'
+    server-email: '&cAnda tidak dapat menggunakan email server.'
+    warn-message:
+    - ''
+    - ' &7Lakukan perintah &f/email associate &7untuk mendaftarkan'
+    - ' &9email&7 anda. Dengan melakukan itu, kamu'
+    - ' &7mengurangi kemungkinan diretas.'
+    - ''
+    email-required:
+    - ''
+    - ' &7Server saat ini mengharuskan Anda untuk menghubungkan'
+    - ' &aemail yang valid &7untuk menyelesaikan pendaftaran.'
+    - ''
+    - ' &6Silakan jalankan &f/email add <email Anda>&6.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Anda perlu mengonfirmasi login akun Anda.'
+    - ' &7Pesan keamanan telah dikirim ke email terdaftar Anda.'
+    - ''
+    - ' &aGunakan perintah &f/email <code> &auntuk menyelesaikan autentikasi.'
+    - ''
+    smtp:
+      configure:
+        subject: Konfirmasi akun @player
+        content:
+        - <h1>
+        - ' Halo, @player!'
+        - </h1>
+        - <p>
+        - ' Untuk menyelesaikan proses pendaftaran email Anda, gunakan perintah <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Jika itu bukan Anda, abaikan pesan ini.'
+        - </p>
+      verify:
+        subject: Konfirmasi login akun @player
+        content:
+        - <h1>
+        - ' Halo, @player!'
+        - </h1>
+        - <p>
+        - ' Untuk mengautentikasi di server, gunakan perintah <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Jika bukan Anda, ubah kata sandi Anda <strong>SEGERA</strong>.'
+        - </p>
+      recover:
+        subject: Memulihkan akun @player
+        content:
+        - <h1>
+        - ' Halo, @player!'
+        - </h1>
+        - <p>
+        - ' Untuk memulihkan akun Anda, gunakan perintah <strong>"/email <new password> @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Jika itu bukan Anda, abaikan pesan ini.'
+        - </p>
+      new-password:
+        subject: Password baru untuk @player
+        content:
+        - <h1>
+        - ' Hai, @player!'
+        - </h1>
+        - <p>
+        - ' Password baru telah dibuat untuk akun Anda: {0}'
+        - </p>
+      password-changed:
+        subject: Password diubah untuk @player
+        content:
+        - <h1>
+        - ' Hai, @player!'
+        - </h1>
+        - <p>
+        - ' Password Anda telah diubah menjadi: {0}'
+        - </p>
+
+bedrock:
+  forms:
+    login:
+      title: Autentikasi
+      content:
+      - Selamat Datang, @player!
+      - 'Untuk masuk, silakan masukkan kata sandi Anda di bidang di bawah ini:'
+      - ''
+      - '[Kata Sandi//Masukkan Kata Sandi Anda]'
+      - ''
+    register:
+      title: Daftar
+      content:
+      - Selamat Datang, @player!
+      - Untuk bermain di server, Anda perlu membuat kata sandi.
+      - Silakan masukkan kata sandi yang diinginkan di bidang di bawah ini.
+      - ''
+      - '[Kata Sandi//Masukkan Kata Sandi Anda]'
+      - '[Konfirmasi//Konfirmasi Kata Sandi Anda]'
+      - ''
+
+dialogs:
+  login:
+    title: '&#ffdb60Masukkan Kata Sandi Anda'
+    body:
+    - '&6Selamat datang, &f@player&6!'
+    - ''
+    - '&#ffdb60Silakan masukkan kata sandi Anda untuk login ke server.'
+    - ''
+    inputs:
+      password: Kata Sandi
+    buttons:
+      login: Masuk
+      recover: Lupa Kata Sandi
+      cancel: Keluar
+  register:
+    title: '&#ffdb60Membuat Kata Sandi'
+    body:
+    - '&6Selamat datang, &f@player&6!'
+    - ''
+    - '&#ffdb60Anda harus &bmembuat kata sandi &#ffdb60untuk login ke server.'
+    - ''
+    - '&#ffdb60Silakan isi kolom di bawah ini untuk melanjutkan.'
+    - ''
+    inputs:
+      password1: Kata Sandi
+      password2: Konfirmasi
+    buttons:
+      register: Buat Akun
+      cancel: Keluar
+
+title:
+  before-login:
+    title: '&a&lSELAMAT DATANG!!'
+    subtitle: '&7Ketik: /login <kata sandi Anda>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  before-register:
+    title: '&a&lSELAMAT DATANG!'
+    subtitle: '&7Ketik: /register <kata sandi Anda> <konfirmasi kata sandi>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  after-login:
+    title: ''
+    subtitle: '&aAnda telah berhasil login!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  after-register:
+    title: ''
+    subtitle: '&aAnda telah berhasil mendaftar!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  incorrect-password:
+    title: ''
+    subtitle: '&cKata sandi salah!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-login:
+    title: ''
+    subtitle: '&cAnda sudah masuk!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-registered:
+    title: ''
+    subtitle: '&cAnda sudah terdaftar!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  passwords-dont-match:
+    title: ''
+    subtitle: '&cKata sandi tidak sama!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  session-login:
+    title: ''
+    subtitle: '&eSesi login anda telah dilanjutkan.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  premium-login:
+    title: ''
+    subtitle: '&eAkun anda unik, berhasil masuk.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  bedrock-login:
+    title: ''
+    subtitle: '&eMengakses melalui Bedrock, berhasil login.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  security-warning:
+    title: ''
+    subtitle: '&cPeringatan keamanan baru telah dikirim dalam obrolan'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  unconfirmed-message:
+    title: ''
+    subtitle: '&c‼ &eAda pesan yang belum dikonfirmasi di chat'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6

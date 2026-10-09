@@ -1,0 +1,8 @@
+package com.nickuc.login.model;
+
+public enum LoudPremiumOption {
+   LOUD_PREMIUM_OPTION,
+   ACTIVE_LOUDPREMIUMOPTION,
+   PENDING_LOUDPREMIUMOPTION,
+   CURRENT_LOUDPREMIUMOPTION;
+}

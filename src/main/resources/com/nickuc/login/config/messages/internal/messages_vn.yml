@@ -1,0 +1,269 @@
+update:
+  stable: '&aỔn định'
+  latest: '&bMới nhất'
+
+notification:
+  setup:
+    select-language:
+    - ''
+    - ' &eChúng tôi đã phát hiện rằng bạn đang sử dụng ngôn ngữ &6{0}&e.'
+    - ''
+    - ' &6Bạn có muốn sử dụng ngôn ngữ này cho nLogin không?'
+    - ''
+    - ' &c‼ &eĐiều này ảnh hưởng đến ngôn ngữ của tất cả người chơi!'
+    - ''
+    permission-required:
+    - ''
+    - ' &eĐể cấu hình nLogin, bạn cần trở thành &cquản trị viên&e.'
+    - ''
+    - ' &6Thêm quyền &f"{0}" &6vào plugin quản lý quyền của bạn.'
+    - ''
+    - ' &c‼ &eQuá trình cài đặt sẽ tiếp tục ngay khi quyền được thêm vào.'
+    - ''
+    welcome-message:
+    - ''
+    - ' &aCảm ơn bạn rất nhiều vì đã chọn nLogin! :)'
+    - ''
+    - ' &6Vì sự an toàn của bạn, vui lòng đọc thông báo dưới đây:'
+    - '  &cKhông bao giờ tải nLogin từ các nguồn không rõ.'
+    - '  &cMột phiên bản đã bị chỉnh sửa có thể chứa phần mềm độc hại.'
+    - ''
+    - ' &aCác nguồn đáng tin cậy:'
+    - '  &7Trang web: &fnickuc.com'
+    - '  &7GitHub: &fgithub.com/nickuc-com'
+    - '  &7Trình cài đặt OpeNLogin (từ &fSpigot &7hoặc &fGitHub&7)'
+    - ''
+    - ' &aHỗ trợ chính thức:'
+    - '  &7Tài liệu: &fdocs.nickuc.com/nlogin/'
+    - '  &7Discord: &fnickuc.com/discord'
+    - '  &7Email: &fsupport@nickuc.com'
+    - ''
+    configure-version-channel:
+    - ''
+    - ' &6Chọn kênh phiên bản ưa thích.'
+    - ''
+    - ' &c‼ &eBạn có thể thay đổi điều này sau bằng cách chạy &f{0}&e.'
+    - ''
+    configure-auto-or-manual-updates:
+    - ''
+    - ' &6Chọn phương thức cập nhật ưa thích.'
+    - ''
+    - ' &c‼ &eBạn có thể thay đổi điều này sau bằng cách chạy &f{0}&e.'
+    - ''
+    configure-password-algorithm:
+    - ''
+    - ' &6Chọn loại mã hóa ưa thích cho mật khẩu.'
+    - ''
+    - ' &c‼ &eBạn có thể thay đổi tùy chọn này thủ công sau trong &fconfig.yml&e.'
+    - ''
+    enable-dialogs:
+    - ''
+    - ' &6Bạn có muốn sử dụng menu (dialog) làm giao diện xác thực không?'
+    - ''
+    - ' &eCác dialog thay thế xác thực bằng lệnh bằng các menu có thể tùy chỉnh.'
+    - ''
+    - ' &c‼ &eTính năng này chỉ hoạt động với client sử dụng phiên bản 1.21.6 trở lên.'
+    - ''
+    configure-dialogs:
+    - ''
+    - ' &6Chọn cách ưa thích để hiển thị dialog.'
+    - ''
+    - ' &c‼ &eBạn có thể thay đổi tùy chọn này thủ công trong &fconfig.yml&e.'
+    - ''
+    configure-bungeeguard:
+    - ''
+    - ' &6Bạn có muốn cấu hình BungeeGuard+ trên máy chủ không?'
+    - ''
+    - ' &c‼ &eNên cài đặt BungeeGuard+ trong các trường hợp sau:'
+    - '  &8⋆ &eBạn sử dụng bất kỳ proxy nào dựa trên BungeeCord.'
+    - '  &8⋆ &eBạn sử dụng Velocity, nhưng không thể sử dụng forwarding &f"MODERN"&e.'
+    - ''
+    - ' &c‼ &eBạn sẽ cần cài đặt JAR BungeeGuard+ trên tất cả các máy chủ.'
+    - ''
+    start-premium-configuration:
+    - ''
+    - ' &aChúc mừng bạn đã mua &6⭐ nLogin Premium'
+    - ''
+    - ' &6Đây là các tính năng mới được mở khóa:'
+    - ''
+    - '  &8⋆ &eTự động đăng nhập &7cho người dùng có Minecraft premium.'
+    - '  &8⋆ &eXác thực hai bước &7qua Discord và Email.'
+    - '  &8⋆ &ePhiên đăng nhập &7khi đăng nhập bằng địa chỉ IP.'
+    - '  &8⋆ &eHỗ trợ &7ưu tiên cao hơn.'
+    - '  &8⋆ &eNhãn khách hàng &7trong nhóm Discord.'
+    - ''
+    configure-username-appendix:
+    - ''
+    - ' &6Bạn có muốn bật hậu tố cho người chơi premium/offline không?'
+    - ''
+    - ' &c‼ &eĐể biết thêm thông tin về tính năng này, truy cập: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    configure-username-appendix-legacy-versions:
+    - ''
+    - ' &6Hậu tố cho người chơi premium/offline không thể được thêm tự động cho phiên bản 1.18.2 trở xuống.'
+    - ''
+    - ' &eBạn sẽ cần cấu hình thủ công hai địa chỉ IP khác nhau cho người chơi premium và offline.'
+    - ''
+    - ' &c‼ &eĐể biết thêm thông tin về tính năng này, truy cập: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    enable-restrict-premium-nicknames:
+    - ''
+    - ' &6Hạn chế người chơi offline đăng ký bằng tên premium? &e(đối với tài khoản mới)'
+    - ''
+    - ' &c‼ &eNgười chơi offline sẽ không thể sử dụng &ftên premium (ví dụ: Notch)&e, ngay cả khi tên đó còn trống để đăng ký.'
+    - ''
+    enable-challenge-premium-nicknames:
+    - ''
+    - ' &6Phát hiện nếu người chơi đang sử dụng tài khoản premium? &e(dựa vào tên)'
+    - ''
+    - ' &c‼ &eNgười chơi offline có thể nhận được thông báo không thể tùy chỉnh với nội dung &f"Invalid session" &ekhi đăng nhập lần đầu vào máy chủ.'
+    - ''
+    enable-premium-question:
+    - ''
+    - ' &6Phát hiện nếu người chơi đang sử dụng tài khoản premium? &e(bằng câu hỏi tương tác)'
+    - ''
+    - ' &c‼ &eTùy chọn này được khuyến nghị nếu bạn muốn đảm bảo người chơi premium nhận được Mojang UUID.'
+    - ''
+    skip-premium-register:
+    - ''
+    - ' &6Bỏ qua yêu cầu đăng ký mật khẩu cho &bngười chơi premium&6?'
+    - ''
+    - ' &c‼ &eNên tắt tùy chọn này nếu mật khẩu của người chơi được sử dụng trong tích hợp web (ví dụ: trang web máy chủ).'
+    - ''
+    skip-bedrock-register:
+    - ''
+    - ' &6Bỏ qua yêu cầu đăng ký mật khẩu cho &cngười chơi Bedrock&6?'
+    - ''
+    - ' &c‼ &eNên tắt tùy chọn này nếu mật khẩu của người chơi được sử dụng trong tích hợp web (ví dụ: trang web máy chủ).'
+    - ''
+    nantibot-recommendation:
+    - ''
+    - ' &6Chúng tôi khuyên bạn nên cài đặt &fnAntiBot &6để ngăn'
+    - ' &6máy chủ của bạn khỏi bị bot tấn công.'
+    - ''
+    - ' &c‼ &eĐể biết thêm thông tin về plugin này, &6nhấp vào đây&e.'
+    - ''
+    nchat-recommendation:
+    - ''
+    - ' &6Chúng tôi khuyên bạn nên cài đặt &fnChat&6,'
+    - ' &6một plugin chat thay thế hoàn toàn Legendchat.'
+    - ''
+    - ' &c‼ &eĐể biết thêm thông tin về plugin này, &6nhấp vào đây&e.'
+    - ''
+    recommend-spawn-set:
+    - ''
+    - ' &6Tọa độ người chơi &cSẼ KHÔNG &6được bảo vệ trước khi đăng nhập.'
+    - ''
+    - ' &c‼ &eĐặt một điểm spawn an toàn bằng lệnh &f{0}&e.'
+    - ''
+    finish-configuration:
+    - ''
+    - ' &6Xác nhận để thoát chế độ cài đặt và lưu tất cả thay đổi.'
+    - ''
+    - ' &c‼ &eTất cả người chơi sẽ bị ngắt kết nối sau khi xác nhận.'
+    - ''
+  update-available-confirmation:
+  - ''
+  - ' &eMột phiên bản nLogin mới đã có sẵn{0} {1}'
+  - ''
+  - ' &6Bạn có muốn xác nhận cập nhật không?'
+  - ''
+  update-available-restart:
+  - ''
+  - ' &eMột phiên bản nLogin mới đã có sẵn{0} {1}'
+  - ''
+  - ' &6Khởi động lại máy chủ để áp dụng bản cập nhật.'
+  - ''
+  premium-fail:
+  - ''
+  - ' &c✖ &cGiấy phép &fnLogin v{0} &ccủa bạn chưa được kích hoạt thành công.'
+  - '  &cHãy thử tải lại JAR trên trang web:'
+  - '  &b{1}'
+  - ''
+  - ' &c‼ &cNếu vấn đề vẫn tiếp diễn, chúng tôi khuyên bạn nên liên hệ với nhà phát triển.'
+  - '  &7Để xem danh sách liên hệ, sử dụng lệnh {2}'
+  - ''
+  premium-expired:
+  - ''
+  - ' &c✖ &cGiấy phép &fnLogin v{0} &ccủa bạn chưa được kích hoạt thành công.'
+  - '  &cGia hạn giấy phép của bạn qua trang web: &b{1}'
+  - ''
+  premium-recommendation:
+  - ''
+  - ' &7Muốn đăng nhập của bạn tiện lợi hơn?'
+  - ' &7Hãy sở hữu phiên bản premium của nLogin ngay bây giờ'
+  - ' &7và bật đăng nhập tự động cho người dùng của bạn.'
+  - ''
+  - ' [&aNhấp vào đây để biết thêm thông tin.]'
+  - ''
+  button:
+    start-setup:
+      text: '&a[✔ Bắt đầu cài đặt]'
+      hover: '&7Nhấp vào đây để bắt đầu cài đặt plugin.'
+    stable:
+      text: '&a[Phiên bản Ổn định]'
+      hover: |-
+        &7Kênh &aổn định &7ít lỗi hơn, nhưng cũng ít tính năng hơn.
+
+        &6Khuyến nghị: &fcho máy chủ đã phát hành công khai.
+    latest:
+      text: '&6[Phiên bản Mới nhất]'
+      hover: |-
+        &7Kênh &6phiên bản mới nhất &7có các phiên bản mới nhất.
+
+        &6Khuyến nghị: &fcho máy chủ muốn các tính năng mới nhất
+    automatic:
+      text: '&a[Cập nhật tự động]'
+      hover: '&7Sẽ không cần xác nhận để cập nhật.'
+    manual:
+      text: '&9[Xác nhận thủ công]'
+      hover: '&7Bạn sẽ cần xác nhận bản cập nhật bằng một thông báo tương tự như thế này.'
+    safer:
+      text: '&a[An toàn hơn]'
+      hover: '&7Một thuật toán an toàn hơn sẽ được sử dụng để bảo vệ mật khẩu.'
+    faster:
+      text: '&c[Nhanh hơn]'
+      hover: '&7Một thuật toán kém an toàn hơn sẽ được sử dụng để bảo vệ mật khẩu.'
+    pre-login:
+      text: '&a[Hiển thị trước]'
+      hover: '&7Các dialog sẽ được hiển thị &atrước khi vào &7máy chủ.'
+    after-login:
+      text: '&9[Hiển thị sau]'
+      hover: '&7Các dialog sẽ được hiển thị &9sau khi vào &7máy chủ.'
+    install:
+      text: '&a[⬇ Cài đặt]'
+      hover: '&7Nhấp vào đây để tự động cài đặt plugin.'
+    skip:
+      text: '&7[✖ Bỏ qua]'
+      hover: null
+
+title:
+  setup:
+    welcome-message-1:
+      title: '&6Chào, @player!'
+      subtitle: '&eChào mừng đến với nLogin!'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-2:
+      title: ''
+      subtitle: '&aVui lòng đọc cảnh báo trước khi tiếp tục.'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-3:
+      title: ''
+      subtitle: '&fNhấp vào nút {0} &fđể tiếp tục.'
+      delays:
+        fadeIn: 10
+        stay: 80
+        fadeOut: 10
+  update-available:
+    title: ''
+    subtitle: '&aĐã có phiên bản mới.'
+    delays:
+      fadeIn: 10
+      stay: 80
+      fadeOut: 10

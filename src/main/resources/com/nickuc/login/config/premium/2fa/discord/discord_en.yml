@@ -1,0 +1,79 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |  For a better understanding of this file see our documentation:                              | #
+# |   ==> https://docs.nickuc.com/nlogin/                                                        | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+# Set the version of the file.
+language-version: 2
+
+# Defines whether Discord can be used as a second factor.
+enable: false
+
+authentication:
+  # Defines the token used in the Discord API.
+  #
+  # - For more information, please access the documentation:
+  #    * https://docs.nickuc.com/nlogin/discord
+  #
+  token: ""
+
+  # Sets the bot status message.
+  presence: ""
+
+  proxy:
+    enable: false
+    host: "https://domain.tld"
+    port: 80
+    username: "username"
+    password: "password"
+
+linking:
+  # Sets the invitation URL of the Discord server.
+  # - This option is required to complete a link.
+  invite-url: "https://discord.gg/YOUR_INVITE_CODE"
+
+  # Defines whether the link should be recommended to players.
+  recommend: true
+
+  # Defines if 2FA will be enabled upon completing the linking.
+  enable-2fa: true
+
+  required:
+    # Sets whether linking a Discord account will be required to authenticate.
+    enable: false
+
+    # Sets whether premium players will also need to link a Discord account to authenticate.
+    enable-for-premium: true
+
+    # Sets whether Bedrock players will also need to link a Discord account to authenticate.
+    enable-for-bedrock: true
+
+account:
+  # Sets the maximum number of accounts that can have the same Discord linked.
+  limit: 1
+
+  # Defines how many time (in seconds) an account needs to have been previously created in order to be approved for linking.
+  # - The default value is 5 minutes (600 seconds)
+  # - To disable the account registration verification time, change the value to "-1".
+  block-recent: 600
+
+  # Defines whether a new password should be created after the account recovery process.
+  # - If this option is disabled, a random password will be set.
+  force-password-update: false

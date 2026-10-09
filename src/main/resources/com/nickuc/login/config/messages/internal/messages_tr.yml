@@ -1,0 +1,269 @@
+update:
+  stable: '&aKararlı'
+  latest: '&bEn Yeni'
+
+notification:
+  setup:
+    select-language:
+    - ''
+    - ' &e&6{0} &edilini kullandığınızı tespit ettik.'
+    - ''
+    - ' &6nLogin için bu dili kullanmak ister misiniz?'
+    - ''
+    - ' &c‼ &eBu, tüm oyuncuların dilini etkiler!'
+    - ''
+    permission-required:
+    - ''
+    - ' &enLogin''i yapılandırmak için &cyönetici&e olmanız gerekiyor.'
+    - ''
+    - ' &6İzin eklentinize &f"{0}" &6iznini ekleyin.'
+    - ''
+    - ' &c‼ &eKurulum, izin eklenir eklenmez devam edecektir.'
+    - ''
+    welcome-message:
+    - ''
+    - ' &anLogin''i seçtiğiniz için çok teşekkür ederiz! :)'
+    - ''
+    - ' &6Güvenliğiniz için lütfen aşağıdaki mesajı okuyun:'
+    - '  &cnLogin''i asla bilinmeyen kaynaklardan indirmeyin.'
+    - '  &cDeğiştirilmiş bir sürüm kötü amaçlı yazılım içerebilir.'
+    - ''
+    - ' &aGüvenilir kaynaklar:'
+    - '  &7Web sitesi: &fnickuc.com'
+    - '  &7GitHub: &fgithub.com/nickuc-com'
+    - '  &7OpeNLogin yükleyicisi (&fSpigot &7veya &fGitHub&7''dan)'
+    - ''
+    - ' &aResmi destek:'
+    - '  &7Dokümantasyon: &fdocs.nickuc.com/nlogin/'
+    - '  &7Discord: &fnickuc.com/discord'
+    - '  &7E-posta: &fsupport@nickuc.com'
+    - ''
+    configure-version-channel:
+    - ''
+    - ' &6Tercih ettiğiniz sürüm kanalını seçin.'
+    - ''
+    - ' &c‼ &eBunu daha sonra &f{0} &ekomutunu çalıştırarak değiştirebilirsiniz.'
+    - ''
+    configure-auto-or-manual-updates:
+    - ''
+    - ' &6Tercih ettiğiniz güncelleme yöntemini seçin.'
+    - ''
+    - ' &c‼ &eBunu daha sonra &f{0} &ekomutunu çalıştırarak değiştirebilirsiniz.'
+    - ''
+    configure-password-algorithm:
+    - ''
+    - ' &6Şifreler için tercih ettiğiniz şifreleme türünü seçin.'
+    - ''
+    - ' &c‼ &eBu seçeneği daha sonra &fconfig.yml&e dosyasından manuel olarak değiştirebilirsiniz.'
+    - ''
+    enable-dialogs:
+    - ''
+    - ' &6Kimlik doğrulama arayüzü olarak menüleri (dialog) kullanmak ister misiniz?'
+    - ''
+    - ' &eDialoglar, komut tabanlı kimlik doğrulamayı özelleştirilebilir menülerle değiştirir.'
+    - ''
+    - ' &c‼ &eBu özellik yalnızca 1.21.6 veya üzeri sürümleri kullanan istemcilerde çalışır.'
+    - ''
+    configure-dialogs:
+    - ''
+    - ' &6Dialogları gösterme yöntemini seçin.'
+    - ''
+    - ' &c‼ &eBu seçeneği &fconfig.yml&e dosyasından manuel olarak değiştirebilirsiniz.'
+    - ''
+    configure-bungeeguard:
+    - ''
+    - ' &6Sunucuda BungeeGuard+''ı yapılandırmak ister misiniz?'
+    - ''
+    - ' &c‼ &eAşağıdaki durumlarda BungeeGuard+ kurulması önerilir:'
+    - '  &8⋆ &eBungeeCord tabanlı herhangi bir proxy kullanıyorsunuz.'
+    - '  &8⋆ &eVelocity kullanıyorsunuz, ancak &f"MODERN" &eforwarding kullanılamıyor.'
+    - ''
+    - ' &c‼ &eBungeeGuard+ JAR dosyasını tüm sunuculara kurmanız gerekecek.'
+    - ''
+    start-premium-configuration:
+    - ''
+    - ' &a&6⭐ nLogin Premium &asatın aldığınız için tebrikler'
+    - ''
+    - ' &6İşte yeni açılan özellikler:'
+    - ''
+    - '  &8⋆ &eOtomatik giriş &7premium Minecraft kullanan kullanıcılar için.'
+    - '  &8⋆ &eDiscord ve E-posta &7üzerinden iki adımlı kimlik doğrulama.'
+    - '  &8⋆ &eIP adresiyle &7giriş yaparken oturum devam ettirme.'
+    - '  &8⋆ &eDaha yüksek öncelikli &7destek talepleri.'
+    - '  &8⋆ &eDiscord grubunda &7müşteri etiketi.'
+    - ''
+    configure-username-appendix:
+    - ''
+    - ' &6Premium/offline oyuncular için bir ek etkinleştirmek ister misiniz?'
+    - ''
+    - ' &c‼ &eBu özellik hakkında daha fazla bilgi için ziyaret edin: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    configure-username-appendix-legacy-versions:
+    - ''
+    - ' &6Premium/offline oyuncular için ek, 1.18.2 veya daha düşük sürümler için otomatik olarak eklenemez.'
+    - ''
+    - ' &ePremium ve offline oyuncular için iki farklı IP''yi manuel olarak yapılandırmanız gerekecek.'
+    - ''
+    - ' &c‼ &eBu özellik hakkında daha fazla bilgi için ziyaret edin: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    enable-restrict-premium-nicknames:
+    - ''
+    - ' &6Premium rumuz kullanan offline oyuncuların kaydını kısıtla? &e(yeni hesaplar için)'
+    - ''
+    - ' &c‼ &eOffline oyuncular, isim kayıt için uygun olsa bile, &fpremium bir rumuz (örn. Notch)&e kullanamayacaklardır.'
+    - ''
+    enable-challenge-premium-nicknames:
+    - ''
+    - ' &6Oyuncuların premium hesap kullanıp kullanmadığını tespit et? &e(rumuz kullanarak)'
+    - ''
+    - ' &c‼ &eOffline oyuncular, sunucuya ilk giriş yaptıklarında özelleştirilemeyen &f"Invalid session" &emesajı alabilirler.'
+    - ''
+    enable-premium-question:
+    - ''
+    - ' &6Oyuncuların premium hesap kullanıp kullanmadığını tespit et? &e(interaktif soru ile)'
+    - ''
+    - ' &c‼ &ePremium oyuncuların Mojang UUID''sini almasını sağlamak istiyorsanız bu seçenek önerilir.'
+    - ''
+    skip-premium-register:
+    - ''
+    - ' &b Premium oyuncular &6için şifre kayıt isteğini atla?'
+    - ''
+    - ' &c‼ &eOyuncuların şifresi bir web entegrasyonunda (örn. sunucu web sitesi) kullanılıyorsa bu seçeneği devre dışı bırakmanız önerilir.'
+    - ''
+    skip-bedrock-register:
+    - ''
+    - ' &c Bedrock oyuncular &6için şifre kayıt isteğini atla?'
+    - ''
+    - ' &c‼ &eOyuncuların şifresi bir web entegrasyonunda (örn. sunucu web sitesi) kullanılıyorsa bu seçeneği devre dışı bırakmanız önerilir.'
+    - ''
+    nantibot-recommendation:
+    - ''
+    - ' &6Sunucunuzun botlar tarafından saldırıya uğramasını önlemek için'
+    - ' &6&fnAntiBot &6kurmanızı öneririz.'
+    - ''
+    - ' &c‼ &eBu eklenti hakkında daha fazla bilgi için &6buraya tıklayın&e.'
+    - ''
+    nchat-recommendation:
+    - ''
+    - ' &6Legendchat''in yerini tamamen alan bir sohbet eklentisi olan'
+    - ' &6&fnChat&6''i kurmanızı öneririz.'
+    - ''
+    - ' &c‼ &eBu eklenti hakkında daha fazla bilgi için &6buraya tıklayın&e.'
+    - ''
+    recommend-spawn-set:
+    - ''
+    - ' &6Oyuncu koordinatları girişten önce &cKORUNMAYACAK&6.'
+    - ''
+    - ' &c‼ &e&f{0} &ekomutunu kullanarak güvenli bir spawn noktası belirleyin.'
+    - ''
+    finish-configuration:
+    - ''
+    - ' &6Kurulum modundan çıkmayı ve tüm değişiklikleri kaydetmeyi onaylayın.'
+    - ''
+    - ' &c‼ &eOnaylandığında tüm oyuncuların bağlantısı kesilecektir.'
+    - ''
+  update-available-confirmation:
+  - ''
+  - ' &eYeni bir nLogin sürümü mevcut{0} {1}'
+  - ''
+  - ' &6Güncellemeyi onaylamak ister misiniz?'
+  - ''
+  update-available-restart:
+  - ''
+  - ' &eYeni bir nLogin sürümü mevcut{0} {1}'
+  - ''
+  - ' &6Güncellemeyi uygulamak için sunucunuzu yeniden başlatın.'
+  - ''
+  premium-fail:
+  - ''
+  - ' &c✖ &c&fnLogin v{0} &clisansınız başarıyla etkinleştirilemedi.'
+  - '  &cJAR dosyasını web sitesinden tekrar indirmeyi deneyin:'
+  - '  &b{1}'
+  - ''
+  - ' &c‼ &cSorun devam ederse, geliştiriciyle iletişime geçmenizi öneririz.'
+  - '  &7İletişim bilgilerini listelemek için {2} komutunu kullanın'
+  - ''
+  premium-expired:
+  - ''
+  - ' &c✖ &c&fnLogin v{0} &clisansınız başarıyla etkinleştirilemedi.'
+  - '  &cLisansınızı site üzerinden yenileyin: &b{1}'
+  - ''
+  premium-recommendation:
+  - ''
+  - ' &7Girişinizi pratik hale getirmek ister misiniz?'
+  - ' &7nLogin''in premium sürümünü şimdi edinin'
+  - ' &7ve kullanıcılarınız için otomatik girişi etkinleştirin.'
+  - ''
+  - ' [&aDaha fazla bilgi için buraya tıklayın.]'
+  - ''
+  button:
+    start-setup:
+      text: '&a[✔ Kuruluma Başla]'
+      hover: '&7Eklentinin kurulumunu başlatmak için buraya tıklayın.'
+    stable:
+      text: '&a[Kararlı Sürüm]'
+      hover: |-
+        &7&aKararlı kanal &7daha az hataya sahiptir, ancak daha az özellik içerir.
+
+        &6Öneri: &fherkese açık sunucular için.
+    latest:
+      text: '&6[En Yeni Sürüm]'
+      hover: |-
+        &7&6En yeni sürüm kanalı &7en son sürümlere sahiptir.
+
+        &6Öneri: &fen yeni özellikleri isteyen sunucular için
+    automatic:
+      text: '&a[Otomatik Güncellemeler]'
+      hover: '&7Güncelleme için herhangi bir onay gerekmeyecek.'
+    manual:
+      text: '&9[Manuel Onay]'
+      hover: '&7Güncellemeyi buna benzer bir bildirimle onaylamanız gerekecek.'
+    safer:
+      text: '&a[Daha Güvenli]'
+      hover: '&7Şifreleri korumak için daha güvenli bir algoritma kullanılacaktır.'
+    faster:
+      text: '&c[Daha Hızlı]'
+      hover: '&7Şifreleri korumak için daha az güvenli bir algoritma kullanılacaktır.'
+    pre-login:
+      text: '&a[Önce Göster]'
+      hover: '&7Dialoglar sunucuya &agirmeden önce &7gösterilecektir.'
+    after-login:
+      text: '&9[Sonra Göster]'
+      hover: '&7Dialoglar sunucuya &9girdikten sonra &7gösterilecektir.'
+    install:
+      text: '&a[⬇ Kur]'
+      hover: '&7Eklentiyi otomatik olarak kurmak için buraya tıklayın.'
+    skip:
+      text: '&7[✖ Atla]'
+      hover: null
+
+title:
+  setup:
+    welcome-message-1:
+      title: '&6Merhaba, @player!'
+      subtitle: '&enLogin''e hoş geldiniz!'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-2:
+      title: ''
+      subtitle: '&aDevam etmeden önce lütfen uyarıyı okuyun.'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-3:
+      title: ''
+      subtitle: '&fDevam etmek için {0} &fbutonuna tıklayın.'
+      delays:
+        fadeIn: 10
+        stay: 80
+        fadeOut: 10
+  update-available:
+    title: ''
+    subtitle: '&aYeni bir sürüm mevcut.'
+    delays:
+      fadeIn: 10
+      stay: 80
+      fadeOut: 10

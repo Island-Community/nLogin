@@ -1,0 +1,79 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |  Para una mejor comprensión de este archivo, consulte nuestra documentación:                 | #
+# |   ==> https://docs.nickuc.com/nlogin/                                                        | #
+# |                                                                                              | #
+# |  Las nuevas opciones no se agregan automáticamente en este archivo.                          | #
+# |  Se utilizan valores predeterminados si no se encuentra una opción.                          | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+# Establece la versión del archivo.
+language-version: 3
+
+# Define si Discord puede utilizarse como segundo factor.
+enable: false
+
+authentication:
+  # Define el token utilizado en la API de Discord.
+  #
+  # - Para más información, acceda a la documentación:
+  #    * https://docs.nickuc.com/nlogin/discord
+  #
+  token: ""
+
+  # Establece el mensaje de estado del bot.
+  presence: ""
+
+  proxy:
+    enable: false
+    host: "https://domain.tld"
+    port: 80
+    username: "username"
+    password: "password"
+
+linking:
+  # Establece la URL de invitación del servidor Discord.
+  # - Esta opción es necesaria para completar un enlace.
+  invite-url: "https://discord.gg/YOUR_INVITE_CODE"
+
+  # Define si el link debe ser recomendado a los jugadores.
+  recommend: true
+
+  # Define si la autenticación de dos factores (2FA) se habilitará al completar el enlace.
+  enable-2fa: true
+
+  required:
+    # Establece si se requerirá vincular una cuenta de Discord para autenticarse.
+    enable: false
+
+    # Establece si los jugadores premium también tendrán que vincular una cuenta de Discord para autenticarse.
+    enable-for-premium: true
+
+    # Establece si los jugadores Bedrock también tendrán que vincular una cuenta de Discord para autenticarse.
+    enable-for-bedrock: true
+
+account:
+  # Establece el número máximo de cuentas que pueden tener el mismo Discord vinculado.
+  limit: 1
+
+  # Define cuánto tiempo (en segundos) tiene que haber sido creada previamente una cuenta para que se apruebe su vinculación.
+  # - El valor por defecto es de 5 minutos (600 segundos).
+  # - Para desactivar el tiempo de verificación de registro de la cuenta, cambie el valor a "-1".
+  block-recent: 600
+
+  # Define si se debe crear una nueva contraseña después del proceso de recuperación de la cuenta.
+  # - Si esta opción está desactivada, se establecerá una contraseña aleatoria.
+  force-password-update: false

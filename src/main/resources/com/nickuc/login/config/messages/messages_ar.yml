@@ -1,0 +1,500 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |              List of translation authors: https://crowdin.com/project/nlogin/members         | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+pending:
+  login: '&eاستخدم الأمر &7/login <كلمة المرور>&e.'
+  register: '&eاستخدم الأمر &7/register <كلمة المرور> <تأكيد كلمة المرور>&e.'
+  action-bar:
+    singular: '&cلديك {0} ثانية إلى {login///register}.'
+    plural: '&cلديك {0} ثوانٍ لـ {login/register}.'
+
+success:
+  login: '&aلقد قمت بتسجيل الدخول بنجاح.'
+  register: '&aلقد قمت بالتسجيل بنجاح.'
+  session: '&aتم استمرار جلسة تسجيل الدخول الخاصة بك.'
+  premium: '&aتم تسجيل الدخول تلقائياً لأنك تستخدم حساب فريد.'
+  bedrock: '&aتم تسجيل الدخول تلقائياً، لأنك تستخدم حساب Bedrock.'
+  change-password: '&aتم تغيير كلمة المرور بنجاح.'
+  reload: '&eتم إعادة تحميل الإضافة بنجاح.'
+  kick:
+    unregister: '&aتم إلغاء التسجيل بنجاح.'
+    marked-offline: '&7تم تغيير حسابك إلى وضع &6الغير متصل&7، الرجاء إعادة الانضمام.'
+    challenge-premium: '&7لتأكيد أنك تستخدم حساب &apremium&7، يرجى تسجيل الدخول مرة أخرى.'
+
+error:
+  not-registered: '&cلم يتم تسجيل هذا الاسم بعد.'
+  offline: '&cاللاعب المطلوب غير متصل.'
+  address-limit: '&cلقد استنفذت حدود الحساب لكل عنوان IP.'
+  database: '&cعذراً، لم يتمكن من إتمام عملية قاعدة البيانات. تحقق من الوحدة لمزيد من التفاصيل.'
+  command:
+    usage: '&cيجب عليك استخدام {0}.'
+    no-permission: '&cليس لديك الصلاحية لتشغيل هذا الأمر.'
+    player-required: '&cتم تعطيل هذا الأمر عبر وحدة التحكم.'
+    console-required: '&cيمكن استخدام هذا الأمر فقط عبر وحدة التحكم.'
+    account-collision:
+    - '&fأكثر من حساب واحد لديه الاسم المستعار &a{0}&f:'
+    - '&8⋆ &7{1} {2}'
+    - ''
+    - '&c!! &eتشغيل الأمر مرة أخرى، تأكد من استخدام الاسم المستعار الذي يتوافق مع نوع الحساب المطلوب.'
+    arguments:
+      password: كلمة المرور
+      current-password: كلمة المرور الحالية
+      new-password: كلمة المرور الجديدة
+  already:
+    login: '&cأنت بالفعل مسجل الدخول.'
+    login-other: '&cهذا اللاعب مسجل الدخول بالفعل.'
+    registered: '&cتم تسجيل هذا الاسم بالفعل.'
+    premium: '&cحسابك مسجل بالفعل كـ premium.'
+  password:
+    same-as-current: '&cكلمة المرور التي أدخلتها هي نفسها كما هي الحالياً.'
+    too-large: '&cكلمة المرور التي أدخلتها طويلة جداً.'
+    too-small: '&cكلمة المرور التي أدخلتها قصيرة جداً.'
+    not-secure: '&7كلمة المرور المقدمة لا تشمل متطلبات الحماية؛ الرجاء وضع أرقام، واحرف كبيرة، واحرف صغيرة، والرموز الخاصة.'
+    do-not-match: '&cكلمات المرور غير متطابقة.'
+    require-confirmation: '&cيجب عليك تأكيد كلمة المرور.'
+    incorrect: '&cكلمة المرور غير صحيحة. يرجى المحاولة مرة أخرى.'
+  kick:
+    incorrect-password: '&cلقد أدخلت كلمة مرور غير صحيحة.'
+    wait-server-start: |-
+      &cالخادم لم يبدأ بالكامل بعد.
+      &cانتظر قليلاً للاتصال.
+    account-blocked: |-
+      &cتم حظر عنوانك بسبب الاشتباه بالاختراق.
+      &r&cالوقت المتبقي للحظر: {0}
+    account-unregistered: |-
+      &cهذا الخادم لا يقبل تسجيلات حساب جديدة.
+
+      &cللحصول على مزيد من المعلومات، يرجى الاتواصل مع إدارة الخادم.
+    invalid-nickname: '&cاسمك غير صالح، قم بإزالة الفراغات والرموز والأحرف غير الصالحة من اسمك.'
+    bedrock-nickname: '&cالبادروك "{0}" مقيد للاعبين.'
+    bedrock-unlinked: |-
+      &cالإسم المستعار المختار &f("{0}") &cis يقتصر على لاعب Java المتميز.
+
+      &eللوصول إلى هذا الحساب، اربط حساب جافا بحساب Bedrock الخاص بك باستخدام أمر &f/linkaccount .
+    transferred-nickname: |-
+      &cتم نقل الاسم "{0}" المختار ونقله إلى حساب يستخدم نفس UUID.
+
+      &eللدخول، يرجى استخدام اسمًا آخر.
+    already-online: '&cهذا اللاعب متصل بالفعل.'
+    unknown-hostname: |-
+      &4[nLogin] الاسم المضيف المستخدم "{0}" لم يتم تعريفه في التكوين.
+      &r
+      &r&cإذا كانت هذه عنوان IP صالح، يرجى إضافته إلى الفئة الأكثر ملاءمة في قسم التكوين "premium.username-appender".
+      &r
+      &r&eلمزيد من المعلومات، راجع دليل استخدام اسم المستخدم:
+      &r&bhttps://docs.nickuc.com/nlogin/username-appender
+    premium-not-logged: |-
+      &7اسم المستخدم &6{0} &7مرتبط بحساب &apremium تم التحقق منه&7، لكن جلستك &cexpired&7.
+
+      &eإذا كنت مالك هذا الحساب، فأعد تشغيل Minecraft وقم بتسجيل الدخول مرة أخرى.
+    premium-challenge: |-
+      &eأثناء محاولة تسجيل الدخول الأخيرة الخاصة بك، لم نتمكن من المصادقة على حسابك.
+
+      &fإذا كنت تستخدم &apremium &faccount، قم بإعادة تشغيل ماينكرافت الخاص بك وتسجيل الدخول مرة أخرى.
+
+      &fإذا كان حسابك &coffline&f، يرجى تسجيل الدخول مرة أخرى لإكمال التحقق.
+    timeout:
+      login: '&cلقد استغرقت وقتًا طويلاً لتسجيل الدخول.'
+      register: '&cلقد استغرقت وقتًا طويلاً للتسجيل.'
+
+notification:
+  all-viewed: '&aتم عرض جميع الإشعارات.'
+  premium-question:
+  - ''
+  - ' &eهل تستخدم حسابًا مميزًا؟'
+  - ' &7(بعد القبول، ستحتاج إلى إعادة الانضمام.)'
+  - ''
+  premium-transfer-question:
+  - ''
+  - ' &eتم تسجيل حساب غير متصل مسبقاً مع لقب &f@player&e.'
+  - ''
+  - ' &6هل ترغب في نقل البيانات من هذا الحساب أو إنشاء حساب جديد؟'
+  - ''
+  - ' &c!! ستحتاج إلى المصادقة لتأكيد ملكية الحساب.'
+  - ''
+  premium-transfer-confirmation:
+  - ''
+  - ' &6هل ترغب في تأكيد نقل البيانات من &f@player &6إلى حسابك المتميز؟'
+  - ''
+  - ' &c!! &eعند تأكيد النقل، سيتم فصلك عن الخادم.'
+  - ''
+  password-update:
+  - ''
+  - ' &eكلمة المرور تحتاج إلى إعادة الضبط.'
+  - ''
+  - ' &7الرجاء تغيير كلمة مرورك عن طريق الأمر في الأسفل:'
+  - ' &f/changepass <كلمة المرور الحالية> <كلمة المرور الجديدة>'
+  - ''
+  button:
+    confirm-read:
+      text: '&a[✔ تأكيد القراءة]'
+      hover: null
+    yes-btn:
+      text: '&a[✔ نعم]'
+      hover: null
+    no-btn:
+      text: '&c[✖ لا]'
+      hover: null
+    new-account:
+      text: '&a[حساب جديد]'
+      hover: null
+    transfer-data:
+      text: '&9[نقل بيانات]'
+      hover: null
+
+2fa:
+  not-registered: '&cليس لديك حساب {0}.'
+  already-registered: '&cلقد قمت بتسجيل {0} بالفعل.'
+  register-limit: '&cلقد استنفذت الحدود لعدد الحسابات مع نفس {0}.'
+  unregistered: '&eتم إزالة تسجيل {0} الخاص بك.'
+  incorrect-code: '&cالرمز غير صحيح. يرجى المحاولة مرة أخرى.'
+  rate-limit: '&cتم تجاوز الحد. يرجى الانتظار {0} دقيقة للمحاولة مرة أخرى.'
+  confirmed-account: '&aتم تسجيل حساب {0} الخاص بك بنجاح.'
+  confirmation-message-sent: |-
+    &7تم إرسال رمز التأكيد إلى &6{0}&7.
+    &8(&f{1}&8).
+  command-delay: '&cانتظر قليلاً قبل تنفيذ هذا الأمر مرة أخرى.'
+  help-command:
+  - ''
+  - ' &fالحالة: [&a{2} مسجل//&c{2} غير مسجل]&f.'
+  - ''
+  - ' [&8⋆ &7/{0} add: &fسجل {1} الخاص بك.]'
+  - ' [&8⋆ &7/{0} remove: &fقم بإزالة {1} الخاص بك.]'
+  - ' [&8⋆ &7/{0} recover: &fاسترجع حسابك.]'
+  - ' [&8⋆ &7/{0} 2fa: &fتفعيل/تعطيل العاملين المزدوجين.]'
+  - ''
+  recover-command:
+  - ''
+  - ' &eاختر طريقة استرداد:'
+  - ' [&8⋆ &7{0}: &f/{1} استرجاع]'
+  - ''
+  switch:
+    enabled: '&aتم تفعيل ميزة العاملين المزدوجين بنجاح.'
+    disabled: '&cتم إلغاء تفعيل ميزة العاملين المزدوجين بنجاح.'
+  recover:
+    not-equal: '&cالـ {0} المقدمة ليست نفسها كالمسجلة.'
+    message-sent: '&aتم إرسال رسالة استرداد إلى حسابك المرتبط.'
+    change-password: '&aتم تغيير كلمة المرور تلقائيًا إلى &f''{0}''&a.'
+  discord:
+    account-linked: |-
+      &aتم تحديث التكوين في Discord بنجاح.
+      &aلقد تم الربط مع حساب &f{0} &a.
+    confirm-account:
+    - ''
+    - ' &7لإكمال الربط، يجب عليك تأكيد حساب Discord الخاص بك.'
+    - ' &7ادخل إلى &b{0} &7واكتب'
+    - ' &7الأمر في الرسائل المباشرة للبوت &f{1} &7.'
+    - ''
+    - ' [&aانقر هنا للحصول على الأمر مع الرمز.]'
+    - ''
+    warn-message:
+    - ''
+    - ' &7قم بتنفيذ الأمر &f/discord add &7للتسجيل'
+    - ' &7الخاص بك &9Discord&7. بالقيام بذلك، أنت'
+    - ' &7ستقلل من فرصة التعرض للاختراق.'
+    - ''
+    discord-required:
+    - ''
+    - ' &7يتطلب الخادم الحالي ربط'
+    - ' &aحساب Discord &7لإكمال عملية التسجيل.'
+    - ''
+    - ' &6يرجى تشغيل &f/discord add&6.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7تحتاج إلى تأكيد تسجيل الدخول إلى حسابك.'
+    - ' &7تم إرسال رسالة أمان إلى Discord المسجل.'
+    - ''
+    - ' &aانقر على زر الرسالة لتأكيد هويتك.'
+    - ''
+    dm:
+      configure:
+        too-recent:
+          title: حساب منشأ مؤخراً
+          description: لا تستطع ربط حساب الدسكورد لأن حسابك قد تم إنشاؤه مؤخرًا.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        invalid:
+          title: الرمز غير صالح
+          description: عذراً، لكن الرمز الذي أدخلته غير صالح أو لا يوجد.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        success:
+          title: تم الربط بـ Discord
+          description: تم ربط Discord الخاص بك بنجاح.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+      verify:
+        title: تأكيد مصادقة حسابك.
+        description: |-
+          يتطلب تأكيد المصادقة الوصول إلى حسابك @player.
+
+          إذا لم تكن أنت، فقم برفض العملية وغيّر كلمة المرور الخاصة بك على الفور.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: السماح
+        deny: رفض
+      recover:
+        title: طلب استرجاع كلمة المرور.
+        description: |-
+          تم طلب استرجاع كلمة المرور من حسابك @player.
+
+          إذا لم تكن أنت، فقم برفض العملية وغيّر كلمة المرور الخاصة بك على الفور.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: السماح
+        deny: رفض
+      new-password:
+        title: كلمة مرور جديدة لـ @player
+        description: |-
+          تم إنشاء كلمة مرور جديدة لحسابك:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+      password-changed:
+        title: تم تغيير كلمة المرور لـ @player
+        description: |-
+          تم تغيير كلمة المرور الخاصة بك إلى:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+  email:
+    invalid-email: '&cالبريد الإلكتروني الذي تم إدخاله غير صالح.'
+    not-allowed: '&cالنطاق الخاص بالبريد الإلكتروني المختار غير مسموح به.'
+    server-email: '&cلا يمكنك استخدام بريد الخادم.'
+    warn-message:
+    - ''
+    - ' &7قم بتنفيذ الأمر &f/email associate &7للتسجيل'
+    - ' &7بريدك الإلكتروني. بذلك،'
+    - ' &7ستقلل من فرصة التعرض للاختراق.'
+    - ''
+    email-required:
+    - ''
+    - ' &7يتطلب الخادم الحالي ربط'
+    - ' &aبريد إلكتروني صالح &7لإكمال عملية التسجيل.'
+    - ''
+    - ' &6يرجى تشغيل &f/email add <بريدك الإلكتروني>&6.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7تحتاج إلى تأكيد تسجيل الدخول إلى حسابك.'
+    - ' &7تم إرسال رسالة أمان إلى بريدك الإلكتروني المسجل.'
+    - ''
+    - ' &aاستخدم الأمر &f/email <الرمز> &aلإتمام المصادقة.'
+    - ''
+    smtp:
+      configure:
+        subject: تأكيد حساب @player
+        content:
+        - <h1>
+        - ' مرحبًا، @player!'
+        - </h1>
+        - <p>
+        - ' لإكمال عملية تسجيل البريد الإلكتروني الخاص بك، استخدم الأمر <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' إذا لم تكن أنت، فتجاهل هذه الرسالة.'
+        - </p>
+      verify:
+        subject: تأكيد تسجيل الدخول لحساب @player
+        content:
+        - <h1>
+        - ' مرحبًا، @player!'
+        - </h1>
+        - <p>
+        - ' للمصادقة على الخادم، استخدم الأمر <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' إذا كنت لم تكن أنت، فقم بتغيير كلمة المرور <strong>فورًا</strong>.'
+        - </p>
+      recover:
+        subject: استعادة حساب @player
+        content:
+        - <h1>
+        - ' مرحبًا، @player!'
+        - </h1>
+        - <p>
+        - ' لاستعادة حسابك، استخدم الأمر <strong>"/email <كلمة المرور الجديدة> @code"</strong>.'
+        - </p>
+        - <p>
+        - ' إذا لم تكن أنت، فتجاهل هذه الرسالة.'
+        - </p>
+      new-password:
+        subject: كلمة مرور جديدة لـ @player
+        content:
+        - <h1>
+        - ' مرحبا، يا أيها اللاعب!'
+        - </h1>
+        - <p>
+        - ' كلمة مرور جديد قدتما إنشاؤها من اجل حسابك: {0}'
+        - </p>
+      password-changed:
+        subject: تغيرت كلمة المرور لألاعب
+        content:
+        - <h1>
+        - ' مرحبًا، @player!'
+        - </h1>
+        - <p>
+        - ' تم تغيير كلمة المرور إلى: {0}'
+        - </p>
+
+bedrock:
+  forms:
+    login:
+      title: المصادقة
+      content:
+      - مرحبًا، @player!
+      - 'لتسجيل الدخول، يرجى إدخال كلمة المرور الخاصة بك في الحقل أدناه:'
+      - ''
+      - '[كلمة المرور//أدخل كلمة المرور الخاصة بك]'
+      - ''
+    register:
+      title: التسجيل
+      content:
+      - مرحبًا، @player!
+      - للعب على الخادم، تحتاج إلى إنشاء كلمة مرور.
+      - يرجى إدخال كلمة المرور المطلوبة في الحقل أدناه.
+      - ''
+      - '[كلمة المرور//أدخل كلمة المرور الخاصة بك]'
+      - '[التأكيد//قم بتأكيد كلمة المرور الخاصة بك]'
+      - ''
+
+dialogs:
+  login:
+    title: '&#ffdb60إدخال كلمة المرور الخاصة بك'
+    body:
+    - '&6مرحبًا &f@player&6!'
+    - ''
+    - '&#ffdb60 الرجاء إدخال كلمة المرور الخاصة بك لتسجيل الدخول إلى الخادم.'
+    - ''
+    inputs:
+      password: كلمة المرور
+    buttons:
+      login: تسجيل الدخول
+      recover: هل نسيت كلمة المرور
+      cancel: تسجيل خروج
+  register:
+    title: '&#ffdb60إنشاء كلمة مرور'
+    body:
+    - '&6مرحبًا &f@player&6!'
+    - ''
+    - '&#ffdb60يجب عليك &bإنشاء كلمة مرور &#ffdb60لتسجيل الدخول إلى الخادم.'
+    - ''
+    - '&#ffdb60 الرجاء ملء الحقول أدناه للمتابعة.'
+    - ''
+    inputs:
+      password1: كلمة المرور
+      password2: تأكيد
+    buttons:
+      register: إنشاء حساب
+      cancel: تسجيل خروج
+
+title:
+  before-login:
+    title: '&a&lمرحبًا!'
+    subtitle: '&7استخدم: /login <كلمة المرور الخاصة بك>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  before-register:
+    title: '&a&lمرحبًا!'
+    subtitle: '&7استخدم: /register <كلمة المرور الخاصة بك> <تأكيد كلمة المرور>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  after-login:
+    title: ''
+    subtitle: '&aلقد قمت بتسجيل الدخول بنجاح!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  after-register:
+    title: ''
+    subtitle: '&aلقد قمت بالتسجيل بنجاح!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  incorrect-password:
+    title: ''
+    subtitle: '&cكلمة المرور غير صحيحة!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-login:
+    title: ''
+    subtitle: '&cأنت مسجل دخول بالفعل!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-registered:
+    title: ''
+    subtitle: '&cأنت مسجل بالفعل!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  passwords-dont-match:
+    title: ''
+    subtitle: '&cكلمات المرور غير متطابقة!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  session-login:
+    title: ''
+    subtitle: '&eتم استمرار جلستك في تسجيل الدخول.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  premium-login:
+    title: ''
+    subtitle: '&eحسابك فريد، تم تسجيل الدخول بنجاح.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  bedrock-login:
+    title: ''
+    subtitle: '&eالدخول عبر Bedrock، تم تسجيل الدخول بنجاح.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  security-warning:
+    title: ''
+    subtitle: '&cتم إرسال تحذير أمان جديد في الدردشة'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  unconfirmed-message:
+    title: ''
+    subtitle: '&c!! &eهناك رسالة غير مؤكدة في المحادثة'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6

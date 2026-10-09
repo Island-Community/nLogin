@@ -1,0 +1,8 @@
+package com.nickuc.login.model;
+
+public enum PrivateNoticeKind {
+   PRIVATE_NOTICE_KIND,
+   ACTIVE_PRIVATENOTICEKIND,
+   PENDING_PRIVATENOTICEKIND,
+   CURRENT_PRIVATENOTICEKIND;
+}

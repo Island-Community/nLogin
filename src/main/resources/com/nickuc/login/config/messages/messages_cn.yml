@@ -1,0 +1,500 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |              List of translation authors: https://crowdin.com/project/nlogin/members         | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+pending:
+  login: '&e使用命令 &f/login <密码> &e来登录'
+  register: '&e使用命令 &f/register <密码> <确认密码> &e来注册您的账户'
+  action-bar:
+    singular: '&c您还有 {0} 秒的时间来完成 {登录/注册}。'
+    plural: '&c您还有 {0} 秒的时间来完成 {登录/注册}。'
+
+success:
+  login: '&a您已成功登录'
+  register: '&a您已成功注册. 请牢记您的密码'
+  session: '&a您已成功登录 &7您当前的会话仍在有效期内 因此不需要密码认证'
+  premium: '&a您已成功登录 &7您正在使用正版账户登入服务器 因此不需要密码认证'
+  bedrock: '&a您已成功登录 &7您正在使用基岩版通过Geyser登入服务器 因此不需要密码认证'
+  change-password: '&a您的密码已成功修改'
+  reload: '&e插件已重新加载'
+  kick:
+    unregister: '&a您的账户已成功注销'
+    marked-offline: '&7你的账户已被标记为 &6离线&7，请重新加入。'
+    challenge-premium: '&7请重新加入服务器以认证您的&a正版账户&7'
+
+error:
+  not-registered: '&c您还没有注册'
+  offline: '&c该玩家已离线'
+  address-limit: '&c您的当前IP可注册账户数量已达上限. &e如果您还没有注册任何账户 &7请联系服务器管理员'
+  database: '&c抱歉, 对数据库进行操作时出现错误. &7请联系服务器管理员检查控制台了解更多详细信息'
+  command:
+    usage: '&c您必须使用 {0}'
+    no-permission: '&c您似乎没有权限使用该命令'
+    player-required: '&c此命令只能通过玩家使用'
+    console-required: '&c此命令只能通过控制台使用'
+    account-collision:
+    - '&fmore 个帐户有昵称 &a{0}&f：'
+    - '&8⋆ &7{1} {2}'
+    - ''
+    - '&c!! &eRun 命令, 确保使用与所需账户类型相对应的昵称。'
+    arguments:
+      password: 密码
+      current-password: 当前密码
+      new-password: 新的密码
+  already:
+    login: '&c您已经登录过了'
+    login-other: '&c这位玩家已登录'
+    registered: '&c该用户名已被注册 如果您没有账户 请更换您的用户名'
+    premium: '&c您的账户已经在使用正版认证的方式登录了!'
+  password:
+    same-as-current: '&c您尝试更改的密码与现在的似乎并没有区别'
+    too-large: '&c输入的密码太长了'
+    too-small: '&c输入的密码太短了'
+    not-secure: '&c提供的密码不符合安全要求。请附上一个数字、大小写字母和一个特殊符号'
+    do-not-match: '&c您输入的密码和重复的不一致'
+    require-confirmation: '&c您需要重复输入一次您的密码才可以注册 &7正确格式:/register <密码> <重复密码>'
+    incorrect: '&c密码错误 请检查您输入的密码 然后再试'
+  kick:
+    incorrect-password: '&c您输入了太多次错误的密码 因此您已被踢出'
+    wait-server-start: |-
+      &c认证服务器目前未完全启动
+      &c请稍后再尝试登录
+    account-blocked: |-
+      &c您的IP地址因涉嫌盗号被阻止
+      &r解禁剩余时间: {0}
+    account-unregistered: |-
+      &c此服务器不接受新的帐户注册。
+
+      &c欲了解更多信息，请联系服务器工作人员。
+    invalid-nickname: '&c您的用户名无效. 请检查您的用户名,删除其中的空格,符号,中文等无效字符 请重新加入服务器'
+    bedrock-nickname: '&c您的用户名前缀 &f("{0}") &c仅限基岩版玩家使用 请删除然后重新加入服务器'
+    bedrock-unlinked: |-
+      &c选中的昵称 &f("{0}") &cis 仅限高级Java 玩家。
+
+      &eTo 访问此帐户，使用 &f/linkaccount &ecommand, 将 Java 帐户与你的贝德罗克帐户连接起来。
+    transferred-nickname: |-
+      &c您的用户名 &f("{0}") &c已保留并迁移到使用相同 UUID 的帐户
+
+      &e要加入服务器, 请使用另一个用户名的账户.
+    already-online: '&c该玩家已在线'
+    unknown-hostname: |-
+      &4[nLogin] 您正在使用的域名 &f({0}) &4没有在配置文件中设置
+      &r
+      &r&c如果您是服务器的管理员且您允许此域名访问, 那么请将此域名添加到配置文件的 &f"premium.username-appender" &c部分的最合适的类别中
+      &r
+      &r&e想要了解更多的信息 请查看有关username appender的教程:
+      &r&bhttps://docs.nickuc.com/nlogin/username-appender
+    premium-not-logged: |-
+      &7该用户名 &6{0} &7关联的是一个已验证的 &apremium 账号&7，但您的会话已 &cexpired&7。
+
+      &e如果您是该账号的所有者，请重新启动《我的世界》并再次登录。
+    premium-challenge: |-
+      &e您上次尝试登录时，我们无法验证您的账号。
+
+      &f如果您使用的是 &apremium &f账号，请重启《我的世界》并重新登录。
+
+      &f如果您的账号处于 &coffline&f状态，请重新登录以完成验证。
+    timeout:
+      login: '&c您在进行时登录时因过久未完成被踢出服务器'
+      register: '&c您在进行时注册时因过久未完成被踢出服务器'
+
+notification:
+  all-viewed: '&a这里是有尽头的 您已查看了所有公告'
+  premium-question:
+  - ''
+  - ' &e您使用的是正版帐户吗?'
+  - ' &7(接受后,您需要重新加入服务器以完成身份认证)'
+  - ''
+  premium-transfer-question:
+  - ''
+  - ' &eA 离线帐户已经用昵称 &f@player&e注册。'
+  - ''
+  - ' &6您是想转移该账户的数据，还是创建一个新账户？'
+  - ''
+  - ' &c!! &e你需要验证帐户所有权。'
+  - ''
+  premium-transfer-confirmation:
+  - ''
+  - ' &6 您想确认从 &f@player 传输数据到您的高级帐户吗 ？'
+  - ''
+  - ' &c!! &eOn确认传输后，您将断开与服务器的连接。'
+  - ''
+  password-update:
+  - ''
+  - ' &e您的密码需要重置'
+  - ''
+  - ' &7请使用以下命令更改密码：'
+  - ' &f/changepass <当前密码> <新密码>'
+  - ''
+  button:
+    confirm-read:
+      text: '&a[✔ 确认已读]'
+      hover: null
+    yes-btn:
+      text: '&a[✔ 是]'
+      hover: null
+    no-btn:
+      text: '&c[✘]'
+      hover: null
+    new-account:
+      text: '&a[新帐户]'
+      hover: null
+    transfer-data:
+      text: '&9[传输数据]'
+      hover: null
+
+2fa:
+  not-registered: '&c您没有 {0} 帐户'
+  already-registered: '&c您已经注册了您的 {0}'
+  register-limit: '&c您已经用完了可绑定同一个 {0} 的账户的限制'
+  unregistered: '&e你的 {0} 已成功注销。'
+  incorrect-code: '&c验证码错误 请再试一次'
+  rate-limit: '&c您在短时间内请求了太多次 请等待 {0} 分钟重试'
+  confirmed-account: '&a你的 {0} 账户已成功注册。'
+  confirmation-message-sent: |-
+    &7验证码已发送至您的 &6{0} &7
+    &8(&f{1}&8)
+  command-delay: '&c稍等片刻再执行此命令'
+  help-command:
+  - ''
+  - ' &f状态: [&a{2} 已注册//&c{2} 未注册]'
+  - ''
+  - ' [&8⋆ &7/{0} add: &f注册您的{1}]'
+  - ' [&8⋆ &7/{0} remove: &f删除您的{1}]'
+  - ' [&8⋆ &7/{0} recover: &f恢复您的帐户]'
+  - ' [&8⋆ &7/{0} 2fa: &f启用或禁用双因素认证]'
+  - ''
+  recover-command:
+  - ''
+  - ' &e请选择可以验证您本人身份的途径以找回您的账户:'
+  - ' [&8⋆ &7{0}: &f/{1}]'
+  - ''
+  switch:
+    enabled: '&a双因素认证功能已启用'
+    disabled: '&c双因素认证功能已停用'
+  recover:
+    not-equal: '&c提供的 {0} 与注册时填入的不同'
+    message-sent: '&a恢复邮件已发送到您的关联帐户'
+    change-password: '&a您的密码已自动更改为 &f''{0}''&a'
+  discord:
+    account-linked: |-
+      &aDiscord 中的配置已成功更新
+      &a您已与 &f{0} &a帐户关联
+    confirm-account:
+    - ''
+    - ' &7要完成关联,您需要确认您的 Discord 帐户'
+    - ' &7加入 &b{0} &7并在 &f{1} &7机器人的私信中输入命令。'
+    - ' &7&f{1} &7机器人的私信中输入命令'
+    - ''
+    - ' [&a点击这里获取带有令牌的命令]'
+    - ''
+    warn-message:
+    - ''
+    - ' &7执行命令 &f/discord add &7 来关联'
+    - ' &7您的 &cDiscord&7. 通过这样做'
+    - ' &7可以减少被黑客攻击的可能'
+    - ''
+    discord-required:
+    - ''
+    - ' &7此服务器需要您关联一个'
+    - ' &aDiscord帐户&7才能完成注册'
+    - ''
+    - ' &6请执行 &f/discord add&6 然后根据提示进行操作'
+    - ''
+    address-changed:
+    - ''
+    - ' &7检测到您尝试在一个新位置登录此账户'
+    - ' &7为了保证账户安全 我们已向您的Discord发送验证消息'
+    - ''
+    - ' &a在Discord内点击验证消息下方的按钮以验证是否是您本人'
+    - ''
+    dm:
+      configure:
+        too-recent:
+          title: 账户创建时间过短
+          description: 你无法关联 Discord，因为你的账户创建时间过短。
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        invalid:
+          title: 验证码无效
+          description: 抱歉, 但您输入的令牌无效或不存在
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        success:
+          title: Discord关联
+          description: 您的Discord账户已成功关联
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+      verify:
+        title: 确认您的帐户身份验证
+        description: |-
+          需要进行身份验证确认是您本人才能访问您的帐户@player
+
+          如果不是您本人操作,请拒绝该操作并立即更改密码,因为您的密码很可能已经泄漏了
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: 允许
+        deny: 拒绝
+      recover:
+        title: 请求恢复密码
+        description: |-
+          您的帐户 @player 正在请求恢复密码
+
+          如果不是您本人操作,请拒绝该操作并立即更改密码,因为您的密码很可能已经泄漏了
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: 允许
+        deny: 拒绝
+      new-password:
+        title: '@player 的新密码'
+        description: |-
+          已为你的账户生成新密码：
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+      password-changed:
+        title: '@player 的密码已更改'
+        description: |-
+          你的密码已更改为：
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+  email:
+    invalid-email: '&c您输入的电子邮件地址无效'
+    not-allowed: '&c您使用的电子邮件的域名不被允许'
+    server-email: '&c您不能使用服务器使用的电子邮件'
+    warn-message:
+    - ''
+    - ' &7执行命令 &f/email associate &7进行绑定'
+    - ' &7您的 &9邮箱&7. 通过这样做'
+    - ' &7可以减少被黑客攻击的可能'
+    - ''
+    email-required:
+    - ''
+    - ' &7此服务器需要您绑定一个'
+    - ' &a有效的电子邮件&7才能完成注册'
+    - ''
+    - ' &6请执行 &f/email add <您的电子邮件> &6以绑定电子邮件'
+    - ''
+    address-changed:
+    - ''
+    - ' &7检测到您尝试在一个新位置登录此账户'
+    - ' &7为了保证账户安全 我们已发送一封含有验证码的电子邮件'
+    - ''
+    - ' &a使用命令 &f/email <验证码> &a来通过安全验证。'
+    - ''
+    smtp:
+      configure:
+        subject: 账户@player的注册请求
+        content:
+        - <h1>
+        - ' 您好, @player!'
+        - </h1>
+        - <p>
+        - ' 要完成电子邮件注册过程,请使用命令<strong>"/email @code"</strong>'
+        - </p>
+        - <p>
+        - ' 如果不是您本人操作,请忽略此消息'
+        - </p>
+      verify:
+        subject: 帐户@player的登录请求
+        content:
+        - <h1>
+        - ' 您好, @player!'
+        - </h1>
+        - <p>
+        - ' 要在服务器上进行身份验证,请使用命令<strong>"/email @code"</strong>'
+        - </p>
+        - <p>
+        - ' 如果不是您本人操作,请<strong>立即</strong>更改密码,因为您的密码很可能已经泄漏了'
+        - </p>
+      recover:
+        subject: 正在恢复帐户@player
+        content:
+        - <h1>
+        - ' 您好, @player!'
+        - </h1>
+        - <p>
+        - ' 要恢复您的帐户,请使用命令 <strong>"/email 新的密码> @code"</strong>'
+        - </p>
+        - <p>
+        - ' 如果不是您本人,请忽略此消息'
+        - </p>
+      new-password:
+        subject: '@player 的新密码'
+        content:
+        - <h1>
+        - ' 你好，@player！'
+        - </h1>
+        - <p>
+        - ' 已为你的账户生成新密码：{0}'
+        - </p>
+      password-changed:
+        subject: '@player 的密码已更改'
+        content:
+        - <h1>
+        - ' 你好，@player！'
+        - </h1>
+        - <p>
+        - ' 你的密码已更改为：{0}'
+        - </p>
+
+bedrock:
+  forms:
+    login:
+      title: 身份验证
+      content:
+      - 欢迎, @player!
+      - '要登录,请在下面的字段中输入您的密码:'
+      - ''
+      - '[密码//输入您的密码]'
+      - ''
+    register:
+      title: 注册
+      content:
+      - 欢迎, @player!
+      - 要在服务器上玩,您需要创建一个密码
+      - 请在下面的字段中输入所需的密码
+      - ''
+      - '[密码//输入您的密码]'
+      - '[确认//确认您的密码]'
+      - ''
+
+dialogs:
+  login:
+    title: '&#ffdb6060输入您的密码'
+    body:
+    - '&6欢迎, &f@player ！'
+    - ''
+    - '&#ffdb6060请输入您的密码登录到服务器。'
+    - ''
+    inputs:
+      password: 密码
+    buttons:
+      login: 登录
+      recover: 忘记密码
+      cancel: 登出
+  register:
+    title: '&#ffdb60;&#ffdb60创建密码'
+    body:
+    - '&6欢迎, &f@player！'
+    - ''
+    - '&#ffdb60您必须 &b创建一个密码 &#ffdb60Fin 才能登录到服务器。'
+    - ''
+    - '&#ffdb60请填写以下信息以继续。'
+    - ''
+    inputs:
+      password1: 密码
+      password2: 确认
+    buttons:
+      register: 创建账户
+      cancel: 退出
+
+title:
+  before-login:
+    title: '&a&l欢迎!'
+    subtitle: '&7类型：/login <您的密码>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  before-register:
+    title: '&a&l欢迎!'
+    subtitle: '&7类型：/register <您的密码> <密码确认>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  after-login:
+    title: ''
+    subtitle: '&a您已成功登录!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  after-register:
+    title: ''
+    subtitle: '&a您已成功注册!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  incorrect-password:
+    title: ''
+    subtitle: '&c密码错误!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-login:
+    title: ''
+    subtitle: '&c您已经登录过了!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-registered:
+    title: ''
+    subtitle: '&c您已经注册过了!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  passwords-dont-match:
+    title: ''
+    subtitle: '&c需要确认的密码与原密码不一致!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  session-login:
+    title: ''
+    subtitle: '&e您已成功登录 &7(会话有效)'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  premium-login:
+    title: ''
+    subtitle: '&e您已成功登录 &7(正版认证)'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  bedrock-login:
+    title: ''
+    subtitle: '&e您已成功登录 &7(Xbox认证)'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  security-warning:
+    title: ''
+    subtitle: '&c聊天栏中已发送新的安全警报'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  unconfirmed-message:
+    title: ''
+    subtitle: '&c‼ &e聊天记录中有一条未确认的消息'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6

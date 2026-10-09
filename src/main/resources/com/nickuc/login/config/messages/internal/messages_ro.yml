@@ -1,0 +1,269 @@
+update:
+  stable: '&aStabilă'
+  latest: '&bCea mai recentă'
+
+notification:
+  setup:
+    select-language:
+    - ''
+    - ' &eAm detectat că folosești limba &6{0}&e.'
+    - ''
+    - ' &6Dorești să folosești această limbă pentru nLogin?'
+    - ''
+    - ' &c‼ &eAcest lucru afectează limba tuturor jucătorilor!'
+    - ''
+    permission-required:
+    - ''
+    - ' &ePentru a configura nLogin, trebuie să devii &cadministrator&e.'
+    - ''
+    - ' &6Adaugă permisiunea &f"{0}" &6la plugin-ul tău de permisiuni.'
+    - ''
+    - ' &c‼ &eConfigurarea va continua imediat ce permisiunea este adăugată.'
+    - ''
+    welcome-message:
+    - ''
+    - ' &aÎți mulțumim mult că ai ales nLogin! :)'
+    - ''
+    - ' &6Pentru siguranța ta, te rugăm să citești mesajul de mai jos:'
+    - '  &cNu descărca niciodată nLogin din surse necunoscute.'
+    - '  &cO versiune modificată poate conține software rău intenționat.'
+    - ''
+    - ' &aSurse de încredere:'
+    - '  &7Website: &fnickuc.com'
+    - '  &7GitHub: &fgithub.com/nickuc-com'
+    - '  &7Instalatorul OpeNLogin (de pe &fSpigot &7sau &fGitHub&7)'
+    - ''
+    - ' &aSuport oficial:'
+    - '  &7Documentație: &fdocs.nickuc.com/nlogin/'
+    - '  &7Discord: &fnickuc.com/discord'
+    - '  &7Email: &fsupport@nickuc.com'
+    - ''
+    configure-version-channel:
+    - ''
+    - ' &6Alege canalul de versiuni preferat.'
+    - ''
+    - ' &c‼ &ePoți schimba asta mai târziu rulând &f{0}&e.'
+    - ''
+    configure-auto-or-manual-updates:
+    - ''
+    - ' &6Alege metoda de actualizare preferată.'
+    - ''
+    - ' &c‼ &ePoți schimba asta mai târziu rulând &f{0}&e.'
+    - ''
+    configure-password-algorithm:
+    - ''
+    - ' &6Selectează tipul de criptare preferat pentru parole.'
+    - ''
+    - ' &c‼ &ePoți schimba manual această opțiune mai târziu în &fconfig.yml&e.'
+    - ''
+    enable-dialogs:
+    - ''
+    - ' &6Dorești să folosești meniurile (dialogs) ca interfață de autentificare?'
+    - ''
+    - ' &eDialogs înlocuiesc autentificarea bazată pe comenzi cu meniuri personalizabile.'
+    - ''
+    - ' &c‼ &eAceastă funcție funcționează doar pentru clienți care folosesc 1.21.6 sau o versiune mai nouă.'
+    - ''
+    configure-dialogs:
+    - ''
+    - ' &6Alege modul preferat de afișare a dialogs.'
+    - ''
+    - ' &c‼ &ePoți schimba manual această opțiune în &fconfig.yml&e.'
+    - ''
+    configure-bungeeguard:
+    - ''
+    - ' &6Dorești să configurezi BungeeGuard+ pe server?'
+    - ''
+    - ' &c‼ &eSe recomandă instalarea BungeeGuard+ în aceste situații:'
+    - '  &8⋆ &eFolosești orice proxy bazat pe BungeeCord.'
+    - '  &8⋆ &eFolosești Velocity, dar forwarding-ul &f"MODERN" &enu poate fi folosit.'
+    - ''
+    - ' &c‼ &eVa trebui să instalezi JAR-ul BungeeGuard+ pe toate serverele.'
+    - ''
+    start-premium-configuration:
+    - ''
+    - ' &aFelicitări pentru achiziționarea &6⭐ nLogin Premium'
+    - ''
+    - ' &6Iată noile funcții deblocate:'
+    - ''
+    - '  &8⋆ &eConectare automată &7pentru utilizatorii cu Minecraft premium.'
+    - '  &8⋆ &eAutentificare &7în doi pași prin Discord și Email.'
+    - '  &8⋆ &eSesiuni de conectare &7la conectarea cu adresa IP.'
+    - '  &8⋆ &eSuport cu &7prioritate mai mare.'
+    - '  &8⋆ &eEtichetă de client &7în grupul Discord.'
+    - ''
+    configure-username-appendix:
+    - ''
+    - ' &6Dorești să activezi un sufix pentru jucătorii premium/offline?'
+    - ''
+    - ' &c‼ &ePentru mai multe informații despre această funcție, vizitează: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    configure-username-appendix-legacy-versions:
+    - ''
+    - ' &6Sufixul pentru jucătorii premium/offline nu poate fi adăugat automat pentru versiunile 1.18.2 sau mai vechi.'
+    - ''
+    - ' &eVa trebui să configurezi manual două adrese IP diferite pentru jucătorii premium și offline.'
+    - ''
+    - ' &c‼ &ePentru mai multe informații despre această funcție, vizitează: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    enable-restrict-premium-nicknames:
+    - ''
+    - ' &6Restricționezi înregistrarea jucătorilor offline care folosesc nume premium? &e(pentru conturile noi)'
+    - ''
+    - ' &c‼ &eJucătorii offline nu vor putea folosi un &fnume premium (ex: Notch)&e, chiar dacă numele este disponibil pentru înregistrare.'
+    - ''
+    enable-challenge-premium-nicknames:
+    - ''
+    - ' &6Detectezi dacă jucătorii folosesc un cont premium? &e(folosind numele)'
+    - ''
+    - ' &c‼ &eJucătorii offline pot primi un mesaj nepersonalizabil care spune &f"Invalid session" &ela prima conectare pe server.'
+    - ''
+    enable-premium-question:
+    - ''
+    - ' &6Detectezi dacă jucătorii folosesc un cont premium? &e(cu întrebare interactivă)'
+    - ''
+    - ' &c‼ &eAceastă opțiune este recomandată dacă dorești să te asiguri că jucătorii premium primesc Mojang UUID.'
+    - ''
+    skip-premium-register:
+    - ''
+    - ' &6Omiți cererea de înregistrare a parolei pentru &bjucătorii premium&6?'
+    - ''
+    - ' &c‼ &eSe recomandă dezactivarea acestei opțiuni dacă parola jucătorilor este folosită într-o integrare web (ex: site-ul serverului).'
+    - ''
+    skip-bedrock-register:
+    - ''
+    - ' &6Omiți cererea de înregistrare a parolei pentru &cjucătorii Bedrock&6?'
+    - ''
+    - ' &c‼ &eSe recomandă dezactivarea acestei opțiuni dacă parola jucătorilor este folosită într-o integrare web (ex: site-ul serverului).'
+    - ''
+    nantibot-recommendation:
+    - ''
+    - ' &6Recomandăm instalarea &fnAntiBot &6pentru a preveni'
+    - ' &6atacarea serverului tău de către boți.'
+    - ''
+    - ' &c‼ &ePentru mai multe informații despre acest plugin, &6apasă aici&e.'
+    - ''
+    nchat-recommendation:
+    - ''
+    - ' &6Recomandăm instalarea &fnChat&6,'
+    - ' &6un plugin de chat care înlocuiește complet Legendchat.'
+    - ''
+    - ' &c‼ &ePentru mai multe informații despre acest plugin, &6apasă aici&e.'
+    - ''
+    recommend-spawn-set:
+    - ''
+    - ' &6Coordonatele jucătorilor &cNU VOR FI &6protejate înainte de conectare.'
+    - ''
+    - ' &c‼ &eSetează un punct de spawn sigur folosind comanda &f{0}&e.'
+    - ''
+    finish-configuration:
+    - ''
+    - ' &6Confirmă pentru a ieși din modul de configurare și a salva toate modificările.'
+    - ''
+    - ' &c‼ &eToți jucătorii vor fi deconectați la confirmare.'
+    - ''
+  update-available-confirmation:
+  - ''
+  - ' &eO nouă versiune nLogin este disponibilă{0} {1}'
+  - ''
+  - ' &6Dorești să confirmi actualizarea?'
+  - ''
+  update-available-restart:
+  - ''
+  - ' &eO nouă versiune nLogin este disponibilă{0} {1}'
+  - ''
+  - ' &6Repornește serverul pentru a aplica actualizarea.'
+  - ''
+  premium-fail:
+  - ''
+  - ' &c✖ &cLicența ta &fnLogin v{0} &cnu a fost activată cu succes.'
+  - '  &cÎncearcă să descarci din nou JAR-ul de pe website:'
+  - '  &b{1}'
+  - ''
+  - ' &c‼ &cDacă problema persistă, recomandăm să contactezi dezvoltatorul.'
+  - '  &7Pentru a lista contactele, folosește comanda {2}'
+  - ''
+  premium-expired:
+  - ''
+  - ' &c✖ &cLicența ta &fnLogin v{0} &cnu a fost activată cu succes.'
+  - '  &cReînnoiește-ți licența prin site: &b{1}'
+  - ''
+  premium-recommendation:
+  - ''
+  - ' &7Vrei să îți faci conectarea practică?'
+  - ' &7Obține acum versiunea premium a nLogin'
+  - ' &7și activează conectarea automată pentru utilizatorii tăi.'
+  - ''
+  - ' [&aApasă aici pentru mai multe informații.]'
+  - ''
+  button:
+    start-setup:
+      text: '&a[✔ Începe Configurarea]'
+      hover: '&7Apasă aici pentru a începe configurarea plugin-ului.'
+    stable:
+      text: '&a[Versiune Stabilă]'
+      hover: |-
+        &7Canalul &astabil &7are mai puține erori, dar și mai puține funcții.
+
+        &6Recomandare: &fpentru serverele lansate publicului.
+    latest:
+      text: '&6[Cea mai Recentă Versiune]'
+      hover: |-
+        &7Canalul &6celor mai recente versiuni &7are cele mai noi versiuni.
+
+        &6Recomandare: &fpentru serverele care vor cele mai noi funcții
+    automatic:
+      text: '&a[Actualizări Automate]'
+      hover: '&7Nu va fi necesară nicio confirmare pentru actualizare.'
+    manual:
+      text: '&9[Confirmare Manuală]'
+      hover: '&7Va trebui să confirmi actualizarea cu o notificare similară acesteia.'
+    safer:
+      text: '&a[Mai Sigur]'
+      hover: '&7Va fi folosit un algoritm mai sigur pentru a proteja parolele.'
+    faster:
+      text: '&c[Mai Rapid]'
+      hover: '&7Va fi folosit un algoritm mai puțin sigur pentru a proteja parolele.'
+    pre-login:
+      text: '&a[Afișează Înainte]'
+      hover: '&7Dialogs vor fi afișate &aînainte de a intra &7pe server.'
+    after-login:
+      text: '&9[Afișează După]'
+      hover: '&7Dialogs vor fi afișate &9după ce ai intrat &7pe server.'
+    install:
+      text: '&a[⬇ Instalează]'
+      hover: '&7Apasă aici pentru a instala automat plugin-ul.'
+    skip:
+      text: '&7[✖ Omite]'
+      hover: null
+
+title:
+  setup:
+    welcome-message-1:
+      title: '&6Salut, @player!'
+      subtitle: '&eBine ai venit pe nLogin!'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-2:
+      title: ''
+      subtitle: '&aTe rugăm să citești avertismentul înainte de a continua.'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-3:
+      title: ''
+      subtitle: '&fApasă butonul {0} &fpentru a continua.'
+      delays:
+        fadeIn: 10
+        stay: 80
+        fadeOut: 10
+  update-available:
+    title: ''
+    subtitle: '&aO nouă versiune este disponibilă.'
+    delays:
+      fadeIn: 10
+      stay: 80
+      fadeOut: 10

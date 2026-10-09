@@ -1,0 +1,495 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |              List of translation authors: https://crowdin.com/project/nlogin/members         | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+pending:
+  login: '&ePoužijte příkaz &7/login <heslo>&e.'
+  register: '&ePoužijte příkaz &7/register <heslo> <heslo>&e. '
+  action-bar:
+    singular: '&cMáš {0} vetřin pro zadání {login///register}.'
+    plural: '&cMáte {0} vetřin pro zadání {login///register}.'
+
+success:
+  login: '&aÚspěšně přihlášen.'
+  register: '&aÚspěšně zaregistrován!'
+  session: '&aTvý login session byla prodloužena.'
+  premium: '&aByl jsi automaticky přihlášen , jelikož je tvůj účet jedinečný.'
+  bedrock: '&aByl jsi automaticky přihlášen, protože používáš Bedrock verzi.'
+  change-password: '&aTvé heslo bylo úspěšně změněno.'
+  reload: '&ePlugin byl úspěšné restartován, a znovu načten.'
+  kick:
+    unregister: '&aÚspěšně odregistrován.'
+    marked-offline: '&7Tvůj účet byl označen jako &6offline&7, prosím, připoj se znovu.'
+    challenge-premium: '&7Pro potvrzení že používáte &apremium účet&7, se přihlaste znova.'
+
+error:
+  not-registered: '&cTahle přezdívka nebyla ještě zaregistrována.'
+  offline: '&cŽádoucí hráč je nedostupný.'
+  address-limit: '&cDosáhl jste svých limitů IP adresy.'
+  database: '&cPromiňte, nemůžete provést tuto operaci. Prosím zkuste znovu [SELHÁNÍ SQL]'
+  command:
+    usage: '&cMusíte použít {0}.'
+    no-permission: '&cNemáte práva pro použití tohoto příkaz!'
+    player-required: '&cTento příkaz byl vypnut přes konzoli.'
+    console-required: '&cTento příkaz smí být spuštěn pouze v konzoli.'
+    account-collision:
+    - '&fVíce než jeden účet má přezdívku &a{0}&f:'
+    - '&8⋆ &7{1} {2}'
+    - ''
+    - '&c‼ &eSpusťte příkaz znovu a ujistěte se, že používáte přezdívku odpovídající požadovanému typu účtu.'
+    arguments:
+      password: heslo
+      current-password: současné heslo
+      new-password: nové heslo
+  already:
+    login: '&cUž jsi přihlášen.'
+    login-other: '&cTenhle hráč už je přihlášen.'
+    registered: '&cTahle přezdívka už byla zaregistrována.'
+    premium: '&cVáš účet je označen jako prémiový. '
+  password:
+    same-as-current: '&cZadané heslo je stejné jako Vaše aktuální heslo.'
+    too-large: '&cHeslo je moc dlouhé.'
+    too-small: '&cHeslo je moc krátké.'
+    not-secure: '&cZadané heslo nesplňuje bezpečnostní požadavky. Prosím, zahrň číslo, velká a malá písmena a speciální symbol.'
+    do-not-match: '&cHesla nejsou stejná.'
+    require-confirmation: '&cMusíte potvrdit svoje heslo.'
+    incorrect: '&cNesprávné heslo. Prosím, zkus to znova.'
+  kick:
+    incorrect-password: '&cPříliš mnoho pokusů o přihlášení.'
+    wait-server-start: '&cServer se ještě zapíná, vyčkejte prosím na spuštění serveru...'
+    account-blocked: |-
+      &cVaše adresa byla zablokovaná za podezdřelou činnost.&r
+      &r&cZbývající čas trestu: {0}
+    account-unregistered: |-
+      &cTento server nepřijímá nové registrace účtů.
+
+      &cPro více informací kontaktujte staff serveru.
+    invalid-nickname: '&cVaše přezdívka je neplatná, vymažte mezery, symboly, a neplatné charaktery z Vašeho jména.'
+    bedrock-nickname: '&cVybraná přezdívka &f("{0}") &cje vyhrazena pro hráče Bedrock.'
+    bedrock-unlinked: |-
+      &cZvolená přezdívka &f("{0}") &cje vyhrazena pro prémiového Java hráče.
+
+      &ePro přístup k tomuto účtu propojte Java účet se svým Bedrock účtem pomocí příkazu &f/linkaccount&e.
+    transferred-nickname: |-
+      &cVybrané jméno &f("{0}") &cbylo rezervováno a převedeno na účet používající stejné UUID.
+
+      &ePro vstup použij prosím jinou přezdívku.
+    already-online: '&cTento hráč je již online.'
+    unknown-hostname: |-
+      &4[nLogin] Používaný hostname &f({0}) &4nebyl definován v konfiguraci.
+      &r
+      &r&cPokud je to platná IP, přidej ji do nejvhodnější kategorie v sekci konfigurace &f"premium.username-appender"&c.
+      &r
+      &r&ePro více informací se podívej na tutoriál k username appenderu:
+      &r&bhttps://docs.nickuc.com/nlogin/username-appender
+    premium-not-logged: '&7Jméno &6{0} &7je spojeno s ověřeným &apremium účtem&7, ale vaše relace &cvypršela&7.'
+    premium-challenge: |-
+      &eBěhem vašeho posledního pokusu o přihlášení se nám nepodařilo ověřit váš účet.
+
+      &fPokud používáte &apremium &fúčet, restartujte Minecraft a znovu se přihlaste.
+
+      &fPokud je váš účet &coffline&f, přihlaste se znovu pro dokončení ověření.
+    timeout:
+      login: '&cPřihlášení ti zabralo moc dlouho.'
+      register: '&cRegistrace ti zabrala moc dlouho.'
+
+notification:
+  all-viewed: '&aVšechny notifikace byly zobrazeny.'
+  premium-question:
+  - ''
+  - ' &ePoužíváte prémiový účet?'
+  - ' &7(Po potvrzení, se budete se muset připojit a odpojit. )'
+  - ''
+  premium-transfer-question:
+  - ''
+  - ' &eOffline účet je již zaregistrován s přezdívkou &f@player&e.'
+  - ''
+  - ' &6Chcete přenést data z tohoto účtu nebo vytvořit nový účet?'
+  - ''
+  - ' &c‼ &eBudete se muset ověřit, abyste potvrdili vlastnictví účtu.'
+  - ''
+  premium-transfer-confirmation:
+  - ''
+  - ' &6Chcete potvrdit přenos dat z &f@player &6na váš prémiový účet?'
+  - ''
+  - ' &c‼ &ePo potvrzení přenosu budete odpojeni ze serveru.'
+  - ''
+  password-update:
+  - ''
+  - ' &eTvoje heslo potřebuje reset.'
+  - ''
+  - ' &7Prosím, změň své heslo pomocí příkazu níže:'
+  - ' &f/changepass <současné heslo> <nové heslo>'
+  - ''
+  button:
+    confirm-read:
+      text: '&a[✔ Potvrdit přečtení]'
+      hover: null
+    yes-btn:
+      text: '&a[✔ Ano]'
+      hover: null
+    no-btn:
+      text: '&c[✖ Ne]'
+      hover: null
+    new-account:
+      text: '&a[Nový účet]'
+      hover: null
+    transfer-data:
+      text: '&9[Přenést data]'
+      hover: null
+
+2fa:
+  not-registered: '&cNemáte {0} učtů.'
+  already-registered: '&cUž máte zaregistrováno {0}.'
+  register-limit: '&cVyčerpali jste limity účtů se stejným {0}.'
+  unregistered: '&eTvoje {0} byla úspěšně odregistrována.'
+  incorrect-code: '&cNesprávné heslo, prosíme, zkuste to znova.'
+  rate-limit: '&cPřekročen limit. Počkej {0} minut, než to zkusíš znovu.'
+  confirmed-account: '&aTvůj účet {0} byl úspěšně zaregistrován.'
+  confirmation-message-sent: |-
+    &7Váš konfirmační kód byl odeslán na &6{0}&7.
+    &8(&f{1}&8).
+  command-delay: '&cChvíli počkejte než použijete tento příkaz znovu.'
+  help-command:
+  - ''
+  - ' &fStatus: [&a{2} registrováno//&c{2} neregistrováno]&f.'
+  - ''
+  - ' [&8⋆ &7/{0} add: &fZaregistruj své {1}.]'
+  - ' [&8⋆ &7/{0} remove: &fOdstraň své {1}.]'
+  - ' [&8⋆ &7/{0} recover: &fObnov svůj účet.]'
+  - ' [&8⋆ &7/{0} 2fa: &fPovolí/vypne dvoufázové ověření.]'
+  - ''
+  recover-command:
+  - ''
+  - ' &eVyber způsob obnovení:'
+  - ' [&8⋆ &7{0}: &f/{1} recover]'
+  - ''
+  switch:
+    enabled: '&aByla aktivována dvou-faktorová funkce.'
+    disabled: '&cByla deaktivována dvou-faktorová funkce.'
+  recover:
+    not-equal: '&c{0} není stejný jako registrovaný.'
+    message-sent: '&aNa váš přidružený účet byla odeslána zpráva pro obnovení.'
+    change-password: '&aVaše heslo bylo automaticky změněno na &f''{0}''&a.'
+  discord:
+    account-linked: |-
+      &aKonfigurace Discordu byla úspěšné aktualizovaná.
+      &abyly propojeny s &f{0} &aúčtem.
+    confirm-account:
+    - ''
+    - ' &7Pro dokončení  propojení, potřebujete potvrdit Váš Discord účet.'
+    - ' &7Připoj se na &b{0} &7a napiš'
+    - ' &7Prikaz v DM z &f{1} &7bota.'
+    - ''
+    - ' [&aKlikněte zde aby jste získali příkaz s tokenem.]'
+    - ''
+    warn-message:
+    - ''
+    - ' &7Spusťe příkaz &f/discord add &7 pro registraci.'
+    - ' &7svůj &9Discord&7. Tím'
+    - ' &7snížíte šanci být napaden.'
+    - ''
+    discord-required:
+    - ''
+    - ' &7Aktuální server vyžaduje, abys propojil(a)'
+    - ' &aDiscord účet &7pro dokončení registrace.'
+    - ''
+    - ' &6Prosím, spusť &f/discord add&6.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Musíš potvrdit přihlášení ke svému účtu.'
+    - ' &7Bezpečnostní zpráva byla odeslána na tvůj registrovaný Discord.'
+    - ''
+    - ' &aKlikni na tlačítko ve zprávě pro potvrzení své identity.'
+    - ''
+    dm:
+      configure:
+        too-recent:
+          title: Příliš nový účet
+          description: Nemůžeš propojit svůj Discord, protože tvůj účet byl vytvořen příliš nedávno.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        invalid:
+          title: Neplatný kód
+          description: Omlouváme se, ale token, který jsi zadal(a), je neplatný nebo neexistuje.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        success:
+          title: Discord propojen
+          description: Tvůj Discord byl úspěšně propojen.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+      verify:
+        title: Potvrď ověření svého účtu.
+        description: |-
+          Pro přístup k tvému účtu @player je vyžadováno potvrzení ověření.
+
+          Pokud jsi to nebyl(a) ty, operaci zamítni a okamžitě změň své heslo.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Povolit
+        deny: Zamítnout
+      recover:
+        title: Požadováno obnovení hesla.
+        description: |-
+          Byla požádána o obnovení hesla z tvého účtu @player.
+
+          Pokud jsi to nebyl(a) ty, operaci zamítni a okamžitě změň své heslo.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Povolit
+        deny: Zamítnout
+      new-password:
+        title: Nové heslo pro @player
+        description: |-
+          Pro tvůj účet bylo vygenerováno nové heslo:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+      password-changed:
+        title: Heslo změněno pro @player
+        description: |-
+          Tvoje heslo bylo změněno na:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+  email:
+    invalid-email: '&cZadaný email je neplatný.'
+    not-allowed: '&cDoména zvoleného emailu není povolena.'
+    server-email: '&cNemůžete použít tento emailový server.'
+    warn-message:
+    - ''
+    - ' &7Spusťte příkaz &f/email add &7pro zaregistrování'
+    - ' &7Váš &9email&7. Tím, že vy'
+    - ' &7Snížíte šanci na to, být napaden.'
+    - ''
+    email-required:
+    - ''
+    - ' &7Aktuální server vyžaduje, abys propojil(a)'
+    - ' &aplatný email &7pro dokončení registrace.'
+    - ''
+    - ' &6Prosím, spusť &f/email add <tvůj email>&6.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Musíš potvrdit přihlášení ke svému účtu.'
+    - ' &7Bezpečnostní zpráva byla odeslána na tvůj registrovaný email.'
+    - ''
+    - ' &aPoužijte příkaz &f/email <code> &apro dokončení ověření.'
+    - ''
+    smtp:
+      configure:
+        subject: Potvrzení účtu @player
+        content:
+        - <h1>
+        - ' Zdravím, @player!'
+        - </h1>
+        - <p>
+        - ' Pro kompletní registrační proces, použijte <strong>"/email @code"</strong> .'
+        - </p>
+        - <p>
+        - ' Pokud jsi to nebyl(a) ty, tuto zprávu ignoruj.'
+        - </p>
+      verify:
+        subject: Potvrzení přihlášení na účet @player
+        content:
+        - <h1>
+        - ' Zdravím, @player!'
+        - </h1>
+        - <p>
+        - ' Pro přihlášení na server, použijte příkaz <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Pokud by jste to nebyl vy, změnte heslo <strong>HNEDKA</strong>.'
+        - </p>
+      recover:
+        subject: Vrácení účtu @player
+        content:
+        - <h1>
+        - ' Zdravím, @player!'
+        - </h1>
+        - <p>
+        - ' Pro nahrazení / vrácení Vašeho účtu, použijte příkaz <strong>"/email <nové heslo> @code"</strong>. '
+        - </p>
+        - <p>
+        - ' Pokud jste to nebyl vy, ignorujte tuto zprávu.'
+        - </p>
+      new-password:
+        subject: Nové heslo pro @player
+        content:
+        - <h1>
+        - ' Ahoj, @player!'
+        - </h1>
+        - <p>
+        - ' Pro tvůj účet bylo vygenerováno nové heslo: {0}'
+        - </p>
+      password-changed:
+        subject: Heslo změněno pro @player
+        content:
+        - <h1>
+        - ' Ahoj, @player!'
+        - </h1>
+        - <p>
+        - ' Tvoje heslo bylo změněno na: {0}'
+        - </p>
+
+bedrock:
+  forms:
+    login:
+      title: Ověření
+      content:
+      - Vítej, @player!
+      - 'Pro přihlášení zadej své heslo do pole níže:'
+      - ''
+      - '[Heslo//Zadej své heslo]'
+      - ''
+    register:
+      title: Registrace
+      content:
+      - Vítej, @player!
+      - Pro hraní na serveru si musíš vytvořit heslo.
+      - Prosím, zadej požadované heslo do pole níže.
+      - ''
+      - '[Heslo//Zadej své heslo]'
+      - '[Potvrzení//Potvrď své heslo]'
+      - ''
+
+dialogs:
+  login:
+    title: '#ffdb60Napiš tvé heslo'
+    body:
+    - '&6Vítej, &f@player&6!'
+    - ''
+    - '&#ffdb60Pro přihlášení na server zadejte své heslo.'
+    - ''
+    inputs:
+      password: Heslo
+    buttons:
+      login: Přihlásit se
+      recover: Zapomenuté heslo
+      cancel: Odhlásit se
+  register:
+    title: '&#ffdb60Vytvoření hesla'
+    body:
+    - '&6Vítej, &f@player&6!'
+    - ''
+    - '&#ffdb60Pro přihlášení na server musíte &bvytvořit heslo&#ffdb60.'
+    - ''
+    - '&#ffdb60Pro pokračování vyplňte pole níže.'
+    - ''
+    inputs:
+      password1: Heslo
+      password2: Potvrzení
+    buttons:
+      register: Vytvořit účet
+      cancel: Odhlásit se
+
+title:
+  before-login:
+    title: '&a&lVÍTEJTE!'
+    subtitle: '&7Napište: /login <vaše heslo>'
+    delays:
+      fadeIn: 6
+      stay: 7000
+      fadeOut: 3
+  before-register:
+    title: '&a&lVÍTEJTE!'
+    subtitle: '&7Napište: /register <tvé heslo> <potvrzení hesla>'
+    delays:
+      fadeIn: 6
+      stay: 7000
+      fadeOut: 3
+  after-login:
+    title: ''
+    subtitle: '&aÚspěšně přihlášen!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 5
+  after-register:
+    title: ''
+    subtitle: '&aÚspěšně Zaregistrován!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  incorrect-password:
+    title: ''
+    subtitle: '&cNesprávné heslo!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-login:
+    title: ''
+    subtitle: '&cUž jste přihlášen!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-registered:
+    title: ''
+    subtitle: '&cUž jste zaregistrován!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  passwords-dont-match:
+    title: ''
+    subtitle: '&cHesla nejsou totožná!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  session-login:
+    title: ''
+    subtitle: '&eVaše přihlašovací relace pokračuje.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  premium-login:
+    title: ''
+    subtitle: '&eVáš účet je unikátní, úspešný přihlášení.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  bedrock-login:
+    title: ''
+    subtitle: '&ePřístup přes Bedrock, úspěšně přihlášen.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  security-warning:
+    title: ''
+    subtitle: V chatu máš nové oznámení.
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 0
+  unconfirmed-message:
+    title: ''
+    subtitle: '&c‼ &eV chatu je nepotvrzená zpráva'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6

@@ -1,0 +1,498 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |              List of translation authors: https://crowdin.com/project/nlogin/members         | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+pending:
+  login: '&eHasználd ezt a parancsot &7/login <jelszó>&e.'
+  register: '&eHasználd ezt a parancsot &7/register <jelszó> <jelszó>&e.'
+  action-bar:
+    singular: '&c{0} másodperced van a {login///register} folyamat befejezésére.'
+    plural: '&c{0} másodperced van a {login///register} folyamat befejezésére.'
+
+success:
+  login: '&aSikeresen beléptél!'
+  register: '&aSikeresen beregisztráltál.'
+  session: '&aA bejelentkezésedet folytattuk.'
+  premium: '&aAutomatikusan beléptettünk tégedet!'
+  bedrock: '&aÖn automatikusan bejelentkezik, mivel egy Bedrock-fiókból lép be.'
+  change-password: '&aJelszavadat sikeresen megváltoztattuk!'
+  reload: '&eFájlok újratöltve!'
+  kick:
+    unregister: '&cSikeresen törölte a jelszavadat!'
+    marked-offline: '&7A fiókod &6offline&7 státuszba került, kérlek, lépj be újra.'
+    challenge-premium: '&7Annak megerősítéséhez, hogy &apremium fiókot&7 használ, kérjük, jelentkezzen be újra.'
+
+error:
+  not-registered: '&cEzt a nevet még nem regisztrálták.'
+  offline: '&cEz a játékos nincs fent.'
+  address-limit: '&cElérted a felhasználódnak az IP limitjét!'
+  database: '&cSajnos nem tudtuk befejezni ezt a műveletet. Kérlek próbáld újra. [SQL FAIL]'
+  command:
+    usage: '&cHasználnia kell {0}.'
+    no-permission: '&cNincs jogod ehez!'
+    player-required: '&cEzt a parancsot a konzolon keresztül letiltották!'
+    console-required: '&cEz a parancs csak a konzolon keresztül használható!'
+    account-collision:
+    - '&fTöbb fiók is rendelkezik a &a{0}&f becenévvel:'
+    - '&8⋆ &7{1} {2}'
+    - ''
+    - '&c‼ &eFuttasd újra a parancsot, ügyelve arra, hogy a kívánt fióktípusnak megfelelő becenevet használd.'
+    arguments:
+      password: jelszó
+      current-password: jelenlegi jelszó
+      new-password: új jelszó
+  already:
+    login: '&cTe már be vagy lépve.'
+    login-other: '&cEz a felhasználó már be van jelentkezve.'
+    registered: '&cEzt a nevet már regisztrálták.'
+    premium: '&cFiókja már prémiumként meg van jelölve.'
+  password:
+    same-as-current: '&cA megadott jelszó megegyezik a jelenlegi jelszóval.'
+    too-large: '&cA megadott jelszó túl nagy.'
+    too-small: '&cA megadott jelszó túl kicsi.'
+    not-secure: '&cA megadott jelszó nem felel meg a biztonsági követelményeknek. Kérlek, tartalmazzon számot, kis- és nagybetűket, valamint speciális karaktert.'
+    do-not-match: '&cA jelszavak nem azonosak.'
+    require-confirmation: '&cMeg kell erősítenie jelszavát.'
+    incorrect: '&cHelytelen jelszó. Kérlek próbáld újra!'
+  kick:
+    incorrect-password: '&cHelytelenül adtad meg a jelszavadat!'
+    wait-server-start: |-
+      &cA szerver nem indult el még teljesen.
+      &cVárj egy kicsit a csatlakozáshoz.
+    account-blocked: |-
+      &cCímedet blokkolták a szerveren!&r
+      &r&cFentmaradt várakozási idő: {0}
+    account-unregistered: |-
+      &cEz a szerver nem fogad el új fiókregisztrációkat.
+
+      &cTovábbi információért lépj kapcsolatba a szerver stábjával.
+    invalid-nickname: '&cTe neved hibás, ne tartalmazzon más szimbólumokat karaktereket!'
+    bedrock-nickname: '&cA választott felhasználónév &f("{0}") &ccsak Bedrock játékosok számára engedélyezett.'
+    bedrock-unlinked: |-
+      &cA kiválasztott becenév &f("{0}") &ckizárólag prémium Java játékosok számára van fenntartva.
+
+      &eA fiók eléréséhez kösd össze a Java fiókodat a Bedrock fiókoddal a &f/linkaccount &eparanccsal.
+    transferred-nickname: |-
+      &cA választott név &f("{0}") &cfoglalt volt és átkerült egy azonos UUID-val rendelkező fiókhoz.
+
+      &eA belépéshez kérlek, használj másik felhasználónevet.
+    already-online: '&cEz a játékos már fent van.'
+    unknown-hostname: |-
+      &4[nLogin] A használt hosztnév &f({0}) &4nem lett definiálva a konfigurációban.
+      &r
+      &r&cHa ez egy érvényes IP, kérlek, add hozzá a legmegfelelőbb kategóriához a &f"premium.username-appender"&c részben.
+      &r
+      &r&eTovábbi információkért nézd meg a felhasználónév hozzáfűző oktatóanyagot:
+      &r&bhttps://docs.nickuc.com/nlogin/username-appender
+    premium-not-logged: |-
+      &7A(z) &6{0} &7felhasználónév egy ellenőrzött &aprémium fiókhoz&7 van társítva, de a munkameneted &clejárt&7.
+
+      &eHa te vagy a fiók tulajdonosa, indítsd újra a Minecraftot és jelentkezz be újra.
+    premium-challenge: |-
+      &eAz utolsó belépési kísérleted során nem sikerült hitelesítenünk a fiókodat.
+
+      &fHa &aprémium &ffiókot használsz, indítsd újra a Minecraftot és jelentkezz be újra.
+
+      &fHa a fiókod &coffline&f, kérjük jelentkezz be újra az ellenőrzés befejezéséhez.
+    timeout:
+      login: '&cNem sikerült belépni megadott időn belül!'
+      register: '&cNem sikerült beregisztrálni megadott időn belül!'
+
+notification:
+  all-viewed: '&aMinden értesítés megtekintésre került.'
+  premium-question:
+  - ''
+  - ' &ePrémium fiókot használ?'
+  - ' &7(az elfogadás után újra be kell lépnie.)'
+  - ''
+  premium-transfer-question:
+  - ''
+  - ' &eEgy offline fiók már regisztrálva van a &f@player&e becenévvel.'
+  - ''
+  - ' &6Szeretnéd átvinni az adatokat erről a fiókról, vagy inkább új fiókot hoznál létre?'
+  - ''
+  - ' &c‼ &eA fiók tulajdonjogának megerősítéséhez hitelesítened kell magad.'
+  - ''
+  premium-transfer-confirmation:
+  - ''
+  - ' &6Szeretnéd megerősíteni a &f@player &6adatainak átvitelét a prémium fiókodra?'
+  - ''
+  - ' &c‼ &eAz átvitel megerősítésekor lecsatlakoztatunk a szerverről.'
+  - ''
+  password-update:
+  - ''
+  - ' &eA jelszavadat vissza kell állítani.'
+  - ''
+  - ' &7Kérlek, változtasd meg a jelszavadat az alábbi paranccsal:'
+  - ' &f/changepass <jelenlegi jelszó> <új jelszó>'
+  - ''
+  button:
+    confirm-read:
+      text: '&a[✔ Olvasás megerősítése]'
+      hover: null
+    yes-btn:
+      text: '&a[✔ Igen]'
+      hover: null
+    no-btn:
+      text: '&c[✖ Nem]'
+      hover: null
+    new-account:
+      text: '&a[Új fiók]'
+      hover: null
+    transfer-data:
+      text: '&9[Adatok átvitele]'
+      hover: null
+
+2fa:
+  not-registered: '&cNincs {0} -fiókod.'
+  already-registered: '&cMár regisztrálta a következőt: {0}.'
+  register-limit: '&cÖn kimerítette az azonos {0} fiókok limitjét.'
+  unregistered: '&eA {0} fiókod sikeresen törölve.'
+  incorrect-code: '&cRossz jelszó. Kérlek, próbáld meg újra.'
+  rate-limit: '&cLimit elérve. Kérlek várj {0} percet az újrapróbálásnál.'
+  confirmed-account: '&aA {0} fiókod sikeresen regisztrálva.'
+  confirmation-message-sent: |-
+    &7Megerősítő kódot küldtünk Önnek &6{0}&7.
+    &8(&f{1}&8).
+  command-delay: '&cVárj egy kicsit mielöbb újra beírnád ezt a parancsot!'
+  help-command:
+  - ''
+  - ' &fStátusz: [&a{2} regisztrált//&c{2} nem regisztrált]&f.'
+  - ''
+  - ' [&8⋆ &7/{0} Hozzáad(add): &fRegisztrálja {1}.]'
+  - ' [&8⋆ &7/{0} Eltávolít(remove): &fEltávolítja {1}.]'
+  - ' [&8⋆ &7/{0} Helyreállit(recover): &fHelyreállítja az akuntodat.]'
+  - ' [&8⋆ &7/{0} kétfaktoros(twofactor): &fBekapcsolod/Kikapcsolod a kétfaktort.]'
+  - ''
+  recover-command:
+  - ''
+  - ' &eVálassz egy helyreállítási módot:'
+  - ' [&8⋆ &7{0}: &f/{1} recover]'
+  - ''
+  switch:
+    enabled: '&aA kétfaktoros funkció aktiválódott.'
+    disabled: '&cA kétfaktoros funkció kikapcsolva.'
+  recover:
+    not-equal: '&cA megadott {0} nem ugyanaz, mint a regisztrált.'
+    message-sent: '&aHelyreállítási üzenetet küldtünk a társított fiókjába.'
+    change-password: '&aJelszavát automatikusan megváltoztatta &ferre ''{0}''.'
+  discord:
+    account-linked: '&aA Discord konfigurációja sikeresen frissítve. \N &aCsatlakoztak a&f {0} &aaccount fiókhoz.'
+    confirm-account:
+    - ''
+    - ' &7Az összekapcsolás befejezéséhez meg kell erősítenie Discord-fiókját.'
+    - ' &7Csatlakozz a &b{0} &7szerverhez, és írd be'
+    - ' &7a parancsot a DM a &f{1} &7botnak.'
+    - ''
+    - ' [&aKattintson ide, hogy megkapja a parancsot a tokent.]'
+    - ''
+    warn-message:
+    - ''
+    - ' &7A regisztrációhoz hajtsa végre a & f/discord add &7parancsot'
+    - ' &7a &9Discordodat&7. Ezzel'
+    - ' &7csökkentse a feltörés esélyét.'
+    - ''
+    discord-required:
+    - ''
+    - ' &7A jelenlegi szerver megköveteli, hogy összekösd a'
+    - ' &aDiscord fiókodat &7a regisztráció befejezéséhez.'
+    - ''
+    - ' &6Kérlek, futtasd a &f/discord add&6 parancsot.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Meg kell erősítened a fiókbejelentkezésedet.'
+    - ' &7Egy biztonsági üzenet elküldve a regisztrált Discord fiókodra.'
+    - ''
+    - ' &aKattints az üzenet gombjára az azonosítás megerősítéséhez.'
+    - ''
+    dm:
+      configure:
+        too-recent:
+          title: Túl új fiók
+          description: Nem kapcsolhatod össze a Discord fiókodat, mivel a fiókod túl új.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        invalid:
+          title: Érvénytelen kód
+          description: Sajnáljuk, de a megadott token érvénytelen vagy nem létezik.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        success:
+          title: Discord összekapcsolva
+          description: A Discord fiókod sikeresen összekapcsolva.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+      verify:
+        title: Erősítsd meg a fiók hitelesítésedet.
+        description: |-
+          Hitelesítési megerősítés szükséges a @player fiók eléréséhez.
+
+          Ha nem te voltál, utasítsd el a műveletet, és azonnal változtasd meg a jelszavadat.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Engedélyez
+        deny: Elutasít
+      recover:
+        title: Jelszó-visszaállítás kérése.
+        description: |-
+          Jelszó-visszaállítási kérés érkezett a @player fiókodtól.
+
+          Ha nem te voltál, utasítsd el a műveletet, és azonnal változtasd meg a jelszavadat.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Engedélyez
+        deny: Elutasít
+      new-password:
+        title: Új jelszó a @player számára
+        description: |-
+          Új jelszó generálva a fiókodhoz:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+      password-changed:
+        title: Jelszó megváltoztatva a @player számára
+        description: |-
+          A jelszavad megváltoztatva erre:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+  email:
+    invalid-email: '&cA megadott e-mail cím érvénytelen.'
+    not-allowed: '&cA választott e-mail domain nem engedélyezett.'
+    server-email: '&cNem használhatja a szerver e-mail címét.'
+    warn-message:
+    - ''
+    - '&7A regisztrációhoz hajtsa végre a & f / email társított & 7 parancsot'
+    - '&7 a &c cemailed &7. Ezáltal te'
+    - '&7csökkentse a feltörés esélyét.'
+    - ''
+    email-required:
+    - ''
+    - ' &7A jelenlegi szerver megköveteli, hogy összekösd a'
+    - ' &aérvényes e-mail&7 fiókodat a regisztráció befejezéséhez.'
+    - ''
+    - ' &6Kérlek, futtasd a &f/email add <e-mail címed>&6 parancsot.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Meg kell erősítened a fiókbejelentkezésedet.'
+    - ' &7Egy biztonsági üzenet elküldve a regisztrált e-mail fiókodra.'
+    - ''
+    - ' &aA hitelesítés befejezéséhez használd a &f/email <code> &aparancsot.'
+    - ''
+    smtp:
+      configure:
+        subject: A @player fiók megerősítése
+        content:
+        - <h1>
+        - ' Szia, @player!'
+        - </h1>
+        - <p>
+        - ' Az e-mail regisztráció befejezéséhez használja a parancsot <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Ha nem te voltál, hagyd figyelmen kívül ezt az üzenetet.'
+        - </p>
+      verify:
+        subject: A @player fiók bejelentkezési megerősítése
+        content:
+        - <h1>
+        - ' Szia, @player!'
+        - </h1>
+        - <p>
+        - ' A kiszolgálón történő hitelesítéshez használja a parancsot <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Ha nem te voltál, akkor változtasd meg a jelszavad <strong>IMMEDIATELY</strong>.'
+        - </p>
+      recover:
+        subject: A @player fiók visszaállítása
+        content:
+        - <h1>
+        - ' Szia, @player!'
+        - </h1>
+        - <p>
+        - ' A fiók helyreállításához használja a parancsot <strong>"/email <new password> @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Ha nem te voltál, hagyd figyelmen kívül ezt az üzenetet.'
+        - </p>
+      new-password:
+        subject: Új jelszó a @player számára
+        content:
+        - <h1>
+        - ' Szia, @player!'
+        - </h1>
+        - <p>
+        - ' Új jelszó generálva a fiókodhoz: {0}'
+        - </p>
+      password-changed:
+        subject: Jelszó megváltoztatva a @player számára
+        content:
+        - <h1>
+        - ' Szia, @player!'
+        - </h1>
+        - <p>
+        - ' A jelszavad megváltoztatva erre: {0}'
+        - </p>
+
+bedrock:
+  forms:
+    login:
+      title: Bejelentkezés
+      content:
+      - Köszöntelek, @player!
+      - 'A bejelentkezéshez adja meg jelszavát az alábbi mezőben:'
+      - ''
+      - '[Jelszó//Ird be a jelszavad]'
+      - ''
+    register:
+      title: Regisztráció
+      content:
+      - Köszöntelek, @player!
+      - A szerveren való játékhoz létre kell hoznia egy jelszót.
+      - Kérjük, írja be a kívánt jelszót az alábbi mezőbe.
+      - ''
+      - '[jelszó//Ird be a jelszavad]'
+      - '[igazolás//Ird be újra a jelszavad]'
+      - ''
+
+dialogs:
+  login:
+    title: '&#ffdb60Add meg a jelszavad'
+    body:
+    - '&6Üdvözlünk, &f@player&6!'
+    - ''
+    - '&#ffdb60A szerverre való belépéshez add meg a jelszavad.'
+    - ''
+    inputs:
+      password: Jelszó
+    buttons:
+      login: Belépés
+      recover: Elfelejtett jelszó
+      cancel: Kijelentkezés
+  register:
+    title: '&#ffdb60Jelszó létrehozása'
+    body:
+    - '&6Üdvözlünk, &f@player&6!'
+    - ''
+    - '&#ffdb60A szerverre való belépéshez &bhozz létre egy jelszót&#ffdb60.'
+    - ''
+    - '&#ffdb60A folytatáshoz töltsd ki az alábbi mezőket.'
+    - ''
+    inputs:
+      password1: Jelszó
+      password2: Megerősítés
+    buttons:
+      register: Fiók létrehozása
+      cancel: Kijelentkezés
+
+title:
+  before-login:
+    title: '&a&lKöszöntelek!'
+    subtitle: '&7Írd be: /login <jelszavad>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  before-register:
+    title: '&a&lKöszöntelek!'
+    subtitle: '&7Írd be: /register <jelszavad> <jelszó megerősítése>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  after-login:
+    title: ''
+    subtitle: '&aSikeresen beléptél!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  after-register:
+    title: ''
+    subtitle: '&aSikeresen beregisztráltál!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  incorrect-password:
+    title: ''
+    subtitle: '&cHibás jelszó!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-login:
+    title: ''
+    subtitle: '&cTe már be vagy lépve!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-registered:
+    title: ''
+    subtitle: '&cTe már be vagy regisztrálva!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  passwords-dont-match:
+    title: ''
+    subtitle: '&cJelszavak nem azonosak!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  session-login:
+    title: ''
+    subtitle: '&eBejelentkezésed folytatódik.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  premium-login:
+    title: ''
+    subtitle: '&eFiókod eredetis, sikeresen beléptél!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  bedrock-login:
+    title: ''
+    subtitle: '&eSikeresen beléptél a bedrokon keresztül!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  security-warning:
+    title: ''
+    subtitle: '&cBiztonsági okokból figyelmeztetést küldtek chatre!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  unconfirmed-message:
+    title: ''
+    subtitle: '&c‼ &eMeg nem erősített üzenet van a chatben'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6

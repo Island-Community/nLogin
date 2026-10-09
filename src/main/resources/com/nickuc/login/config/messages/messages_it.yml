@@ -1,0 +1,500 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |              List of translation authors: https://crowdin.com/project/nlogin/members         | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+pending:
+  login: '&eUsa il comando &7/login <password>&e.'
+  register: '&eUsa il comando &7/register <password> <password>&e.'
+  action-bar:
+    singular: '&cHai {0} secondo per {login///register}.'
+    plural: '&cHai {0} secondi per {login///register}.'
+
+success:
+  login: '&aSei entrato con successo.'
+  register: '&aTi sei registrato con successo.'
+  session: '&aLa tua sessione è stata continuata con successo.'
+  premium: '&aSei stato loggato automaticamente.'
+  bedrock: '&aSei stato loggato automaticamente.'
+  change-password: '&aLa tua password è stata cambiata con successo.'
+  reload: '&ePlugin reload.'
+  kick:
+    unregister: '&aSei stato unregistrato con successo.'
+    marked-offline: '&7Il tuo account è stato impostato come  &6offline&7. Per favore rientra.'
+    challenge-premium: '&7Per confermare che stai usando un &apremium account&7, rientra nuovamente.'
+
+error:
+  not-registered: '&cQuesto nome non è stato registrato.'
+  offline: '&cIl player è offline.'
+  address-limit: '&cIl numero di IP concessi è stato superato.'
+  database: '&cScusaci, Ma non riusciamo a eseguire questa operazione. Prova nuovamente. [SQL FAIL]'
+  command:
+    usage: '&cForse hai sbagliato, Prova ad usare il comando: {0}.'
+    no-permission: '&cNon hai i permessi necessari per eseguire questo comando.'
+    player-required: '&cIl comando è stato disabilitato.'
+    console-required: '&cIl comando è stato disabilitato.'
+    account-collision:
+    - '&fPiù di un account ha il nome &a{0}&f:'
+    - '&8⋆ &7{1} {2}'
+    - ''
+    - '&c‼ &eEsegui di nuovo il comando, assicurandoti di usare il nome corrispondente al tipo di account desiderato.'
+    arguments:
+      password: password
+      current-password: password attuale
+      new-password: nuova password
+  already:
+    login: '&cHai già effettuato l''accesso.'
+    login-other: '&cQuesto player ha già effettuato l''accesso.'
+    registered: '&cQuesto nome è già stato registrato.'
+    premium: '&cIl tuo account è già impostato come premium.'
+  password:
+    same-as-current: '&cLa password è identica a quella precedente.'
+    too-large: '&cLa password è troppo grande.'
+    too-small: '&cLa password è troppo piccola.'
+    not-secure: '&cLa password fornita non soddisfa i requisiti di sicurezza. Includi un numero, lettere maiuscole e minuscole e un simbolo speciale.'
+    do-not-match: '&cLe password non corrispondono.'
+    require-confirmation: '&cDevi confermare la password.'
+    incorrect: '&cPassword Incorretta. Perfavore, riprova.'
+  kick:
+    incorrect-password: '&cHai inserito una password incorretta.'
+    wait-server-start: |-
+      &cIl server non è ancora completamente attivo.
+      &cPerfavore aspetta prima di connetterti.
+    account-blocked: |-
+      &cIl tuo indirizzo IP è stato bloccato per possibili azioni sospette.&r
+      &r&cTempo rimanente: {0}
+    account-unregistered: |-
+      &cQuesto server non accetta nuove registrazioni di account.
+
+      &cPer maggiori informazioni, contatta lo staff del server.
+    invalid-nickname: '&cNickname non valido, remuovi gli spazi, simboli, e caratteri non validi dal tuo nome.'
+    bedrock-nickname: '&cIl nickname scelto &f("{0}") &cè riservato ai giocatori Bedrock.'
+    bedrock-unlinked: |-
+      &cIl nome scelto &f("{0}") &cè riservato a un giocatore Java premium.
+
+      &ePer accedere a questo account, collega l'account Java al tuo account Bedrock usando il comando &f/linkaccount&e.
+    transferred-nickname: |-
+      &cIl nome scelto &f("{0}") &cè stato riservato e trasferito a un account utilizzando lo stesso UUID.
+
+      &ePer entrare, si prega di utilizzare un altro soprannome.
+    already-online: '&cQuesto player è già online.'
+    unknown-hostname: |-
+      &4[nLogin] L'hostname utilizzato &f({0}) &4non è stato definito nella configurazione.
+      &r
+      &r&cSe si tratta di un IP valido, aggiungilo alla categoria più appropriata nella sezione di configurazione &f"premium.username-appender"&c.
+      &r
+      &r&ePer ulteriori informazioni, consulta il tutorial sull'aggiunta del nome utente:
+      &r&bhttps://docs.nickuc.com/nlogin/username-appender
+    premium-not-logged: |-
+      &7Il nome utente &6{0} &7è associato a un &aaccount premium&7 verificato, ma la tua sessione è &cscaduta&7.
+
+      &eSe sei il proprietario di questo account, riavvia Minecraft ed effettua nuovamente l'accesso.
+    premium-challenge: |-
+      &eDurante il tuo ultimo tentativo di accesso, non siamo riusciti ad autenticare il tuo account.
+
+      &fSe stai usando un account &apremium&f, riavvia Minecraft ed effettua nuovamente l'accesso.
+
+      &fSe il tuo account è &coffline&f, effettua nuovamente l'accesso per completare la verifica.
+    timeout:
+      login: '&cHai impiegato troppo tempo per il login.'
+      register: '&cHai impiegato troppo tempo per il register.'
+
+notification:
+  all-viewed: '&aTutte le notiche sono state viste.'
+  premium-question:
+  - ''
+  - ' &eStai utilizzando un account premium?'
+  - ' &7(Dopo aver accettato, dovrai rientrare.)'
+  - ''
+  premium-transfer-question:
+  - ''
+  - ' &eUn account offline è già registrato con il nome &f@player&e.'
+  - ''
+  - ' &6Vuoi trasferire i dati da questo account o crearne uno nuovo?'
+  - ''
+  - ' &c‼ &eDovrai autenticarti per confermare la proprietà dell''account.'
+  - ''
+  premium-transfer-confirmation:
+  - ''
+  - ' &6Vuoi confermare il trasferimento dei dati da &f@player &6al tuo account premium?'
+  - ''
+  - ' &c‼ &eConfermando il trasferimento, verrai disconnesso dal server.'
+  - ''
+  password-update:
+  - ''
+  - ' &eLa tua password deve essere reimpostata.'
+  - ''
+  - ' &7Cambia la tua password con il comando seguente:'
+  - ' &f/changepass <password attuale> <nuova password>'
+  - ''
+  button:
+    confirm-read:
+      text: '&a[✔ Conferma lettura]'
+      hover: null
+    yes-btn:
+      text: '&a[✔ Sì]'
+      hover: null
+    no-btn:
+      text: '&c[✖ No]'
+      hover: null
+    new-account:
+      text: '&a[Nuovo Account]'
+      hover: null
+    transfer-data:
+      text: '&9[Trasferisci Dati]'
+      hover: null
+
+2fa:
+  not-registered: '&cNon hai un {0} account 2FA.'
+  already-registered: '&cL''account {0} già è stato registrato come 2FA.'
+  register-limit: '&c {0} Hai esaurito i limiti dei registri, contatta lo staff.'
+  unregistered: '&eIl tuo {0} è stato deregistrato con successo.'
+  incorrect-code: '&cCodice Errato, Riprova.'
+  rate-limit: '&cLimite raggiunto. Aspetta altri {0} minuti.'
+  confirmed-account: '&aIl tuo account {0} è stato registrato con successo.'
+  confirmation-message-sent: |-
+    &7Un codice di conferma è stato inviato &6{0}&7.
+    &8(&f{1}&8).
+  command-delay: '&cAspetta prima di eseguire questo comando nuovamente.'
+  help-command:
+  - ''
+  - ' &fStato: [&a{2} registrato//&c{2} non registrato]&f.'
+  - ''
+  - ' [&8⋆ &7/{0} add: &fRegistra il {1}.]'
+  - ' [&8⋆ &7/{0} remove: &fRemuovi il {1}.]'
+  - ' [&8⋆ &7/{0} recover: &fRicovera il tuo account.]'
+  - ' [&8⋆ &7/{0} 2fa: &fAttiva/disattiva il 2FA.]'
+  - ''
+  recover-command:
+  - ''
+  - ' &eScegli un metodo di recupero:'
+  - ' [&8⋆ &7{0}: &f/{1} recover]'
+  - ''
+  switch:
+    enabled: '&a2FA Attivo.'
+    disabled: '&c2FA Non attivo.'
+  recover:
+    not-equal: '&cIl {0} mandato non è identico.'
+    message-sent: '&aIl messaggio per il ricovero è stato mandato al tuo account.'
+    change-password: '&aLa tua password è stata cambiata automaticamente a &f''{0}''&a.'
+  discord:
+    account-linked: |-
+      &aConfigurazione su Discord aggiornata con successo.
+      &aSei stato collegato all'account &f{0} &a.
+    confirm-account:
+    - ''
+    - ' &7Per completare il collegamento, devi confermare il tuo account Discord.'
+    - ' &7Entra in &b{0} &7e digita'
+    - ' &7il comando nei DM del bot &f{1} &7.'
+    - ''
+    - ' [&aClicca qui per ottenere il comando con il token.]'
+    - ''
+    warn-message:
+    - ''
+    - ' &7Esegui il comando &f/discord add &7per registrare'
+    - ' &7il tuo &9Discord&7. Così facendo,'
+    - ' &7riduci il rischio di essere hackerato.'
+    - ''
+    discord-required:
+    - ''
+    - ' &7Il server corrente richiede di collegare un'
+    - ' &aaccount Discord &7per completare la registrazione.'
+    - ''
+    - ' &6Esegui &f/discord add&6.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Devi confermare l''accesso al tuo account.'
+    - ' &7Un messaggio di sicurezza è stato inviato al tuo Discord registrato.'
+    - ''
+    - ' &aClicca sul pulsante del messaggio per confermare la tua identità.'
+    - ''
+    dm:
+      configure:
+        too-recent:
+          title: Account troppo recente
+          description: Non puoi collegare il tuo Discord perché il tuo account è stato creato troppo recentemente.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        invalid:
+          title: Codice invalido
+          description: Scusa, ma il codice inserito è invalido o non esiste
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        success:
+          title: Discord collegato
+          description: Il tuo Discord è stato collegato con successo.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+      verify:
+        title: Conferma l'autenticazione del tuo account.
+        description: |-
+          È richiesta la conferma dell'autenticazione per accedere al tuo account @player.
+
+          Se non sei stato tu, nega l'operazione e cambia immediatamente la password.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Consenti
+        deny: Nega
+      recover:
+        title: Recupero password richiesto.
+        description: |-
+          Una richiesta di recupero password è stata richiesta al tuo account @player
+
+          Se non sei tu, nega l'operazione e cambia subito la password.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Consenti
+        deny: Nega
+      new-password:
+        title: Nuova password per @player
+        description: |-
+          È stata generata una nuova password per il tuo account:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+      password-changed:
+        title: Password cambiata per @player
+        description: |-
+          La tua password è stata cambiata in:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+  email:
+    invalid-email: '&cL''email inserita non è valida.'
+    not-allowed: '&cIl dominio dell''email scelta non è consentito.'
+    server-email: '&cNon puoi utilizzare l''email del server.'
+    warn-message:
+    - ''
+    - ' &7Esegui il comando &f/email associate &7per registrare'
+    - ' &7la tua &9email&7. In questo modo,'
+    - ' &7riduci il rischio di essere hackerato.'
+    - ''
+    email-required:
+    - ''
+    - ' &7Il server corrente richiede di collegare una'
+    - ' &aemail valida &7per completare la registrazione.'
+    - ''
+    - ' &6Esegui &f/email add <tua email>&6.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Devi confermare l''accesso al tuo account.'
+    - ' &7Un messaggio di sicurezza è stato inviato alla tua email registrata.'
+    - ''
+    - ' &aUsa il comando &f/email <code> &aper completare l''autenticazione.'
+    - ''
+    smtp:
+      configure:
+        subject: Conferma dell'account @player
+        content:
+        - <h1>
+        - ' Ciao, @player!'
+        - </h1>
+        - <p>
+        - ' Per completare il processo di registrazione dell''email, usa il comando <strong>"/email @codice"</strong>.'
+        - </p>
+        - <p>
+        - ' Se non sei stato tu, ignora questo messaggio.'
+        - </p>
+      verify:
+        subject: Conferma di accesso per l'account @player
+        content:
+        - <h1>
+        - ' Ciao, @player!'
+        - </h1>
+        - <p>
+        - ' Per autenticarti sul server, usa il comando <strong>"/email @codice"</strong>.'
+        - </p>
+        - <p>
+        - ' Se non sei stato tu, cambia immediatamente la password <strong>IMMEDIATAMENTE</strong>.'
+        - </p>
+      recover:
+        subject: Recupero dell'account @player
+        content:
+        - <h1>
+        - ' Ciao, @player!'
+        - </h1>
+        - <p>
+        - ' Per recuperare il tuo account, usa il comando <strong>"/email <nuova password> @codice"</strong>.'
+        - </p>
+        - <p>
+        - ' Se non sei stato tu, ignora questo messaggio.'
+        - </p>
+      new-password:
+        subject: Nuova password per @player
+        content:
+        - <h1>
+        - ' Ciao, @player!'
+        - </h1>
+        - <p>
+        - ' È stata generata una nuova password per il tuo account: {0}'
+        - </p>
+      password-changed:
+        subject: Password cambiata per @player
+        content:
+        - <h1>
+        - ' Ciao, @player!'
+        - </h1>
+        - <p>
+        - ' La tua password è stata cambiata in: {0}'
+        - </p>
+
+bedrock:
+  forms:
+    login:
+      title: Autenticazione
+      content:
+      - Bentornato, @player!
+      - 'Per entrare, Inserisci la password qua sotto:'
+      - ''
+      - '[Password//Inserisci la password]'
+      - ''
+    register:
+      title: Registrare
+      content:
+      - Benvenuto, @player!
+      - Per giocare su Aeteria, devi creare una password.
+      - Inserisci la password desiderata qua sotto:.
+      - ''
+      - '[Password//Inserisci la password]'
+      - '[Conferma//Conferma la password]'
+      - ''
+
+dialogs:
+  login:
+    title: '&#ffdb60Inserisci la tua Password'
+    body:
+    - '&6Benvenuto, &f@player&6!'
+    - ''
+    - '&#ffdb60Inserisci la tua password per accedere al server.'
+    - ''
+    inputs:
+      password: Password
+    buttons:
+      login: Accedi
+      recover: Password dimenticata
+      cancel: Disconnetti
+  register:
+    title: '&#ffdb60Crea una Password'
+    body:
+    - '&6Benvenuto, &f@player&6!'
+    - ''
+    - '&#ffdb60Devi &bcreare una password &#ffdb60per accedere al server.'
+    - ''
+    - '&#ffdb60Compila i campi qui sotto per continuare.'
+    - ''
+    inputs:
+      password1: Password
+      password2: Conferma
+    buttons:
+      register: Crea Account
+      cancel: Disconnetti
+
+title:
+  before-login:
+    title: '&a&lBENTORNATO!'
+    subtitle: '&7Digita: /login <la tua password>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  before-register:
+    title: '&a&lBENVENUTO!'
+    subtitle: '&7Digita: /register <la tua password> <conferma password>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  after-login:
+    title: ''
+    subtitle: '&aSei entrato con successo!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  after-register:
+    title: ''
+    subtitle: '&aSei registrato con successo!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  incorrect-password:
+    title: ''
+    subtitle: '&cPassword incorretta!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-login:
+    title: ''
+    subtitle: '&cSei già loggato!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-registered:
+    title: ''
+    subtitle: '&cSei già registrato!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  passwords-dont-match:
+    title: ''
+    subtitle: '&cLe password non sono le stesse!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  session-login:
+    title: ''
+    subtitle: '&eLa tua sessione e'' stata continuata.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  premium-login:
+    title: ''
+    subtitle: '&eAccount Premium trovato, Loggato con successo.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  bedrock-login:
+    title: ''
+    subtitle: '&eAccesso via Bedrock, Loggato con successo.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  security-warning:
+    title: ''
+    subtitle: '&cUn alert di sicurezza è stato eseguito con successo.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  unconfirmed-message:
+    title: ''
+    subtitle: '&c‼ &eC''è un messaggio non confermato in chat'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6

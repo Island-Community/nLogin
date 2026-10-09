@@ -1,0 +1,55 @@
+name: nLogin
+version: 2.0.19
+main: com.nickuc.login.loader.NLoginBukkitLoader
+description: 'A practical, secure and friendly authentication plugin (read readme.txt)'
+website: 'https://www.nickuc.com'
+load: STARTUP
+api-version: 1.13
+folia-supported: true
+authors: [NickUC, Henry_Fabio, NullPointer_]
+permissions:
+  nlogin.admin:
+    description: 'Gives access to administration resources.'
+    default: op
+  nlogin.bypass.discord:
+    description: 'Skip the required Discord verification.'
+    default: op
+  nlogin.bypass.email:
+    description: 'Skip the required email verification.'
+    default: op
+  nlogin.command.nlogin:
+    description: 'Gives access to "/nlogin" command.'
+    default: false
+  nlogin.command.nlogin.changepass:
+    description: 'Gives access to "/nlogin changepass" command.'
+    default: false
+  nlogin.command.nlogin.changeuuid:
+    description: 'Gives access to "/nlogin changeuuid" command.'
+    default: false
+  nlogin.command.nlogin.delete:
+    description: 'Gives access to "/nlogin delete" command.'
+    default: false
+  nlogin.command.nlogin.register:
+    description: 'Gives access to "/nlogin register" command.'
+    default: false
+  nlogin.command.nlogin.unban:
+    description: 'Gives access to "/nlogin unban" command.'
+    default: op
+  nlogin.command.nlogin.unregister:
+    description: 'Gives access to "/nlogin unregister" command.'
+    default: false
+  nlogin.command.nlogin.verify:
+    description: 'Gives access to "/nlogin verify" command.'
+    default: op
+  nlogin.command.discord:
+    description: 'Gives access to "/discord" command.'
+    default: op
+  nlogin.command.email:
+    description: 'Gives access to "/email" command.'
+    default: op
+  nlogin.force.discord:
+    description: 'Force Discord verification on every login.'
+    default: false
+  nlogin.force.email:
+    description: 'Force email verification on every login.'
+    default: false

@@ -1,0 +1,500 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |              List of translation authors: https://crowdin.com/project/nlogin/members         | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+pending:
+  login: '&eNaudokite komandą &7/login <slaptažodis>&e.'
+  register: '&eNaudokite komandą &7/register <slaptažodis> <slaptažodis>&e.'
+  action-bar:
+    singular: '&cJūs turite {0} sekundę, kad {login///register}.'
+    plural: '&cJūs turite {0} sekundžių, kad {login///register}.'
+
+success:
+  login: '&aJūs sėkmingai prisijungėte.'
+  register: '&aJūs sėkmingai užsiregistravote.'
+  session: '&aJūsų prisijungimo sesija yra tęsiama.'
+  premium: '&aJūs esate automatiškai prisijungęs, kai naudojate unikalią paskyrą.'
+  bedrock: '&aEsate automatiškai prisijungę, nes prisijungiate iš "Bedrock" paskyros.'
+  change-password: '&aJūsų slaptažodis buvo sėkmingai pakeistas.'
+  reload: '&ePapildinys sėkmingai perkrautas.'
+  kick:
+    unregister: '&aJūs sėkmingai išsiregistravote.'
+    marked-offline: '&7Jūsų paskyra buvo pažymėta kaip &6neaktyvi&7, prašome prisijungti iš naujo.'
+    challenge-premium: '&7Norėdami patvirtinti, kad naudojate &apremium paskyrą&7, prašome prisijungti iš naujo.'
+
+error:
+  not-registered: '&cŠis slapyvardis dar nebuvo užregistruotas.'
+  offline: '&cNorimas žaidėjas neprisijungęs.'
+  address-limit: '&cJūs išnaudojote žaidėjų limitą per IP adresą.'
+  database: '&cDeja, mums nepavyko užbaigti šios operacijos. Prašau, pabandykite dar kartą. [SQL FAIL]'
+  command:
+    usage: '&cJūs turite naudoti {0}.'
+    no-permission: '&cJūs neturite leidimo vykdyti šią komandą.'
+    player-required: '&cŠi komanda buvo išjungta per konsolę.'
+    console-required: '&cŠią komandą galima naudoti tik per konsolę.'
+    account-collision:
+    - '&fDaugiau nei viena paskyra turi slapyvardį &a{0}&f:'
+    - '&8⋆ &7{1} {2}'
+    - ''
+    - '&c‼ &eĮvykdykite komandą dar kartą, įsitikindami, kad naudojate slapyvardį, atitinkantį norimą paskyros tipą.'
+    arguments:
+      password: slaptažodis
+      current-password: dabartinis slaptažodis
+      new-password: naujas slaptažodis
+  already:
+    login: '&cJūs jau esate prisijungęs.'
+    login-other: '&cŠis žaidėjau jau prisijungęs.'
+    registered: '&cŠis slapyvardis jau buvo užregistruotas.'
+    premium: '&cJūsų paskyra jau yra pažymėta kaip premium.'
+  password:
+    same-as-current: '&cĮvestas slaptažodis yra toks pats kaip dabartinis.'
+    too-large: '&cĮvestas slaptažodis per ilgas.'
+    too-small: '&cĮvestas slaptažodis per trumpas.'
+    not-secure: '&cPateiktas slaptažodis neatitinka saugumo reikalavimų. Prašome įtraukti skaičių, didžiąsias ir mažąsias raides bei specialų simbolį.'
+    do-not-match: '&cSlaptažodžiai nėra vienodi.'
+    require-confirmation: '&cTurite patvirtinti savo slaptažodį.'
+    incorrect: '&cNeteisingas slaptažodis. Bandykite dar kartą.'
+  kick:
+    incorrect-password: '&cĮvedėte neteisingą slaptažodį.'
+    wait-server-start: |-
+      &cServeris dar nėra visiškai paleistas.
+      &cTruputi palaukite, kad prisijunkti.
+    account-blocked: |-
+      &cJūsų adresas buvo užblokuotas dėl įtariamos invazijos.&r
+      &r&cLikęs užblokavimo laikas: {0}
+    account-unregistered: |-
+      &cŠis serveris nepriima naujų paskyrų registracijų.
+
+      &cDėl daugiau informacijos susisiekite su serverio administracija.
+    invalid-nickname: '&cJūsų slapyvardis yra neteisingas, iš vardo pašalinkite tarpus, simbolius ir netinkamus simbolius.'
+    bedrock-nickname: '&cPasirinktas slapyvardis &f("{0}") &cyra ribojamas tik Bedrock žaidėjams.'
+    bedrock-unlinked: |-
+      &cPasirinktas slapyvardis &f("{0}") &cyra skirtas tik premium Java žaidėjui.
+
+      &eNorėdami pasiekti šią paskyrą, susiekite Java paskyrą su savo Bedrock paskyra naudodami komandą &f/linkaccount&e.
+    transferred-nickname: |-
+      &cPasirinktas vardas &f("{0}") &cbuvo rezervuotas ir perduotas paskyrai, naudojančiai tą patį UUID.
+
+      &eNorėdami prisijungti, prašome naudoti kitą slapyvardį.
+    already-online: '&cŠis žaidėjas jau prisijungęs.'
+    unknown-hostname: |-
+      &4[nLogin] Naudojamas hostname &f({0}) &4nebuvo apibrėžtas konfigūracijoje.
+      &r
+      &r&cJei tai yra galiojantis IP, prašome pridėti jį į tinkamą kategoriją konfigūracijos skyriuje &f"premium.username-appender"&c.
+      &r
+      &r&eDaugiau informacijos rasite username appender pamokoje:
+      &r&bhttps://docs.nickuc.com/nlogin/username-appender
+    premium-not-logged: |-
+      &7Vartotojo vardas &6{0} &7yra susietas su patvirtinta &apremium paskyra&7, tačiau jūsų sesija &cbaigėsi&7.
+
+      &eJei esate šios paskyros savininkas, paleiskite Minecraft iš naujo ir prisijunkite dar kartą.
+    premium-challenge: |-
+      &ePer paskutinį jūsų prisijungimo bandymą mums nepavyko patvirtinti jūsų paskyros.
+
+      &fJei naudojate &apremium &fpaskyrą, paleiskite Minecraft iš naujo ir prisijunkite dar kartą.
+
+      &fJei jūsų paskyra yra &coffline&f, prisijunkite dar kartą, kad užbaigtumėte patvirtinimą.
+    timeout:
+      login: '&cPer ilgai užtrukote prisijunkdami.'
+      register: '&cPer ilgai užtrukote registruodamiesi.'
+
+notification:
+  all-viewed: '&aVisi pranešimai buvo peržiūrėti.'
+  premium-question:
+  - ''
+  - ' &eAr naudojate premium paskyrą?'
+  - ' &7(po patvirtinimo, jums reikės prisijungti iš naujo.)'
+  - ''
+  premium-transfer-question:
+  - ''
+  - ' &eOffline paskyra jau užregistruota su slapyvardžiu &f@player&e.'
+  - ''
+  - ' &6Ar norite perkelti duomenis iš šios paskyros ar sukurti naują paskyrą?'
+  - ''
+  - ' &c‼ &eJums reikės patvirtinti tapatybę, kad patvirtintumėte paskyros nuosavybę.'
+  - ''
+  premium-transfer-confirmation:
+  - ''
+  - ' &6Ar norite patvirtinti duomenų perkėlimą iš &f@player &6į jūsų premium paskyrą?'
+  - ''
+  - ' &c‼ &ePatvirtinus perkėlimą, būsite atjungti nuo serverio.'
+  - ''
+  password-update:
+  - ''
+  - ' &eJūsų slaptažodis turi būti atnaujintas.'
+  - ''
+  - ' &7Prašome pakeisti savo slaptažodį naudodami komandą:'
+  - ' &f/changepass <dabartinis slaptažodis> <naujas slaptažodis>'
+  - ''
+  button:
+    confirm-read:
+      text: '&a[✔ Patvirtinti perskaitymą]'
+      hover: null
+    yes-btn:
+      text: '&a[✔ Taip]'
+      hover: null
+    no-btn:
+      text: '&c[✖ Ne]'
+      hover: null
+    new-account:
+      text: '&a[Nauja paskyra]'
+      hover: null
+    transfer-data:
+      text: '&9[Perkelti duomenis]'
+      hover: null
+
+2fa:
+  not-registered: '&cJūs neturite {0} paskyros.'
+  already-registered: '&cJūs jau užsiregistravote savo {0}.'
+  register-limit: '&cJūs išnaudojote paskyrų limitą su tuo pačiu {0}.'
+  unregistered: '&eJūsų {0} buvo sėkmingai išregistruotas.'
+  incorrect-code: '&cNeteisingas slaptažodis.Bandykite dar kartą.'
+  rate-limit: '&cViršytas limitas. Prašome palaukti {0} minučių, kol bandysite dar kartą.'
+  confirmed-account: '&aJūsų {0} paskyra buvo sėkmingai užregistruota.'
+  confirmation-message-sent: |-
+    &7Patvirtinimo kodas buvo išsiųstas į jūsų &6{0}&7.
+    &8(&f{1}&8).
+  command-delay: '&cPalaukite, kol galėsite vykdyti šią komandą dar kartą.'
+  help-command:
+  - ''
+  - ' &fBūsena: [&a{2} užregistruota//&c{2} neužregistruota]&f.'
+  - ''
+  - ' [&8⋆ &7/{0} add: &fUžregistruokite savo {1}.]'
+  - ' [&8⋆ &7/{0} remove: &fPašalinkite savo {1}.]'
+  - ' [&8⋆ &7/{0} recover: &fAtkurkite savo paskyrą.]'
+  - ' [&8⋆ &7/{0} 2fa: &fĮjungia/išjungia dviejų faktorių autentifikaciją.]'
+  - ''
+  recover-command:
+  - ''
+  - ' &ePasirinkite atkūrimo metodą:'
+  - ' [&8⋆ &7{0}: &f/{1} recover]'
+  - ''
+  switch:
+    enabled: '&aDviejų faktorių autentifikacija buvo įjungta.'
+    disabled: '&cDviejų faktorių autentifikacija buvo išjungta.'
+  recover:
+    not-equal: '&cPateiktas {0} nesutampa su užregistruotu.'
+    message-sent: '&aAtkūrimo pranešimas buvo išsiųstas į jūsų susietą paskyrą.'
+    change-password: '&aJūsų slaptažodis buvo automatiškai pakeistas į &f''{0}''&a.'
+  discord:
+    account-linked: |-
+      &aKonfigūracija Discord sėkmingai atnaujinta.
+      &aJūs buvote susieti su &f{0} &apaskyra.
+    confirm-account:
+    - ''
+    - ' &7Norėdami užbaigti susiejimą, turite patvirtinti savo Discord paskyrą.'
+    - ' &7Prisijunkite prie &b{0} &7ir įveskite'
+    - ' &7komandą DM &f{1} &7bote.'
+    - ''
+    - ' [&aSpustelėkite čia, kad gautumėte komandą su tokenu.]'
+    - ''
+    warn-message:
+    - ''
+    - ' &7Vykdykite komandą &f/discord add &7, kad užregistruotumėte'
+    - ' &7savo &9Discord&7. Tai padarydami, jūs'
+    - ' &7sumažinsite šansą būti užpultam.'
+    - ''
+    discord-required:
+    - ''
+    - ' &7Dabartinis serveris reikalauja, kad susietumėte'
+    - ' &aDiscord paskyrą &7, kad užbaigtumėte registraciją.'
+    - ''
+    - ' &6Prašome paleisti &f/discord add&6.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Jums reikia patvirtinti savo paskyros prisijungimą.'
+    - ' &7Saugumo pranešimas buvo išsiųstas į jūsų užregistruotą Discord.'
+    - ''
+    - ' &aSpustelėkite pranešimo mygtuką, kad patvirtintumėte savo tapatybę.'
+    - ''
+    dm:
+      configure:
+        too-recent:
+          title: Per nauja paskyra
+          description: Jūs negalite susieti savo Discord, nes jūsų paskyra buvo sukurta per neseniai.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        invalid:
+          title: Neteisingas kodas
+          description: Atsiprašome, bet įvestas tokenas yra neteisingas arba neegzistuoja.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        success:
+          title: Discord susietas
+          description: Jūsų Discord buvo sėkmingai susietas.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+      verify:
+        title: Patvirtinkite savo paskyros autentifikaciją.
+        description: |-
+          Autentifikacijos patvirtinimas reikalingas norint pasiekti jūsų @player paskyrą.
+
+          Jei tai buvote ne jūs, atminkite operaciją ir nedelsdami pakeiskite slaptažodį.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Leisti
+        deny: Atmesti
+      recover:
+        title: Prašomas slaptažodžio atkūrimas.
+        description: |-
+          Iš jūsų @player paskyros buvo prašomas slaptažodžio atkūrimas.
+
+          Jei tai buvote ne jūs, atminkite operaciją ir nedelsdami pakeiskite slaptažodį.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Leisti
+        deny: Atmesti
+      new-password:
+        title: Naujas slaptažodis @player
+        description: |-
+          Jūsų paskyrai buvo sugeneruotas naujas slaptažodis:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+      password-changed:
+        title: Slaptažodis pakeistas @player
+        description: |-
+          Jūsų slaptažodis buvo pakeistas į:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+  email:
+    invalid-email: '&cĮvestas el. paštas yra neteisingas.'
+    not-allowed: '&cPasirinkto el. pašto domenas neleidžiamas.'
+    server-email: '&cJūs negalite naudoti serverio el. pašto.'
+    warn-message:
+    - ''
+    - ' &7Vykdykite komandą &f/email associate &7, kad užregistruotumėte'
+    - ' &7savo &9el. paštą&7. Tai padarydami, jūs'
+    - ' &7sumažinsite šansą būti užpultam.'
+    - ''
+    email-required:
+    - ''
+    - ' &7Dabartinis serveris reikalauja, kad susietumėte'
+    - ' &agaliojantį el. paštą &7, kad užbaigtumėte registraciją.'
+    - ''
+    - ' &6Prašome paleisti &f/email add <jūsų el. paštas>&6.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Jums reikia patvirtinti savo paskyros prisijungimą.'
+    - ' &7Saugumo pranešimas buvo išsiųstas į jūsų užregistruotą el. paštą.'
+    - ''
+    - ' &aNaudokite komandą &f/email <code> &akad užbaigtumėte patvirtinimą.'
+    - ''
+    smtp:
+      configure:
+        subject: '@player paskyros patvirtinimas'
+        content:
+        - <h1>
+        - ' Sveiki, @player!'
+        - </h1>
+        - <p>
+        - ' Norėdami užbaigti el. pašto registracijos procesą, naudokite komandą <strong>"/email @kodas"</strong>.'
+        - </p>
+        - <p>
+        - ' Jei tai buvote ne jūs, ignoruokite šį pranešimą.'
+        - </p>
+      verify:
+        subject: '@player paskyros prisijungimo patvirtinimas'
+        content:
+        - <h1>
+        - ' Sveiki, @player!'
+        - </h1>
+        - <p>
+        - ' Norėdami autentikuotis serveryje, naudokite komandą <strong>"/email @kodas"</strong>.'
+        - </p>
+        - <p>
+        - ' Jei tai buvote ne jūs, nedelsdami pakeiskite slaptažodį <strong>NEGAIŠTANT</strong>.'
+        - </p>
+      recover:
+        subject: '@player paskyros atkūrimas'
+        content:
+        - <h1>
+        - ' Sveiki, @player!'
+        - </h1>
+        - <p>
+        - ' Norėdami atkurti savo paskyrą, naudokite komandą <strong>"/email <naujas slaptažodis> @kodas"</strong>.'
+        - </p>
+        - <p>
+        - ' Jei tai buvote ne jūs, ignoruokite šį pranešimą.'
+        - </p>
+      new-password:
+        subject: Naujas slaptažodis @player
+        content:
+        - <h1>
+        - ' Sveiki, @player!'
+        - </h1>
+        - <p>
+        - ' Jūsų paskyrai buvo sugeneruotas naujas slaptažodis: {0}'
+        - </p>
+      password-changed:
+        subject: Slaptažodis pakeistas @player
+        content:
+        - <h1>
+        - ' Sveiki, @player!'
+        - </h1>
+        - <p>
+        - ' Jūsų slaptažodis buvo pakeistas į: {0}'
+        - </p>
+
+bedrock:
+  forms:
+    login:
+      title: Autentifikacija
+      content:
+      - Sveiki, @player!
+      - 'Norėdami prisijungti, prašome įvesti savo slaptažodį žemiau:'
+      - ''
+      - '[Slaptažodis//Įveskite savo slaptažodį]'
+      - ''
+    register:
+      title: Registracija
+      content:
+      - Sveiki, @player!
+      - Norėdami žaisti serveryje, turite sukurti slaptažodį.
+      - Prašome įvesti norimą slaptažodį žemiau.
+      - ''
+      - '[Slaptažodis//Įveskite savo slaptažodį]'
+      - '[Patvirtinimas//Patvirtinkite savo slaptažodį]'
+      - ''
+
+dialogs:
+  login:
+    title: '&#ffdb60Įveskite savo slaptažodį'
+    body:
+    - '&6Sveiki, &f@player&6!'
+    - ''
+    - '&#ffdb60Norėdami prisijungti prie serverio, įveskite savo slaptažodį.'
+    - ''
+    inputs:
+      password: Slaptažodis
+    buttons:
+      login: Prisijungti
+      recover: Pamiršau slaptažodį
+      cancel: Atsijungti
+  register:
+    title: '&#ffdb60Slaptažodžio kūrimas'
+    body:
+    - '&6Sveiki, &f@player&6!'
+    - ''
+    - '&#ffdb60Norėdami prisijungti prie serverio, turite &bsukurti slaptažodį&#ffdb60.'
+    - ''
+    - '&#ffdb60Užpildykite žemiau esančius laukus, kad tęstumėte.'
+    - ''
+    inputs:
+      password1: Slaptažodis
+      password2: Patvirtinimas
+    buttons:
+      register: Sukurti paskyrą
+      cancel: Atsijungti
+
+title:
+  before-login:
+    title: '&a&lSveiki!'
+    subtitle: '&7Įveskite: /login <jūsų slaptažodis>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  before-register:
+    title: '&a&lSveiki!'
+    subtitle: '&7Įveskite: /register <jūsų slaptažodis> <slaptažodžio patvirtinimas>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  after-login:
+    title: ''
+    subtitle: '&aJūs sėkmingai prisijungėte!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  after-register:
+    title: ''
+    subtitle: '&aJūs sėkmingai Užsiregistravote!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  incorrect-password:
+    title: ''
+    subtitle: '&cNeteisingas slaptažodis!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-login:
+    title: ''
+    subtitle: '&cJūs jau prisijungęs!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-registered:
+    title: ''
+    subtitle: '&cJūs jau prisiregistavęs!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  passwords-dont-match:
+    title: ''
+    subtitle: '&cSlaptažodžiai nesutampa!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  session-login:
+    title: ''
+    subtitle: '&eJūsų prisijungimo sesija yra tęsiama.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  premium-login:
+    title: ''
+    subtitle: '&eJūsų paskyra yra unikali, sėkmingai prisijungėte.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  bedrock-login:
+    title: ''
+    subtitle: '&ePrieiga per "Bedrock", sėkmingai prisijungta.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  security-warning:
+    title: ''
+    subtitle: '&cChat''e išsiustas naujas saugumo įspėjimas'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  unconfirmed-message:
+    title: ''
+    subtitle: '&c‼ &ePokalbyje yra nepatvirtintas pranešimas'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6

@@ -1,0 +1,500 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |              List of translation authors: https://crowdin.com/project/nlogin/members         | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+pending:
+  login: '&eKomutu kullanın &7/login <şifre>&e.'
+  register: '&eKomutu kullanın &7/register <şifre> <şifre>&e.'
+  action-bar:
+    singular: '&c{login///register} için {0} saniyeniz var.'
+    plural: '&c{login///register} için {0} saniyeniz var.'
+
+success:
+  login: '&aBaşarıyla giriş yaptınız.'
+  register: '&aBaşarıyla kayıt oldunuz.'
+  session: '&aGiriş oturumunuz devam ettirildi.'
+  premium: '&aBenzersiz bir hesap kullandığınız için otomatik olarak giriş yaptınız.'
+  bedrock: '&aBedrock hesabından eriştiğiniz için otomatik olarak giriş yaptınız.'
+  change-password: '&aŞifreniz başarıyla değiştirildi.'
+  reload: '&eEklenti başarıyla yeniden yüklendi.'
+  kick:
+    unregister: '&aBaşarıyla kaydınız silindi.'
+    marked-offline: '&7Twoje konto zostało oznaczone jako &6offline&7, dołącz ponownie.'
+    challenge-premium: '&7Bir &apremium hesap&7 kullandığınızı doğrulamak için lütfen tekrar giriş yapın.'
+
+error:
+  not-registered: '&cBu takma ad henüz kayıt edilmemiş.'
+  offline: '&cİstenen oyuncu çevrimdışı.'
+  address-limit: '&cIP başına hesap limitlerini aştınız.'
+  database: '&cÜzgünüz, bu veritabanı işlemi tamamlanamadı. Daha fazla bilgi için konsolu kontrol edin.'
+  command:
+    usage: '&c{0} kullanmalısınız.'
+    no-permission: '&cBu komutu çalıştırmak için izniniz yok.'
+    player-required: '&cBu komut konsol üzerinden devre dışı bırakıldı.'
+    console-required: '&cBu komut sadece konsol üzerinden kullanılabilir.'
+    account-collision:
+    - '&f&a{0} &frumuzuna sahip birden fazla hesap var:'
+    - '&8⋆ &7{1} {2}'
+    - ''
+    - '&c‼ &eKomutu tekrar çalıştırın, istediğiniz hesap türüne karşılık gelen rumuzu kullandığınızdan emin olun.'
+    arguments:
+      password: şifre
+      current-password: mevcut şifre
+      new-password: yeni şifre
+  already:
+    login: '&cZaten giriş yapmışsınız.'
+    login-other: '&cBu oyuncu zaten giriş yapmış.'
+    registered: '&cBu takma ad zaten kayıt edilmiş.'
+    premium: '&cHesabınız zaten premium olarak işaretlenmiş.'
+  password:
+    same-as-current: '&cGirilen şifre mevcut şifre ile aynı.'
+    too-large: '&cGirilen şifre çok büyük.'
+    too-small: '&cGirilen şifre çok küçük.'
+    not-secure: '&cPodane hasło nie spełnia wymagań bezpieczeństwa. Proszę uwzględnić cyfrę, wielkie i małe litery oraz symbol specjalny.'
+    do-not-match: '&cŞifreler aynı değil.'
+    require-confirmation: '&cŞifrenizi onaylamanız gerekmektedir.'
+    incorrect: '&cYanlış şifre. Lütfen, tekrar deneyin.'
+  kick:
+    incorrect-password: '&cYanlış şifre girdiniz.'
+    wait-server-start: |-
+      &cSunucu henüz tamamen başlamadı.
+      &cBağlanmak için biraz bekleyin.
+    account-blocked: |-
+      &cAdresiniz şüpheli bir işgal nedeniyle bloke edildi.&r
+      &r&cKalan yasaklama süresi: {0}
+    account-unregistered: |-
+      &cBu sunucu yeni hesap kayıtlarını kabul etmiyor.
+
+      &cDaha fazla bilgi için lütfen sunucu yetkilileriyle iletişime geçin.
+    invalid-nickname: '&cTakma adınız geçersiz, adınızdan boşlukları, sembolleri ve geçersiz karakterleri çıkarın.'
+    bedrock-nickname: '&cSeçilen takma ad öneki &f("{0}") &cBedrock oyuncularına kısıtlıdır.'
+    bedrock-unlinked: |-
+      &cSeçilen rumuz &f("{0}") &cpremium bir Java oyuncusuna ayrılmıştır.
+
+      &eBu hesaba erişmek için Java hesabınızı &f/linkaccount &ekomutunu kullanarak Bedrock hesabınızla bağlayın.
+    transferred-nickname: |-
+      &cSeçilen ad &f("{0}") &cbir hesaba rezerve edilmiş ve aynı UUID kullanılarak aktarılmıştır.
+
+      &eGiriş yapmak için lütfen başka bir takma ad kullanın.
+    already-online: '&cBu oyuncu zaten çevrimiçi.'
+    unknown-hostname: |-
+      &4[nLogin] Kullanılan hostname &f({0}) &4konfigürasyonda tanımlanmamış.
+      &r
+      &r&cBu geçerli bir IP ise, lütfen bunu konfigürasyon bölümünde &f"premium.username-appender"&c en uygun kategoriye ekleyin.
+      &r
+      &r&eDaha fazla bilgi için kullanıcı adı ekleyici öğreticisine göz atın:
+      &r&bhttps://docs.nickuc.com/nlogin/username-appender
+    premium-not-logged: |-
+      &7&6{0} &7kullanıcı adı doğrulanmış bir &apremium hesapla&7 ilişkilendirilmiş, ancak oturumunuz &csüresi dolmuş&7.
+
+      &eBu hesabın sahibiyseniz, Minecraft'ı yeniden başlatın ve tekrar giriş yapın.
+    premium-challenge: |-
+      &eSon giriş denemenizde, hesabınızı doğrulayamadık.
+
+      &fEğer &apremium &fbir hesap kullanıyorsanız, Minecraft'ınızı yeniden başlatın ve tekrar giriş yapın.
+
+      &fHesabınız &coffline&f ise, doğrulamayı tamamlamak için lütfen tekrar giriş yapın.
+    timeout:
+      login: '&cGiriş yapmak için çok uzun sürdünüz.'
+      register: '&cKayıt olmak için çok uzun sürdünüz.'
+
+notification:
+  all-viewed: '&aTüm bildirimler görüntülendi.'
+  premium-question:
+  - ''
+  - ' &ePremium bir hesap kullanıyor musunuz?'
+  - ' &7(kabul ettikten sonra, yeniden katılmanız gerekecek.)'
+  - ''
+  premium-transfer-question:
+  - ''
+  - ' &e&f@player&e rumuzuyla zaten kayıtlı bir offline hesap var.'
+  - ''
+  - ' &6Bu hesaptaki verileri aktarmak mı yoksa yeni bir hesap oluşturmak mı istiyorsunuz?'
+  - ''
+  - ' &c‼ &eHesap sahipliğini onaylamak için kimlik doğrulaması yapmanız gerekecek.'
+  - ''
+  premium-transfer-confirmation:
+  - ''
+  - ' &6&f@player &6verilerinin premium hesabınıza aktarılmasını onaylamak istiyor musunuz?'
+  - ''
+  - ' &c‼ &eAktarımı onayladığınızda, sunucudan bağlantınız kesilecektir.'
+  - ''
+  password-update:
+  - ''
+  - ' &eTwoje hasło wymaga zresetowania.'
+  - ''
+  - ' &7Zmień swoje hasło za pomocą poniższej komendy:'
+  - ' &f/changepass <obecne hasło> <nowe hasło>'
+  - ''
+  button:
+    confirm-read:
+      text: '&a[✔ Okumayı onayla]'
+      hover: null
+    yes-btn:
+      text: '&a[✔ Evet]'
+      hover: null
+    no-btn:
+      text: '&c[✖ Hayır]'
+      hover: null
+    new-account:
+      text: '&a[Yeni Hesap]'
+      hover: null
+    transfer-data:
+      text: '&9[Veri Aktar]'
+      hover: null
+
+2fa:
+  not-registered: '&cBir {0} hesabınız yok.'
+  already-registered: '&cZaten {0} kaydettiniz.'
+  register-limit: '&cAynı {0} ile hesap limitlerini aştınız.'
+  unregistered: '&eTwoje {0} zostało pomyślnie wyrejestrowane.'
+  incorrect-code: '&cYanlış kod. Lütfen tekrar deneyin.'
+  rate-limit: '&cLimit aşıldı. Tekrar denemek için {0} dakika bekleyin.'
+  confirmed-account: '&aTwoje konto {0} zostało pomyślnie zarejestrowane.'
+  confirmation-message-sent: |-
+    &7Onay kodu &6{0}&7 adresinize gönderildi.
+    &8(&f{1}&8).
+  command-delay: '&cBu komutu tekrar çalıştırmadan önce biraz bekleyin.'
+  help-command:
+  - ''
+  - ' &fDurum: [&a{2} kayıtlı//&c{2} kayıtsız]&f.'
+  - ''
+  - ' [&8⋆ &7/{0} ekle: &f{1} kaydet.]'
+  - ' [&8⋆ &7/{0} kaldır: &f{1} kaldır.]'
+  - ' [&8⋆ &7/{0} kurtar: &fHesabınızı kurtar.]'
+  - ' [&8⋆ &7/{0} 2fa: &fİki faktörlüyü etkinleştir/devre dışı bırak.]'
+  - ''
+  recover-command:
+  - ''
+  - ' &eBir kurtarma yöntemi seçin:'
+  - ' [&8⋆ &7{0}: &f/{1} kurtar]'
+  - ''
+  switch:
+    enabled: '&aİki faktörlü özellik aktive edildi.'
+    disabled: '&cİki faktörlü özellik devre dışı bırakıldı.'
+  recover:
+    not-equal: '&cSağlanan {0} kayıtlı olanla aynı değil.'
+    message-sent: '&aİlişkili hesabınıza bir kurtarma mesajı gönderildi.'
+    change-password: '&aŞifreniz otomatik olarak &f''{0}''&a olarak değiştirildi.'
+  discord:
+    account-linked: |-
+      &aDiscord'da yapılandırma başarıyla güncellendi.
+      &a&f{0} &ahesabı ile bağlantı kuruldu.
+    confirm-account:
+    - ''
+    - ' &7Bağlantıyı tamamlamak için Discord hesabınızı onaylamanız gerekmektedir.'
+    - ' &7Dołącz do &b{0} &7i wpisz'
+    - ' &7komendę w DM bota &f{1} &7.'
+    - ''
+    - ' [&aKliknij tutaj, aby uzyskać komendę z tokenem.]'
+    - ''
+    warn-message:
+    - ''
+    - ' &7Kayıt olmak için &f/discord ekle &7komutunu çalıştırın'
+    - ' &7&9Discord&7''unuzu. Bunu yaparak,'
+    - ' &7hesabınızın hacklenme şansını azaltın.'
+    - ''
+    discord-required:
+    - ''
+    - ' &7Mevcut sunucu, kaydı tamamlamak için bir'
+    - ' &aDiscord hesabı &7bağlantısı gerektiriyor.'
+    - ''
+    - ' &6Lütfen &f/discord ekle&6 çalıştırın.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Hesabınızın girişini onaylamanız gerekiyor.'
+    - ' &7Kayıtlı Discord adresinize bir güvenlik mesajı gönderildi.'
+    - ''
+    - ' &aKimliğinizi doğrulamak için mesaj düğmesine tıklayın.'
+    - ''
+    dm:
+      configure:
+        too-recent:
+          title: Zbyt nowe konto
+          description: Nie możesz połączyć swojego Discord, ponieważ twoje konto zostało utworzone zbyt niedawno.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        invalid:
+          title: Geçersiz kod
+          description: Üzgünüz, girdiğiniz token geçersiz veya mevcut değil.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        success:
+          title: Discord bağlandı
+          description: Discord'unuz başarıyla bağlandı.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+      verify:
+        title: Hesap doğrulamanızı onaylayın.
+        description: |-
+          @player hesabınıza erişim için doğrulama onayı gerekmektedir.
+
+          Eğer siz değilseniz, işlemi reddedin ve şifrenizi derhal değiştirin.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: İzin Ver
+        deny: Reddet
+      recover:
+        title: Şifre kurtarma istendi.
+        description: |-
+          @player hesabınızdan bir şifre kurtarma isteği geldi.
+
+          Eğer siz değilseniz, işlemi reddedin ve şifrenizi derhal değiştirin.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: İzin Ver
+        deny: Reddet
+      new-password:
+        title: Nowe hasło dla @player
+        description: |-
+          Wygenerowano nowe hasło dla twojego konta:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+      password-changed:
+        title: Hasło zmienione dla @player
+        description: |-
+          Twoje hasło zostało zmienione na:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+  email:
+    invalid-email: '&cGirilen e-posta geçersiz.'
+    not-allowed: '&cSeçilen e-posta domaini izin verilmiyor.'
+    server-email: '&cSunucunun e-postasını kullanamazsınız.'
+    warn-message:
+    - ''
+    - ' &7Kayıt olmak için &f/email associate &7komutunu çalıştırın'
+    - ' &7böylece &9e-posta&7''nızı kaydederek'
+    - ' &7hesabınızın hacklenme şansını azaltın.'
+    - ''
+    email-required:
+    - ''
+    - ' &7Mevcut sunucu, kaydı tamamlamak için geçerli bir'
+    - ' &ae-posta &7bağlantısı gerektiriyor.'
+    - ''
+    - '&6Lütfen &f/email ekle <e-postanız>&6 çalıştırın.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Hesabınızın girişini onaylamanız gerekiyor.'
+    - ' &7Kayıtlı e-posta adresinize bir güvenlik mesajı gönderildi.'
+    - ''
+    - ' &aDoğrulamayı tamamlamak için &f/email <code> &akomutunu kullanın.'
+    - ''
+    smtp:
+      configure:
+        subject: '@player hesabının onaylanması'
+        content:
+        - <h1>
+        - ' Witaj, @player!'
+        - </h1>
+        - <p>
+        - ' Aby zakończyć proces rejestracji emaila, użyj komendy <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Jeśli to nie ty, zignoruj tę wiadomość.'
+        - </p>
+      verify:
+        subject: '@player hesabının giriş onayı'
+        content:
+        - <h1>
+        - ' Witaj, @player!'
+        - </h1>
+        - <p>
+        - ' Aby zalogować się na serwer, użyj komendy <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Jeśli to nie ty, zmień hasło <strong>NATYCHMIAST</strong>.'
+        - </p>
+      recover:
+        subject: '@player hesabının kurtarılması'
+        content:
+        - <h1>
+        - ' Witaj, @player!'
+        - </h1>
+        - <p>
+        - ' Aby odzyskać konto, użyj komendy <strong>"/email <nowe hasło> @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Jeśli to nie ty, zignoruj tę wiadomość.'
+        - </p>
+      new-password:
+        subject: Nowe hasło dla @player
+        content:
+        - <h1>
+        - ' Cześć, @player!'
+        - </h1>
+        - <p>
+        - ' Wygenerowano nowe hasło dla twojego konta: {0}'
+        - </p>
+      password-changed:
+        subject: Hasło zmienione dla @player
+        content:
+        - <h1>
+        - ' Cześć, @player!'
+        - </h1>
+        - <p>
+        - ' Twoje hasło zostało zmienione na: {0}'
+        - </p>
+
+bedrock:
+  forms:
+    login:
+      title: Kimlik Doğrulama
+      content:
+      - Witaj, @player!
+      - 'Aby się zalogować, wprowadź swoje hasło w polu poniżej:'
+      - ''
+      - '[Hasło//Wprowadź swoje hasło]'
+      - ''
+    register:
+      title: Kayıt Ol
+      content:
+      - Witaj, @player!
+      - Aby grać na serwerze, musisz utworzyć hasło.
+      - Wprowadź żądane hasło w polu poniżej.
+      - ''
+      - '[Hasło//Wprowadź swoje hasło]'
+      - '[Potwierdzenie//Potwierdź swoje hasło]'
+      - ''
+
+dialogs:
+  login:
+    title: '&#ffdb60Şifrenizi Girin'
+    body:
+    - '&6Hoş geldin, &f@player&6!'
+    - ''
+    - '&#ffdb60Sunucuya giriş yapmak için lütfen şifrenizi girin.'
+    - ''
+    inputs:
+      password: Şifre
+    buttons:
+      login: Giriş Yap
+      recover: Şifremi Unuttum
+      cancel: Çıkış Yap
+  register:
+    title: '&#ffdb60Şifre Oluşturma'
+    body:
+    - '&6Hoş geldin, &f@player&6!'
+    - ''
+    - '&#ffdb60Sunucuya giriş yapmak için &bbir şifre oluşturmalısınız&#ffdb60.'
+    - ''
+    - '&#ffdb60Devam etmek için lütfen aşağıdaki alanları doldurun.'
+    - ''
+    inputs:
+      password1: Şifre
+      password2: Onay
+    buttons:
+      register: Hesap Oluştur
+      cancel: Çıkış Yap
+
+title:
+  before-login:
+    title: '&a&lHOŞ GELDİNİZ!'
+    subtitle: '&7Yazın: /login <şifreniz>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  before-register:
+    title: '&a&lHOŞ GELDİNİZ!'
+    subtitle: '&7Yazın: /register <şifreniz> <şifre onayı>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  after-login:
+    title: ''
+    subtitle: '&aBaşarıyla giriş yaptınız!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  after-register:
+    title: ''
+    subtitle: '&aBaşarıyla kayıt oldunuz!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  incorrect-password:
+    title: ''
+    subtitle: '&cYanlış şifre!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-login:
+    title: ''
+    subtitle: '&cZaten giriş yapmışsınız!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-registered:
+    title: ''
+    subtitle: '&cZaten kayıt olmuşsunuz!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  passwords-dont-match:
+    title: ''
+    subtitle: '&cŞifreler aynı değil!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  session-login:
+    title: ''
+    subtitle: '&eGiriş oturumunuz devam ettirildi.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  premium-login:
+    title: ''
+    subtitle: '&eHesabınız benzersiz, başarıyla giriş yapıldı.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  bedrock-login:
+    title: ''
+    subtitle: '&eBedrock üzerinden erişim, başarıyla giriş yapıldı.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  security-warning:
+    title: ''
+    subtitle: '&cSohbette yeni bir güvenlik uyarısı gönderildi'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  unconfirmed-message:
+    title: ''
+    subtitle: '&c‼ &eSohbette onaylanmamış bir mesaj var'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6

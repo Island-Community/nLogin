@@ -1,0 +1,500 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |              List of translation authors: https://crowdin.com/project/nlogin/members         | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+pending:
+  login: '&eFolosește comanda &7/login <parola>&e.'
+  register: '&eFolosește comanda &7/register <parola> <parola>&e.'
+  action-bar:
+    singular: '&cAi {0} secundă pentru a te {login///register}.'
+    plural: '&cAi {0} secunde pentru a te {login///register}.'
+
+success:
+  login: '&aTe-ai autentificat cu succes.'
+  register: '&aTe-ai înregistrat cu succes.'
+  session: '&aSesiunea ta de conectare a fost continuată.'
+  premium: '&aEști conectat automat, deoarece folosești un cont unic.'
+  bedrock: '&aSunteți conectat în mod automat, deoarece accesați de pe un cont Bedrock.'
+  change-password: '&aParola ta a fost schimbată cu succes.'
+  reload: '&ePlugin-ul a fost reîncărcat cu succes.'
+  kick:
+    unregister: '&aAi fost dezînregistrat cu succes.'
+    marked-offline: '&7Contul tău a fost marcat ca &6offline&7, te rugăm să te reconectezi.'
+    challenge-premium: '&7Pentru a confirma că folosești un &acont premium&7, te rugăm să te autentifici din nou.'
+
+error:
+  not-registered: '&cAcest nume nu a fost încă înregistrat.'
+  offline: '&cJucătorul dorit este deconectat.'
+  address-limit: '&cAi epuizat limita de conturi pe IP.'
+  database: '&cNe pare rău, nu am reușit să finalizăm această operațiune. Te rugăm să încerci din nou. [SQL FAIL]'
+  command:
+    usage: '&cTrebuie să folosești {0}.'
+    no-permission: '&cNu ai permisiunea de a executa această comandă.'
+    player-required: '&cAceastă comandă a fost dezactivată prin intermediul consolei.'
+    console-required: '&cAceastă comandă poate fi utilizată numai prin intermediul consolei.'
+    account-collision:
+    - '&fMai mult de un cont are numele &a{0}&f:'
+    - '&8⋆ &7{1} {2}'
+    - ''
+    - '&c‼ &eRulează comanda din nou, asigurându-te că folosești numele corespunzător tipului de cont dorit.'
+    arguments:
+      password: parolă
+      current-password: parola actuală
+      new-password: noua parolă
+  already:
+    login: '&cEști deja autentificat.'
+    login-other: '&cAcest jucător este deja autentificat.'
+    registered: '&cAcest nume a fost deja înregistrat.'
+    premium: '&cContul tău este deja marcat ca fiind premium.'
+  password:
+    same-as-current: '&cParola introdusă este aceeași cu cea curentă.'
+    too-large: '&cParola introdusă este prea mare.'
+    too-small: '&cParola introdusă este prea scurtă.'
+    not-secure: '&cParola furnizată nu îndeplinește cerințele de securitate. Te rugăm să incluzi un număr, litere mari și mici și un simbol special.'
+    do-not-match: '&cParolele nu sunt identice.'
+    require-confirmation: '&cTrebuie să confirmi parola.'
+    incorrect: '&cParolă incorectă. Te rugăm să încerci din nou.'
+  kick:
+    incorrect-password: '&cAi introdus parola incorectă.'
+    wait-server-start: |-
+      &cServerul nu a pornit încă complet.
+      &cAșteaptă puțin până la conectare.
+    account-blocked: |-
+      &cAdresa ta a fost blocată din cauza unei presupuse invazii.&r
+      &r&cTimp de interdicție rămas: {0}
+    account-unregistered: |-
+      &cAcest server nu acceptă înregistrări de conturi noi.
+
+      &cPentru mai multe informații, te rugăm să contactezi echipa serverului.
+    invalid-nickname: '&cNumele tău de utilizator nu este valid, elimină spațiile, simbolurile și caracterele invalide din numele tău.'
+    bedrock-nickname: '&cNumele de utilizator ales &f("{0}") &ceste restricționat pentru jucătorii Bedrock.'
+    bedrock-unlinked: |-
+      &cNumele ales &f("{0}") &ceste rezervat unui jucător Java premium.
+
+      &ePentru a accesa acest cont, conectează contul Java cu contul tău Bedrock folosind comanda &f/linkaccount&e.
+    transferred-nickname: |-
+      &cNumele ales &f("{0}") &ca fost rezervat și transferat către un cont care folosește același UUID.
+
+      &ePentru a intra, te rugăm să folosești alt nume de utilizator.
+    already-online: '&cAcest jucător este deja conectat.'
+    unknown-hostname: |-
+      &4[nLogin] Numele gazdei folosit &f({0}) &4nu a fost definit în configurație.
+      &r
+      &r&cDacă acesta este un IP valid, te rugăm să îl adaugi în categoria cea mai potrivită din secțiunea de configurare &f"premium.username-appender"&c.
+      &r
+      &r&ePentru mai multe informații, verifică tutorialul pentru adăugarea numelui de utilizator:
+      &r&bhttps://docs.nickuc.com/nlogin/username-appender
+    premium-not-logged: |-
+      &7Numele de utilizator &6{0} &7este asociat cu un &acont premium&7 verificat, dar sesiunea ta a &cexpirat&7.
+
+      &eDacă ești proprietarul acestui cont, repornește Minecraft și conectează-te din nou.
+    premium-challenge: |-
+      &eÎn timpul ultimei tale încercări de conectare, nu am putut autentifica contul tău.
+
+      &fDacă folosești un cont &apremium&f, repornește Minecraft și conectează-te din nou.
+
+      &fDacă contul tău este &coffline&f, te rugăm să te conectezi din nou pentru a finaliza verificarea.
+    timeout:
+      login: '&cȚi-a luat prea mult timp să te conectezi.'
+      register: '&cȚi-a luat prea mult timp să te înregistrezi.'
+
+notification:
+  all-viewed: '&aToate notificările au fost vizualizate.'
+  premium-question:
+  - ''
+  - ' &eFolosești un cont premium?'
+  - ' &7(după acceptare, va trebui să reintri.)'
+  - ''
+  premium-transfer-question:
+  - ''
+  - ' &eUn cont offline este deja înregistrat cu numele &f@player&e.'
+  - ''
+  - ' &6Dorești să transferi datele de la acest cont sau să creezi un cont nou?'
+  - ''
+  - ' &c‼ &eVa trebui să te autentifici pentru a confirma proprietatea contului.'
+  - ''
+  premium-transfer-confirmation:
+  - ''
+  - ' &6Dorești să confirmi transferul datelor de la &f@player &6către contul tău premium?'
+  - ''
+  - ' &c‼ &eLa confirmarea transferului, vei fi deconectat de pe server.'
+  - ''
+  password-update:
+  - ''
+  - ' &eParola ta trebuie resetată.'
+  - ''
+  - ' &7Te rugăm să îți schimbi parola folosind comanda de mai jos:'
+  - ' &f/changepass <parola actuală> <parola nouă>'
+  - ''
+  button:
+    confirm-read:
+      text: '&a[✔ Confirmă citirea]'
+      hover: null
+    yes-btn:
+      text: '&a[✔ Da]'
+      hover: null
+    no-btn:
+      text: '&c[✖ Nu]'
+      hover: null
+    new-account:
+      text: '&a[Cont Nou]'
+      hover: null
+    transfer-data:
+      text: '&9[Transferă Datele]'
+      hover: null
+
+2fa:
+  not-registered: '&cNu ai un cont {0}.'
+  already-registered: '&cAi înregistrat deja {0}.'
+  register-limit: '&cAți epuizat limitele de conturi cu același {0}.'
+  unregistered: '&e{0} a fost dezînregistrat cu succes.'
+  incorrect-code: '&cParolă incorectă. Te rugăm să încerci din nou.'
+  rate-limit: '&cLimită depășită. Te rugăm să aștepți {0} minute pentru a încerca din nou.'
+  confirmed-account: '&aContul tău {0} a fost înregistrat cu succes.'
+  confirmation-message-sent: |-
+    &7Un cod de confirmare a fost trimis la &6{0}&7.
+    &8(&f{1}&8).
+  command-delay: '&cAșteptă un timp înainte de a executa din nou această comandă.'
+  help-command:
+  - ''
+  - ' &fStare: [&a{2} înregistrat//&c{2} neînregistrat]&f.'
+  - ''
+  - ' [&8⋆ &7/{0} add: &fÎnregistrează {1}.]'
+  - ' [&8⋆ &7/{0} remove: &fElimină {1}.]'
+  - ' [&8⋆ &7/{0} recover: &fRecuperează-ți contul.]'
+  - ' [&8⋆ &7/{0} 2fa: &fActivează/dezactivează factorul dublu.]'
+  - ''
+  recover-command:
+  - ''
+  - ' &eAlege o metodă de recuperare:'
+  - ' [&8⋆ &7{0}: &f/{1} recover]'
+  - ''
+  switch:
+    enabled: '&aFuncția cu doi factori a fost activată.'
+    disabled: '&cFuncția cu doi factori a fost dezactivată.'
+  recover:
+    not-equal: '&c{0} furnizat nu este același cu cel înregistrat.'
+    message-sent: '&aUn mesaj de recuperare a fost trimis în contul tău asociat.'
+    change-password: '&aParola ta a fost schimbată automat la &f''{0}''&a.'
+  discord:
+    account-linked: |-
+      &aConfigurația din Discord a fost actualizată cu succes.
+      &aAi fost conectat cu contul &f{0} &a.
+    confirm-account:
+    - ''
+    - ' &7Pentru a finaliza conectarea, trebuie să confirmi contul tău de Discord.'
+    - ' &7Intră pe &b{0} &7și tastează'
+    - ' &7comanda în mesajele private ale &f{1} &7bot-ului.'
+    - ''
+    - ' [&aClick aici pentru a obține comanda cu token-ul.]'
+    - ''
+    warn-message:
+    - ''
+    - ' &7Efectuează comanda &f/discord add &7pentru a-ți înregistra'
+    - ' &7contul tău &9Discord&7. Făcând asta,'
+    - ' &7reduci șansele de a fi hackuit.'
+    - ''
+    discord-required:
+    - ''
+    - ' &7Serverul actual necesită să îți legi un'
+    - ' &acont Discord &7pentru a finaliza înregistrarea.'
+    - ''
+    - ' &6Te rugăm să rulezi &f/discord add&6.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Trebuie să îți confirmi autentificarea în cont.'
+    - ' &7Un mesaj de securitate a fost trimis către Discord-ul tău înregistrat.'
+    - ''
+    - ' &aClic pe butonul mesajului pentru a-ți confirma identitatea.'
+    - ''
+    dm:
+      configure:
+        too-recent:
+          title: Cont prea recent
+          description: Nu poți să îți legi Discord-ul deoarece contul tău a fost creat prea recent.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        invalid:
+          title: Cod invalid
+          description: Ne pare rău, dar tokenul introdus este invalid sau nu există.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        success:
+          title: Discord legat
+          description: Discord-ul tău a fost legat cu succes.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+      verify:
+        title: Confirmă autentificarea contului tău.
+        description: |-
+          Este necesară confirmarea autentificării pentru a accesa contul @player.
+
+          Dacă nu ai fost tu, refuză operația și schimbă-ți parola imediat.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Permite
+        deny: Refuză
+      recover:
+        title: Solicitare de recuperare a parolei.
+        description: |-
+          A fost solicitată recuperarea parolei din contul tău @player.
+
+          Dacă nu ai fost tu, refuză operația și schimbă-ți parola imediat.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Permite
+        deny: Refuză
+      new-password:
+        title: Parolă nouă pentru @player
+        description: |-
+          A fost generată o parolă nouă pentru contul tău:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+      password-changed:
+        title: Parolă schimbată pentru @player
+        description: |-
+          Parola ta a fost schimbată în:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+  email:
+    invalid-email: '&cAdresa de e-mail introdusă nu este validă.'
+    not-allowed: '&cDomeniul email-ului ales nu este permis.'
+    server-email: '&cNu poți utiliza adresa de e-mail a serverului.'
+    warn-message:
+    - ''
+    - ' &7Scrie comanda &f/email add &7pentru a-ți înregistra'
+    - ' &7&9email-yl&7. În acest fel,'
+    - ' &7reduci șansele de a fi hackuit.'
+    - ''
+    email-required:
+    - ''
+    - ' &7Serverul actual necesită să îți legi o'
+    - ' &aadresă de email validă &7pentru a finaliza înregistrarea.'
+    - ''
+    - ' &6Te rugăm să rulezi &f/email add <adresa ta de email>&6.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Trebuie să îți confirmi autentificarea în cont.'
+    - ' &7Un mesaj de securitate a fost trimis către email-ul tău înregistrat.'
+    - ''
+    - ' &aFolosește comanda &f/email <code> &apentru a finaliza autentificarea.'
+    - ''
+    smtp:
+      configure:
+        subject: Confirmarea contului @player
+        content:
+        - <h1>
+        - ' Salut, @player!'
+        - </h1>
+        - <p>
+        - ' Pentru a finaliza procesul de înregistrare prin e-mail, scrie comanda <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Dacă nu ai fost tu, ignoră acest mesaj.'
+        - </p>
+      verify:
+        subject: Confirmare de autentificare a contului @player
+        content:
+        - <h1>
+        - ' Salut, @player!'
+        - </h1>
+        - <p>
+        - ' Pentru a te autentifica pe server, folosește comanda <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Dacă nu ai fost tu, schimbă-ți parola <strong>IMEDIAT</strong>.'
+        - </p>
+      recover:
+        subject: Recuperarea contului @player
+        content:
+        - <h1>
+        - ' Salut, @player!'
+        - </h1>
+        - <p>
+        - ' Pentru a-ți recupera contul, folosește comanda <strong>"/email <parolă nouă> @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Dacă nu ai fost tu, ignoră acest mesaj.'
+        - </p>
+      new-password:
+        subject: Parolă nouă pentru @player
+        content:
+        - <h1>
+        - ' Bună, @player!'
+        - </h1>
+        - <p>
+        - ' A fost generată o parolă nouă pentru contul tău: {0}'
+        - </p>
+      password-changed:
+        subject: Parolă schimbată pentru @player
+        content:
+        - <h1>
+        - ' Bună, @player!'
+        - </h1>
+        - <p>
+        - ' Parola ta a fost schimbată în: {0}'
+        - </p>
+
+bedrock:
+  forms:
+    login:
+      title: Autentificare
+      content:
+      - Bun venit, @player!
+      - 'Pentru a te autentifica, te rugăm să introduci parola în câmpul de mai jos:'
+      - ''
+      - '[Parolă//Introdu parola]'
+      - ''
+    register:
+      title: Înregistrare
+      content:
+      - Bun venit, @player!
+      - Pentru a juca pe server, trebuie să creezi o parolă.
+      - Te rugăm să introduci parola dorită în câmpul de mai jos.
+      - ''
+      - '[Parolă//Introdu parola]'
+      - '[Confirmare//Confirmă parola]'
+      - ''
+
+dialogs:
+  login:
+    title: '&#ffdb60Introdu Parola'
+    body:
+    - '&6Bine ai venit, &f@player&6!'
+    - ''
+    - '&#ffdb60Te rugăm să introduci parola pentru a te conecta la server.'
+    - ''
+    inputs:
+      password: Parolă
+    buttons:
+      login: Conectare
+      recover: Am uitat parola
+      cancel: Deconectare
+  register:
+    title: '&#ffdb60Crearea unei Parole'
+    body:
+    - '&6Bine ai venit, &f@player&6!'
+    - ''
+    - '&#ffdb60Trebuie să &bcreezi o parolă &#ffdb60pentru a te conecta la server.'
+    - ''
+    - '&#ffdb60Te rugăm să completezi câmpurile de mai jos pentru a continua.'
+    - ''
+    inputs:
+      password1: Parolă
+      password2: Confirmare
+    buttons:
+      register: Creează Cont
+      cancel: Deconectare
+
+title:
+  before-login:
+    title: '&a&lBun venit!'
+    subtitle: '&7Scrie: /login <parola ta>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  before-register:
+    title: '&a&lBun venit!'
+    subtitle: '&7Scrie: /register <parola ta> <confirmarea parolei>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  after-login:
+    title: ''
+    subtitle: '&aTe-ai autentificat cu succes!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  after-register:
+    title: ''
+    subtitle: '&aTe-ai înregistrat cu succes!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  incorrect-password:
+    title: ''
+    subtitle: '&cParolă incorectă!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-login:
+    title: ''
+    subtitle: '&cEști deja autentificat!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-registered:
+    title: ''
+    subtitle: '&cEști deja înregistrat!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  passwords-dont-match:
+    title: ''
+    subtitle: '&cParolele nu sunt identice!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  session-login:
+    title: ''
+    subtitle: '&eSesiunea ta de conectare a fost continuată.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  premium-login:
+    title: ''
+    subtitle: '&eContul tău este unic, te-ai autentificat cu succes.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  bedrock-login:
+    title: ''
+    subtitle: '&eAccesând prin Bedrock, autentificat cu succes.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  security-warning:
+    title: ''
+    subtitle: '&cO nouă alertă de securitate a fost trimisă în chat'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  unconfirmed-message:
+    title: ''
+    subtitle: '&c‼ &eExistă un mesaj neconfirmat în chat'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6

@@ -1,0 +1,8 @@
+package com.nickuc.login.model;
+
+public enum IncomingSpawnState {
+   INCOMING_SPAWN_STATE,
+   ACTIVE_INCOMINGSPAWNSTATE,
+   PENDING_INCOMINGSPAWNSTATE,
+   CURRENT_INCOMINGSPAWNSTATE;
+}

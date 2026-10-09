@@ -1,0 +1,1 @@
+{"id":"nlogin","name":"nLogin","version":"2.0.19","description":"A practical, secure and friendly authentication plugin","url":"https://www.nickuc.com","authors":["NickUC"],"dependencies":[],"main":"com.nickuc.login.loader.NLoginVelocityLoader"}

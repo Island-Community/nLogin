@@ -1,0 +1,9 @@
+package com.nickuc.login.model;
+
+public enum QuickMessageKind {
+   QUICK_MESSAGE_KIND,
+   ACTIVE_QUICKMESSAGEKIND,
+   PENDING_QUICKMESSAGEKIND,
+   CURRENT_QUICKMESSAGEKIND,
+   PRIMARY_QUICKMESSAGEKIND;
+}

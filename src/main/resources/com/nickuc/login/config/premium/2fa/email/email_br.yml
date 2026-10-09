@@ -1,0 +1,90 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |  Para um melhor entendimento deste arquivo acesse nossa documentação:                        | #
+# |   ==> https://docs.nickuc.com/nlogin/                                                        | #
+# |                                                                                              | #
+# |  Novas opções não são adicionadas automaticamente neste arquivo. Valores padrões são usados  | #
+# |  caso uma opção não seja encontrada.                                                         | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+# Define a versão do arquivo.
+language-version: 1
+
+# Define se o e-mail poderá ser usado como um segundo fator.
+enable: false
+
+authentication:
+  # Email
+  email: "yourserver@domain.com"
+  # From
+  from: "Seu Servidor"
+  # Usuário
+  user: ""
+  # Senha
+  password: ""
+
+  # Charset
+  charset: "UTF-8"
+  # Mimetype
+  mimetype: "text/html"
+
+  # Host SMTP
+  host: "smtp.gmail.com"
+  # Porta SMTP
+  port: 587
+
+  # Tipo de criptografia.
+  #
+  # - Opções disponíveis:
+  #  |=> AUTO
+  #  |=> TLS
+  #  |=> SSL
+  encryption: AUTO
+
+  # Debug mode
+  debug: false
+
+linking:
+  # Define se a vinculação deverá ser recomendada para os jogadores.
+  recommend: true
+
+  # Define se o 2FA será ativado ao concluir a vinculação.
+  enable-2fa: true
+
+  required:
+    # Define se vincular um e-mail será exigido para se autenticar.
+    enable: false
+
+    # Define se jogadores originais também precisarão vincular um e-mail para se autenticar.
+    enable-for-premium: true
+
+    # Define se jogadores Bedrock também precisarão vincular um e-mail para se autenticar.
+    enable-for-bedrock: true
+
+account:
+  # Define o número máximo de contas que podem ter o mesmo e-mail vinculado.
+  limit: 1
+
+  # Define se uma nova senha deverá ser criada após o processo de recuperação da conta.
+  # - Se esta opção estiver desativada, uma senha aleatória será definida.
+  force-password-update: false
+
+  # Define a lista de domínios permitidos.
+  # - Se nenhum domínio for definido, todos os domínios serão permitidos.
+  allowed-domains: []
+
+  # Define a lista de domínios bloqueados.
+  denied-domains: []

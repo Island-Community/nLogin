@@ -1,0 +1,269 @@
+update:
+  stable: '&aStabil'
+  latest: '&bTerbaru'
+
+notification:
+  setup:
+    select-language:
+    - ''
+    - ' &eKami mendeteksi bahwa Anda menggunakan bahasa &6{0}&e.'
+    - ''
+    - ' &6Apakah Anda ingin menggunakan bahasa ini untuk nLogin?'
+    - ''
+    - ' &c‼ &eIni memengaruhi bahasa semua pemain!'
+    - ''
+    permission-required:
+    - ''
+    - ' &eUntuk mengonfigurasi nLogin, Anda perlu menjadi &cadministrator&e.'
+    - ''
+    - ' &6Tambahkan izin &f"{0}" &6ke plugin izin Anda.'
+    - ''
+    - ' &c‼ &ePengaturan akan dilanjutkan segera setelah izin ditambahkan.'
+    - ''
+    welcome-message:
+    - ''
+    - ' &aTerima kasih banyak telah memilih nLogin! :)'
+    - ''
+    - ' &6Untuk keamanan Anda, silakan baca pesan di bawah ini:'
+    - '  &cJangan pernah mengunduh nLogin dari sumber yang tidak dikenal.'
+    - '  &cVersi yang dimodifikasi mungkin mengandung perangkat lunak berbahaya.'
+    - ''
+    - ' &aSumber terpercaya:'
+    - '  &7Situs web: &fnickuc.com'
+    - '  &7GitHub: &fgithub.com/nickuc-com'
+    - '  &7Installer OpeNLogin (dari &fSpigot &7atau &fGitHub&7)'
+    - ''
+    - ' &aDukungan resmi:'
+    - '  &7Dokumentasi: &fdocs.nickuc.com/nlogin/'
+    - '  &7Discord: &fnickuc.com/discord'
+    - '  &7Email: &fsupport@nickuc.com'
+    - ''
+    configure-version-channel:
+    - ''
+    - ' &6Pilih channel versi yang diinginkan.'
+    - ''
+    - ' &c‼ &eAnda dapat mengubah ini nanti dengan menjalankan &f{0}&e.'
+    - ''
+    configure-auto-or-manual-updates:
+    - ''
+    - ' &6Pilih metode pembaruan yang diinginkan.'
+    - ''
+    - ' &c‼ &eAnda dapat mengubah ini nanti dengan menjalankan &f{0}&e.'
+    - ''
+    configure-password-algorithm:
+    - ''
+    - ' &6Pilih jenis enkripsi yang diinginkan untuk kata sandi.'
+    - ''
+    - ' &c‼ &eAnda dapat mengubah opsi ini secara manual nanti di &fconfig.yml&e.'
+    - ''
+    enable-dialogs:
+    - ''
+    - ' &6Apakah Anda ingin menggunakan menu (dialog) sebagai antarmuka autentikasi?'
+    - ''
+    - ' &eDialog menggantikan autentikasi berbasis perintah dengan menu yang dapat disesuaikan.'
+    - ''
+    - ' &c‼ &eFitur ini hanya berfungsi untuk klien yang menggunakan 1.21.6 atau lebih tinggi.'
+    - ''
+    configure-dialogs:
+    - ''
+    - ' &6Pilih cara yang diinginkan untuk menampilkan dialog.'
+    - ''
+    - ' &c‼ &eAnda dapat mengubah opsi ini secara manual di &fconfig.yml&e.'
+    - ''
+    configure-bungeeguard:
+    - ''
+    - ' &6Apakah Anda ingin mengonfigurasi BungeeGuard+ di server?'
+    - ''
+    - ' &c‼ &eDirekomendasikan untuk memasang BungeeGuard+ dalam keadaan berikut:'
+    - '  &8⋆ &eAnda menggunakan proxy berbasis BungeeCord apa pun.'
+    - '  &8⋆ &eAnda menggunakan Velocity, tetapi forwarding &f"MODERN" &etidak dapat digunakan.'
+    - ''
+    - ' &c‼ &eAnda perlu memasang JAR BungeeGuard+ di semua server.'
+    - ''
+    start-premium-configuration:
+    - ''
+    - ' &aSelamat atas pembelian &6⭐ nLogin Premium &aAnda'
+    - ''
+    - ' &6Berikut adalah fitur baru yang terbuka:'
+    - ''
+    - '  &8⋆ &eLogin otomatis &7untuk pengguna dengan Minecraft premium.'
+    - '  &8⋆ &eAutentikasi &7dua langkah melalui Discord dan Email.'
+    - '  &8⋆ &eSesi login &7saat login dengan alamat IP.'
+    - '  &8⋆ &eDukungan dengan &7prioritas lebih tinggi.'
+    - '  &8⋆ &eTag pelanggan &7di grup Discord.'
+    - ''
+    configure-username-appendix:
+    - ''
+    - ' &6Apakah Anda ingin mengaktifkan tambahan untuk pemain premium/offline?'
+    - ''
+    - ' &c‼ &eUntuk informasi lebih lanjut tentang fitur ini, kunjungi: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    configure-username-appendix-legacy-versions:
+    - ''
+    - ' &6Tambahan untuk pemain premium/offline tidak dapat ditambahkan secara otomatis untuk versi 1.18.2 atau lebih rendah.'
+    - ''
+    - ' &eAnda perlu mengonfigurasi secara manual dua IP berbeda untuk pemain premium dan offline.'
+    - ''
+    - ' &c‼ &eUntuk informasi lebih lanjut tentang fitur ini, kunjungi: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    enable-restrict-premium-nicknames:
+    - ''
+    - ' &6Batasi pendaftaran pemain offline yang menggunakan nama premium? &e(untuk akun baru)'
+    - ''
+    - ' &c‼ &ePemain offline tidak akan dapat menggunakan &fnama premium (contoh: Notch)&e, meskipun nama tersebut tersedia untuk pendaftaran.'
+    - ''
+    enable-challenge-premium-nicknames:
+    - ''
+    - ' &6Deteksi apakah pemain menggunakan akun premium? &e(menggunakan nama)'
+    - ''
+    - ' &c‼ &ePemain offline mungkin menerima pesan yang tidak dapat disesuaikan bertuliskan &f"Invalid session" &esaat pertama kali login ke server.'
+    - ''
+    enable-premium-question:
+    - ''
+    - ' &6Deteksi apakah pemain menggunakan akun premium? &e(dengan pertanyaan interaktif)'
+    - ''
+    - ' &c‼ &eOpsi ini direkomendasikan jika Anda ingin memastikan pemain premium menerima Mojang UUID.'
+    - ''
+    skip-premium-register:
+    - ''
+    - ' &6Lewati permintaan pendaftaran kata sandi untuk &bpemain premium&6?'
+    - ''
+    - ' &c‼ &eDirekomendasikan untuk menonaktifkan opsi ini jika kata sandi pemain digunakan dalam integrasi web (contoh: situs web server).'
+    - ''
+    skip-bedrock-register:
+    - ''
+    - ' &6Lewati permintaan pendaftaran kata sandi untuk &cpemain Bedrock&6?'
+    - ''
+    - ' &c‼ &eDirekomendasikan untuk menonaktifkan opsi ini jika kata sandi pemain digunakan dalam integrasi web (contoh: situs web server).'
+    - ''
+    nantibot-recommendation:
+    - ''
+    - ' &6Kami merekomendasikan pemasangan &fnAntiBot &6untuk mencegah'
+    - ' &6server Anda diserang oleh bot.'
+    - ''
+    - ' &c‼ &eUntuk informasi lebih lanjut tentang plugin ini, &6klik di sini&e.'
+    - ''
+    nchat-recommendation:
+    - ''
+    - ' &6Kami merekomendasikan pemasangan &fnChat&6,'
+    - ' &6plugin chat yang sepenuhnya menggantikan Legendchat.'
+    - ''
+    - ' &c‼ &eUntuk informasi lebih lanjut tentang plugin ini, &6klik di sini&e.'
+    - ''
+    recommend-spawn-set:
+    - ''
+    - ' &6Koordinat pemain &cTIDAK AKAN &6dilindungi sebelum login.'
+    - ''
+    - ' &c‼ &eTetapkan titik spawn yang aman menggunakan perintah &f{0}&e.'
+    - ''
+    finish-configuration:
+    - ''
+    - ' &6Konfirmasi untuk keluar dari mode pengaturan dan simpan semua perubahan.'
+    - ''
+    - ' &c‼ &eSemua pemain akan terputus setelah konfirmasi.'
+    - ''
+  update-available-confirmation:
+  - ''
+  - ' &eVersi nLogin baru tersedia{0} {1}'
+  - ''
+  - ' &6Apakah Anda ingin mengonfirmasi pembaruan?'
+  - ''
+  update-available-restart:
+  - ''
+  - ' &eVersi nLogin baru tersedia{0} {1}'
+  - ''
+  - ' &6Mulai ulang server Anda untuk menerapkan pembaruan.'
+  - ''
+  premium-fail:
+  - ''
+  - ' &c✖ &cLisensi &fnLogin v{0} &cAnda tidak berhasil diaktifkan.'
+  - '  &cCoba unduh JAR lagi di situs web:'
+  - '  &b{1}'
+  - ''
+  - ' &c‼ &cJika masalah berlanjut, kami merekomendasikan untuk menghubungi pengembang.'
+  - '  &7Untuk menampilkan daftar kontak, gunakan perintah {2}'
+  - ''
+  premium-expired:
+  - ''
+  - ' &c✖ &cLisensi &fnLogin v{0} &cAnda tidak berhasil diaktifkan.'
+  - '  &cPerpanjang lisensi Anda melalui situs: &b{1}'
+  - ''
+  premium-recommendation:
+  - ''
+  - ' &7Ingin membuat login Anda lebih praktis?'
+  - ' &7Dapatkan versi premium nLogin sekarang'
+  - ' &7dan aktifkan login otomatis untuk pengguna Anda.'
+  - ''
+  - ' [&aKlik di sini untuk informasi lebih lanjut.]'
+  - ''
+  button:
+    start-setup:
+      text: '&a[✔ Mulai Pengaturan]'
+      hover: '&7Klik di sini untuk memulai pengaturan plugin.'
+    stable:
+      text: '&a[Versi Stabil]'
+      hover: |-
+        &7Channel &astabil &7memiliki lebih sedikit bug, tetapi juga lebih sedikit fitur.
+
+        &6Rekomendasi: &funtuk server yang dirilis untuk publik.
+    latest:
+      text: '&6[Versi Terbaru]'
+      hover: |-
+        &7Channel &6versi terbaru &7memiliki versi paling mutakhir.
+
+        &6Rekomendasi: &funtuk server yang menginginkan fitur terbaru
+    automatic:
+      text: '&a[Pembaruan Otomatis]'
+      hover: '&7Tidak diperlukan konfirmasi untuk memperbarui.'
+    manual:
+      text: '&9[Konfirmasi Manual]'
+      hover: '&7Anda perlu mengonfirmasi pembaruan dengan notifikasi serupa dengan ini.'
+    safer:
+      text: '&a[Lebih Aman]'
+      hover: '&7Algoritma yang lebih aman akan digunakan untuk melindungi kata sandi.'
+    faster:
+      text: '&c[Lebih Cepat]'
+      hover: '&7Algoritma yang kurang aman akan digunakan untuk melindungi kata sandi.'
+    pre-login:
+      text: '&a[Tampilkan Sebelum]'
+      hover: '&7Dialog akan ditampilkan &asebelum masuk &7ke server.'
+    after-login:
+      text: '&9[Tampilkan Sesudah]'
+      hover: '&7Dialog akan ditampilkan &9setelah masuk &7ke server.'
+    install:
+      text: '&a[⬇ Pasang]'
+      hover: '&7Klik di sini untuk memasang plugin secara otomatis.'
+    skip:
+      text: '&7[✖ Lewati]'
+      hover: null
+
+title:
+  setup:
+    welcome-message-1:
+      title: '&6Hai, @player!'
+      subtitle: '&eSelamat datang di nLogin!'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-2:
+      title: ''
+      subtitle: '&aSilakan baca peringatan sebelum melanjutkan.'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-3:
+      title: ''
+      subtitle: '&fKlik tombol {0} &funtuk melanjutkan.'
+      delays:
+        fadeIn: 10
+        stay: 80
+        fadeOut: 10
+  update-available:
+    title: ''
+    subtitle: '&aVersi baru tersedia.'
+    delays:
+      fadeIn: 10
+      stay: 80
+      fadeOut: 10

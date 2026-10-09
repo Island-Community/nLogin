@@ -1,0 +1,87 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |  Para um melhor entendimento deste arquivo acesse nossa documentação:                        | #
+# |   ==> https://docs.nickuc.com/nlogin/                                                        | #
+# |                                                                                              | #
+# |  Novas opções não são adicionadas automaticamente neste arquivo. Valores padrões são usados  | #
+# |  caso uma opção não seja encontrada.                                                         | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+# Define a versão do arquivo.
+language-version: 1
+
+#     ___      _        ___               __        __       ___
+#    / __\    /_\      / __\    /\ /\    /__\    /\ \ \     /   \
+#   /__\//   //_\\    / /      / //_/   /_\     /  \/ /    / /\ /
+#  / \/  \  /  _  \  / /___   / __ \   //__    / /\  /    / /_//
+#  \_____/  \_/ \_/  \____/   \/  \/   \__/    \_\ \/    /___,'
+
+# Configurações relacionadas aos servidores de backend.
+backend:
+  # Define a lista de servidores de autenticação.
+  # - Você deve insira nesta lista TODOS os servidores que o nLogin está instalado.
+  # - A maioria dos servidores utiliza um servidor de autenticação ou um lobby principal.
+  # - Para mais informações, acesse o tutorial:
+  #  ==> https://docs.nickuc.com/nlogin/proxy
+  auth-servers:
+    - 'lobby'
+
+  # Define se o proxy deve verificar se os servidores de autenticação estão configurados corretamente.
+  # - Se você usa um servidor sem o nLogin (ex.: servidores limbo não baseados no Spigot)
+  #   é recomendável desativar esta opção.
+  check-ack-message: true
+
+#     __      __       ___     _____      __      __      ___    _____
+#    /__\    /__\     /   \    \_   \    /__\    /__\    / __\  /__   \
+#   / \//   /_\      / /\ /     / /\/   / \//   /_\     / /       / /\/
+#  / _  \  //__     / /_//   /\/ /_    / _  \  //__    / /___    / /
+#  \/ \_/  \__/    /___,'    \____/    \/ \_/  \__/    \____/    \/
+
+# Configurações do redirecionamento de servidores.
+redirect:
+  # Define se o redirecionamento será feito antes de se conectar ao servidores de autenticação.
+  # - Por exemplo, quando um jogador que não precisa se autenticar entrar no servidor proxy, ele se
+  #   conectará automaticamente a um servidor que respeite as opções abaixo.
+  use-fast-redirect: true
+
+  # Define se o redirecionamento do primeiro servidor deve ser sobrescrito pelo nLogin.
+  # - Esta opção evita que jogadores burlem o servidor de autenticação e restaura
+  #   o primeiro servidor fornecido pelo proxy.
+  override-first-server: true
+
+  # Define o tempo de espera (em milissegundos) ao trocar o servidor.
+  connect-delay: 500
+
+  # Define o tempo de espera (em milissegundos) para reconectar ao servidor após falhar a conexão.
+  retry-delay: 5000
+
+  last-server:
+    # Define se o plugin deverá redirecionar os jogadores para o último servidor conectado.
+    # - Se o último servidor conectado não existir mais, um servidor aleatório da opção "after-auth.servers" será escolhido.
+    enable: false
+
+    # Define quais servidores serão ignorados pelo redirecionamento.
+    ignored: []
+
+  after-auth:
+    # Define se jogadores deverão ser encaminhados automaticamente para outros servidores ao se autenticarem.
+    enable: false
+
+    # Define a quais servidores os jogadores deverão ser encaminhados.
+    # - Ao inserir mais de um item, o servidor será escolhido randomicamente.
+    servers:
+      - "lobby1"
+      - "lobby2"

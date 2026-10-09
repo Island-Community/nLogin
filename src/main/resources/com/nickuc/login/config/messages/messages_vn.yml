@@ -1,0 +1,500 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |              List of translation authors: https://crowdin.com/project/nlogin/members         | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+pending:
+  login: ' &b&l❑ &8&l| &7Sử dụng: &a&n/login <mật khẩu>'
+  register: ' &b&l❑ &8&l| &7Sử dụng: &a&n/register <mật khẩu> <nhập lại mật khẩu>.'
+  action-bar:
+    singular: '&cBạn có {0} giây để {login///register}.'
+    plural: '&cBạn có {0} giây để {login///register}.'
+
+success:
+  login: '&8[&a✔&8] &aBạn đã đăng nhập thành công.'
+  register: '&8[&a✔&8] &aBạn đã đăng kí thành công.'
+  session: '&aKhông cần đăng nhập bạn đã đăng nhập trước đó rồi.'
+  premium: '&aBạn đã được tự động đăng nhập vì sử dụng tài khoản &8[&epremium&8].'
+  bedrock: '&aBạn đã được tự động đăng nhập vì sử dụng Minecraft &8[&eBedrock&8] để vào server.'
+  change-password: '&8[&a✔&8] &aMật Khẩu của bạn đã được thay đổi thành công.'
+  reload: '&8[&a✔&8] &a&nnLogin đã được tải lại thành công nhé.'
+  kick:
+    unregister: '&8[&c⚠&8] &aBạn đã hủy đăng ký thành công.'
+    marked-offline: '&7Tài khoản của bạn đã được đánh dấu là &6ngoại tuyến&7, vui lòng tham gia lại.'
+    challenge-premium: '&8[&c⚠&8] &7Để xác nhận rằng bạn đang sử dụng &apremium account&7, xin vui lòng đăng nhập lại.'
+
+error:
+  not-registered: '&cTên này vẫn chưa được đăng ký.'
+  offline: '&cNgười chơi mong muốn đang ngoại tuyến.'
+  address-limit: '&cBạn đã sử dụng hết giới hạn tài khoản trên mỗi IP.'
+  database: '&cRất tiếc, chúng tôi không thể hoàn tất thao tác này.Vui lòng thử lại. [SQL FAIL]'
+  command:
+    usage: '&8[&c⚠&8] &cBạn phải dùng {0}.'
+    no-permission: '&8[&c⚠&8] &cBạn không có quyền chạy lệnh này.'
+    player-required: '&c[&c⚠&c] &cLệnh này đã bị vô hiệu hóa thông qua bảng điều khiển.'
+    console-required: '&8[&c⚠&8] &cLệnh này chỉ có thể được sử dụng thông qua bảng điều khiển.'
+    account-collision:
+    - '&fCó hơn một tài khoản được gắn với tên &a{0}&f:'
+    - '&8⋆ &7{1} {2}'
+    - ''
+    - '&c‼ &eHãy chạy lại lệnh, đảm bảo sử dụng đúng tên tương ứng với loại tài khoản mong muốn.'
+    arguments:
+      password: mật khẩu
+      current-password: mật khẩu hiện tại
+      new-password: mật khẩu mới
+  already:
+    login: '&8[&a✔&8] &aBạn đã đăng nhập rồi.'
+    login-other: '&8[&c⚠&8] &cNgười chơi này đã đăng nhập.'
+    registered: '&8[&c⚠&8] &cTên này đã được đăng ký.'
+    premium: '&8[&a✔&8] &cTài khoản của bạn đã được đánh dấu là &8[&epremium&8].'
+  password:
+    same-as-current: '&8[&c⚠&8] &cMật khẩu đã nhập giống với mật khẩu hiện tại.'
+    too-large: ' &8[&c⚠&8] &cMật khẩu đã nhập quá lớn.'
+    too-small: '&8[&c⚠&8] &cMật khẩu đã nhập quá nhỏ.'
+    not-secure: '&cMật khẩu được cung cấp không đáp ứng yêu cầu bảo mật. Vui lòng bao gồm số, chữ hoa, chữ thường và ký tự đặc biệt.'
+    do-not-match: '&8[&c⚠&8] &cMật khẩu không giống nhau.'
+    require-confirmation: '&8[&c&l⚠&8] &cBạn phải xác nhận mật khẩu của mình.'
+    incorrect: '&8[&c✖&8] &c&lMật khẩu không đúng &8[&c✖&8]'
+  kick:
+    incorrect-password: '&8[&c✖&8] &c&lBạn đã nhập sai mật khẩu &8[&c✖&8]'
+    wait-server-start: |-
+      &cMáy chủ vẫn chưa khởi động hoàn toàn.
+      &cĐợi một lúc để kết nối.
+    account-blocked: |-
+      &cĐịa chỉ IP của bạn đã bị cấm bởi hệ thống.&r
+      &r&cThời gian cấm còn lại: {0}
+    account-unregistered: |-
+      &cMáy chủ này không chấp nhận đăng ký tài khoản mới.
+
+      &cĐể biết thêm thông tin, vui lòng liên hệ với đội ngũ quản trị máy chủ.
+    invalid-nickname: '&cTên của bạn không hợp lệ, hãy xóa dấu cách, ký hiệu và ký tự không hợp lệ khỏi tên của bạn.'
+    bedrock-nickname: '&cTiền tố biệt danh đã chọn &f("{0}") &cbị hạn chế đối với người chơi Bedrock.'
+    bedrock-unlinked: |-
+      &cTên &f("{0}") &cđã chọn chỉ dành riêng cho người chơi Java premium.
+
+      &eĐể truy cập tài khoản này, hãy liên kết tài khoản Java với tài khoản Bedrock của bạn bằng lệnh &f/linkaccount&e.
+    transferred-nickname: |-
+      &cTên được chọn &f("{0}") &cđã được bảo lưu và chuyển vào một tài khoản sử dụng cùng UUID.
+
+      &eĐể tham gia, vui lòng sử dụng biệt hiệu khác.
+    already-online: '&cNgười chơi này đã trực tuyến.'
+    unknown-hostname: |-
+      &4[nLogin] Tên máy chủ đang được sử dụng &f({0}) &4không được xác định trong cấu hình.
+      &r
+      &r&cNếu đây là IP hợp lệ, vui lòng thêm nó vào danh mục phù hợp nhất trong phần config &f"premium.username-appender"&c.
+      &r
+      &r&eĐể biết thêm thông tin, hãy xem hướng dẫn bổ sung tên người dùng:
+      &r&bhttps://docs.nickuc.com/nlogin/username-appender
+    premium-not-logged: |-
+      &7Tên đăng nhập &6{0} &7được liên kết với một &atài khoản premium&7 đã xác minh, nhưng phiên đăng nhập của bạn đã &chết hạn&7.
+
+      &eNếu bạn là chủ sở hữu tài khoản này, hãy khởi động lại Minecraft và đăng nhập lại.
+    premium-challenge: |-
+      &eTrong lần đăng nhập gần nhất, chúng tôi không thể xác thực tài khoản của bạn.
+
+      &fNếu bạn đang sử dụng tài khoản &apremium&f, hãy khởi động lại Minecraft và đăng nhập lại.
+
+      &fNếu tài khoản của bạn là &coffline&f, vui lòng đăng nhập lại để hoàn tất xác minh.
+    timeout:
+      login: '&8[&c✖&8] &cBạn mất quá nhiều thời gian để đăng nhập &8[&c✖&8]'
+      register: '&8[&c✖&8] &cBạn mất quá nhiều thời gian để đăng ký &8[&c✖&8]'
+
+notification:
+  all-viewed: '&aTất cả các thông báo đã được xem.'
+  premium-question:
+  - ''
+  - ' &eBạn có phải đang xài tài khoản &8[&epremium&8] không?'
+  - ' &7( &a&nsau khi đồng ý, bạn cần thoát ra vào lại server. &7)'
+  - ''
+  premium-transfer-question:
+  - ''
+  - ' &eMột tài khoản offline đã được đăng ký với tên &f@player&e.'
+  - ''
+  - ' &6Bạn có muốn chuyển dữ liệu từ tài khoản này hay tạo một tài khoản mới?'
+  - ''
+  - ' &c‼ &eBạn sẽ cần xác thực để xác nhận quyền sở hữu tài khoản.'
+  - ''
+  premium-transfer-confirmation:
+  - ''
+  - ' &6Bạn có muốn xác nhận chuyển dữ liệu từ &f@player &6sang tài khoản premium của bạn không?'
+  - ''
+  - ' &c‼ &eSau khi xác nhận chuyển, bạn sẽ bị ngắt kết nối khỏi máy chủ.'
+  - ''
+  password-update:
+  - ''
+  - ' &eMật khẩu của bạn cần được đặt lại.'
+  - ''
+  - ' &7Vui lòng thay đổi mật khẩu của bạn bằng lệnh dưới đây:'
+  - ' &f/changepass <mật khẩu hiện tại> <mật khẩu mới>'
+  - ''
+  button:
+    confirm-read:
+      text: '&a[✔ Xác nhận đã đọc]'
+      hover: null
+    yes-btn:
+      text: '&a[✔ Có]'
+      hover: null
+    no-btn:
+      text: '&c[✖ Không]'
+      hover: null
+    new-account:
+      text: '&a[Tài khoản mới]'
+      hover: null
+    transfer-data:
+      text: '&9[Chuyển dữ liệu]'
+      hover: null
+
+2fa:
+  not-registered: '&cBạn không có tài khoản {0}.'
+  already-registered: '&cBạn đã đăng ký {0} của mình.'
+  register-limit: '&cBạn đã sử dụng hết giới hạn của các tài khoản có cùng {0}.'
+  unregistered: '&e{0} của bạn đã được hủy đăng ký thành công.'
+  incorrect-code: '&cMã không chính xác.Hãy thử lại '
+  rate-limit: '&cVượt quá giới hạn. Vui lòng đợi {0} phút để thử lại.'
+  confirmed-account: '&aTài khoản {0} của bạn đã được đăng ký thành công.'
+  confirmation-message-sent: |-
+    &7Mã xác nhận đã được gửi tới &6{0}&7 của bạn.
+    &8(&f{1}&8).
+  command-delay: '&cĐợi một lúc trước khi thực hiện lại lệnh này.'
+  help-command:
+  - ''
+  - ' &fTrạng thái: [&a{2} đã đăng ký//&c{2} chưa đăng ký]&f.'
+  - ''
+  - ' [&8⋆ &7/{0} add: &fĐăng ký {1} của bạn.]'
+  - ' [&8⋆ &7/{0} remove: &fXóa {1} của bạn.]'
+  - ' [&8⋆ &7/{0} recover: &fKhôi phục tài khoản của bạn.]'
+  - ' [&8⋆ &7/{0} twofactor: &fBật/tắt tính năng xác thực hai yếu tố.]'
+  - ''
+  recover-command:
+  - ''
+  - ' &eChọn phương pháp khôi phục:'
+  - ' [&8⋆ &7{0}: &f/{1} recover]'
+  - ''
+  switch:
+    enabled: '&aTính năng xác thực hai yếu tố đã được kích hoạt.'
+    disabled: '&cTính năng xác thực hai yếu tố đã bị vô hiệu hóa.'
+  recover:
+    not-equal: '&c{0} đã cung cấp không giống với {0} đã đăng ký.'
+    message-sent: '&aMột thông báo khôi phục đã được gửi đến tài khoản được liên kết của bạn.'
+    change-password: '&aMật khẩu của bạn đã được tự động thay đổi thành &f''{0}''&a.'
+  discord:
+    account-linked: |-
+      &aĐã cập nhật thành công cấu hình trong Discord.
+      &aBạn đã được liên kết với &f{0} &atài khoản.
+    confirm-account:
+    - ''
+    - ' &7Để hoàn tất liên kết, bạn cần xác nhận tài khoản Discord của mình.'
+    - ' &7Tham gia &b{0} &7và nhập'
+    - ' &7lệnh trong DM của &f{1} &7bot.'
+    - ''
+    - '&6▶ &8[&a&nNhấn vào đây để nhận lệnh với mã token.&8]'
+    - ''
+    warn-message:
+    - ''
+    - ' &7Thực hiện lệnh &a&n/discord add&r &7để đăng ký'
+    - ' &7&9Discord&7 của bạn. Bằng cách làm điều đó, bạn'
+    - ' &7giảm nguy cơ bị &c&nhack/checkpass&r &7acc.'
+    - ''
+    discord-required:
+    - ''
+    - ' &7Máy chủ hiện tại yêu cầu bạn liên kết một'
+    - ' &aTài khoản Discord &7để hoàn tất đăng ký.'
+    - ''
+    - ' &7Hãy chạy &a&n/discord add&7.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Bạn cần xác nhận đăng nhập tài khoản của mình.'
+    - ' &7Một thông báo bảo mật đã được gửi đến Discord đã đăng ký của bạn.'
+    - ''
+    - ' &aNhấp vào nút tin nhắn để xác nhận danh tính của bạn.'
+    - ''
+    dm:
+      configure:
+        too-recent:
+          title: Tài khoản quá mới
+          description: Bạn không thể liên kết Discord của mình vì tài khoản của bạn được tạo quá gần đây.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        invalid:
+          title: Mã không hợp lệ
+          description: Xin lỗi, mã thông báo bạn đã nhập không hợp lệ hoặc không tồn tại.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+        success:
+          title: Discord đã liên kết
+          description: Discord của bạn đã được liên kết thành công.
+          image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+          color: '#808080'
+      verify:
+        title: Xác nhận xác thực tài khoản của bạn.
+        description: |-
+          Cần có xác nhận xác thực để truy cập @player account.
+
+          Nếu đó không phải là bạn, hãy từ chối thao tác và thay đổi mật khẩu của bạn ngay lập tức.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Cho phép
+        deny: Từ chối
+      recover:
+        title: Đã yêu cầu khôi phục mật khẩu.
+        description: |-
+          Yêu cầu khôi phục mật khẩu đã được yêu cầu từ bạn @player account.
+
+          Nếu đó không phải là bạn, hãy từ chối thao tác và thay đổi mật khẩu của bạn ngay lập tức.
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+        allow: Cho phép
+        deny: Từ chối
+      new-password:
+        title: Mật khẩu mới cho @player
+        description: |-
+          Một mật khẩu mới đã được tạo cho tài khoản của bạn:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+      password-changed:
+        title: Mật khẩu đã thay đổi cho @player
+        description: |-
+          Mật khẩu của bạn đã được thay đổi thành:
+          `{0}`
+        image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
+        color: '#808080'
+  email:
+    invalid-email: '&cEmail đã nhập không hợp lệ.'
+    not-allowed: '&cTên miền của email đã chọn không được phép.'
+    server-email: '&cBạn không thể sử dụng email của máy chủ.'
+    warn-message:
+    - ''
+    - ' &7Thực hiện lệnh &a&n/email associate&r &7để đăng kí'
+    - ' &7&eemail &7của bạn. Làm như vậy, bạn'
+    - ' &7giảm nguy cơ bị &c&nhack/checkpass&r &7acc.'
+    - ''
+    email-required:
+    - ''
+    - ' &7Máy chủ hiện tại yêu cầu bạn liên kết một'
+    - ' &eemail &7hợp lệ để hoàn tất đăng ký.'
+    - ''
+    - ' &7Hãy Sài lệnh &a/email add <email bạn>&7.'
+    - ''
+    address-changed:
+    - ''
+    - ' &7Bạn cần xác nhận đăng nhập tài khoản của mình.'
+    - ' &7Một tin nhắn bảo mật đã được gửi đến email đăng ký của bạn.'
+    - ''
+    - ' &aSử dụng lệnh &f/email <code> &ađể hoàn tất xác thực.'
+    - ''
+    smtp:
+      configure:
+        subject: Xác nhận tài khoản @player
+        content:
+        - <h1>
+        - ' Xin chào, @player!'
+        - </h1>
+        - <p>
+        - ' Để hoàn tất quy trình đăng ký email của bạn, hãy sử dụng lệnh <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Nếu không phải bạn, hãy bỏ qua tin nhắn này.'
+        - </p>
+      verify:
+        subject: Xác nhận đăng nhập của tài khoản @player
+        content:
+        - <h1>
+        - ' Xin chào, @player!'
+        - </h1>
+        - <p>
+        - ' Để xác thực trên máy chủ, hãy sử dụng lệnh <strong>"/email @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Nếu đó không phải là bạn, hãy thay đổi mật khẩu của bạn <strong>NGAY LẬP TỨC</strong>.'
+        - </p>
+      recover:
+        subject: Khôi phục tài khoản @player
+        content:
+        - <h1>
+        - ' Xin chào, @player!'
+        - </h1>
+        - <p>
+        - ' Để khôi phục tài khoản của bạn, hãy sử dụng lệnh <strong>"/email <mật khẩu mới> @code"</strong>.'
+        - </p>
+        - <p>
+        - ' Nếu đó không phải là bạn, hãy bỏ qua tin nhắn này.'
+        - </p>
+      new-password:
+        subject: Mật khẩu mới cho @player
+        content:
+        - <h1>
+        - ' Xin chào, @player!'
+        - </h1>
+        - <p>
+        - ' Một mật khẩu mới đã được tạo cho tài khoản của bạn: {0}'
+        - </p>
+      password-changed:
+        subject: Mật khẩu đã thay đổi cho @player
+        content:
+        - <h1>
+        - ' Xin chào, @player!'
+        - </h1>
+        - <p>
+        - ' Mật khẩu của bạn đã được thay đổi thành: {0}'
+        - </p>
+
+bedrock:
+  forms:
+    login:
+      title: Xác Thực
+      content:
+      - Chào Mừng, @player!
+      - 'Để đăng nhập, vui lòng nhập mật khẩu của bạn vào trường bên dưới:'
+      - ''
+      - '[Mật Khẩu//Nhập mật khẩu của bạn]'
+      - ''
+    register:
+      title: Đăng kí
+      content:
+      - Chào mừng, @player!
+      - Để chơi trên máy chủ, bạn cần tạo mật khẩu.
+      - Vui lòng nhập mật khẩu mong muốn vào bên dưới.
+      - ''
+      - '[Mật Khẩu//Nhập mật khẩu của bạn]'
+      - '[Xác Nhận//Xác nhận mật khẩu của bạn]'
+      - ''
+
+dialogs:
+  login:
+    title: '&#ffdb60Nhập Mật khẩu của bạn'
+    body:
+    - '&6Chào mừng, &f@player&6!'
+    - ''
+    - '&#ffdb60Vui lòng nhập mật khẩu để đăng nhập vào máy chủ.'
+    - ''
+    inputs:
+      password: Mật khẩu
+    buttons:
+      login: Đăng nhập
+      recover: Quên mật khẩu
+      cancel: Đăng xuất
+  register:
+    title: '&#ffdb60Tạo Mật khẩu'
+    body:
+    - '&6Chào mừng, &f@player&6!'
+    - ''
+    - '&#ffdb60Bạn phải &btạo mật khẩu &#ffdb60để đăng nhập vào máy chủ.'
+    - ''
+    - '&#ffdb60Vui lòng điền vào các trường bên dưới để tiếp tục.'
+    - ''
+    inputs:
+      password1: Mật khẩu
+      password2: Xác nhận
+    buttons:
+      register: Tạo tài khoản
+      cancel: Đăng xuất
+
+title:
+  before-login:
+    title: '&a&lCHÀO MỪNG!'
+    subtitle: '&7Gõ: /login <mật khẩu của bạn>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  before-register:
+    title: '&a&lCHÀO MỪNG!'
+    subtitle: '&7Gõ: /register <mật khẩu của bạn> <xác nhận mật khẩu>'
+    delays:
+      fadeIn: 6
+      stay: 9999
+      fadeOut: 6
+  after-login:
+    title: ''
+    subtitle: '&aBạn đã đăng nhập thành công!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  after-register:
+    title: ''
+    subtitle: '&aBạn đã đăng kí thành công!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  incorrect-password:
+    title: ''
+    subtitle: '&cMật Khẩu Không Đúng!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-login:
+    title: ''
+    subtitle: '&cBạn đã đăng nhập trước đó rồi!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  already-registered:
+    title: ''
+    subtitle: '&cBạn đã đăng kí trước đó rồi!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  passwords-dont-match:
+    title: ''
+    subtitle: '&cMật khẩu không giống nhau!'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  session-login:
+    title: ''
+    subtitle: '&eKhông cần đăng nhập bạn đã đăng nhập trước đó rồi.'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  premium-login:
+    title: ''
+    subtitle: '&eVì tài khoản bạn là &8[&epremium&8] nên được bỏ qua bước đăng nhập'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  bedrock-login:
+    title: ''
+    subtitle: '&eVì bạn là người chơi &8[&eBedrock&8] nên được bỏ qua bước đăng nhập'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  security-warning:
+    title: ''
+    subtitle: '&cMột cảnh báo bảo mật mới đã được gửi trong khung trò chuyện'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6
+  unconfirmed-message:
+    title: ''
+    subtitle: '&c‼ &eCó một tin nhắn chưa xác nhận trong khung chat'
+    delays:
+      fadeIn: 6
+      stay: 60
+      fadeOut: 6

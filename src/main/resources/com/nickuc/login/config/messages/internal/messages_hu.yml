@@ -1,0 +1,269 @@
+update:
+  stable: '&aStabil'
+  latest: '&bLegújabb'
+
+notification:
+  setup:
+    select-language:
+    - ''
+    - ' &eÉszleltük, hogy a(z) &6{0} &enyelvet használod.'
+    - ''
+    - ' &6Szeretnéd ezt a nyelvet használni az nLoginhoz?'
+    - ''
+    - ' &c‼ &eEz minden játékos nyelvét befolyásolja!'
+    - ''
+    permission-required:
+    - ''
+    - ' &eAz nLogin beállításához &cadminisztrátorrá&e kell válnod.'
+    - ''
+    - ' &6Add hozzá a(z) &f"{0}" &6jogosultságot a jogosultságkezelő pluginodhoz.'
+    - ''
+    - ' &c‼ &eA beállítás folytatódik, amint a jogosultság hozzáadásra kerül.'
+    - ''
+    welcome-message:
+    - ''
+    - ' &aKöszönjük, hogy az nLogint választottad! :)'
+    - ''
+    - ' &6Biztonságod érdekében olvasd el az alábbi üzenetet:'
+    - '  &cSoha ne töltsd le az nLogint ismeretlen forrásból.'
+    - '  &cEgy módosított verzió rosszindulatú szoftvert tartalmazhat.'
+    - ''
+    - ' &aMegbízható források:'
+    - '  &7Weboldal: &fnickuc.com'
+    - '  &7GitHub: &fgithub.com/nickuc-com'
+    - '  &7OpeNLogin telepítő (&fSpigotról &7vagy &fGitHubról&7)'
+    - ''
+    - ' &aHivatalos támogatás:'
+    - '  &7Dokumentáció: &fdocs.nickuc.com/nlogin/'
+    - '  &7Discord: &fnickuc.com/discord'
+    - '  &7E-mail: &fsupport@nickuc.com'
+    - ''
+    configure-version-channel:
+    - ''
+    - ' &6Válaszd ki a preferált verziócsatornát.'
+    - ''
+    - ' &c‼ &eEzt később megváltoztathatod a &f{0} &efuttatásával.'
+    - ''
+    configure-auto-or-manual-updates:
+    - ''
+    - ' &6Válaszd ki a preferált frissítési módszert.'
+    - ''
+    - ' &c‼ &eEzt később megváltoztathatod a &f{0} &efuttatásával.'
+    - ''
+    configure-password-algorithm:
+    - ''
+    - ' &6Válaszd ki a jelszavakhoz preferált titkosítási típust.'
+    - ''
+    - ' &c‼ &eEzt az opciót később manuálisan megváltoztathatod a &fconfig.yml&e fájlban.'
+    - ''
+    enable-dialogs:
+    - ''
+    - ' &6Szeretnéd a menüket (dialogokat) használni hitelesítési felületként?'
+    - ''
+    - ' &eA dialogok testreszabható menükkel váltják fel a parancs alapú hitelesítést.'
+    - ''
+    - ' &c‼ &eEz a funkció csak 1.21.6-os vagy újabb kliensek esetén működik.'
+    - ''
+    configure-dialogs:
+    - ''
+    - ' &6Válaszd ki a dialogok megjelenítésének preferált módját.'
+    - ''
+    - ' &c‼ &eEzt az opciót manuálisan megváltoztathatod a &fconfig.yml&e fájlban.'
+    - ''
+    configure-bungeeguard:
+    - ''
+    - ' &6Szeretnéd beállítani a BungeeGuard+-t a szerveren?'
+    - ''
+    - ' &c‼ &eAz alábbi esetekben ajánlott telepíteni a BungeeGuard+-t:'
+    - '  &8⋆ &eBármilyen BungeeCord alapú proxyt használsz.'
+    - '  &8⋆ &eVelocityt használsz, de a &f"MODERN" &etovábbítás nem használható.'
+    - ''
+    - ' &c‼ &eA BungeeGuard+ JAR-t minden szerverre telepítened kell.'
+    - ''
+    start-premium-configuration:
+    - ''
+    - ' &aGratulálunk a(z) &6⭐ nLogin Premium &avásárlásához'
+    - ''
+    - ' &6Íme az újonnan feloldott funkciók:'
+    - ''
+    - '  &8⋆ &eAutomatikus bejelentkezés &7prémium Minecraftot használó felhasználóknak.'
+    - '  &8⋆ &eKétlépcsős &7hitelesítés Discordon és e-mailben.'
+    - '  &8⋆ &eBejelentkezési munkamenetek &7IP-cím alapú bejelentkezéskor.'
+    - '  &8⋆ &eMagasabb prioritású &7támogatási ügyek.'
+    - '  &8⋆ &eÜgyfélcímke &7a Discord csoportban.'
+    - ''
+    configure-username-appendix:
+    - ''
+    - ' &6Szeretnéd engedélyezni a toldalékot a prémium/offline játékosoknak?'
+    - ''
+    - ' &c‼ &eEzzel a funkcióval kapcsolatban további információért látogass el ide: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    configure-username-appendix-legacy-versions:
+    - ''
+    - ' &6A prémium/offline játékosok toldaléka nem adható hozzá automatikusan 1.18.2-es vagy alacsonyabb verziók esetén.'
+    - ''
+    - ' &eManuálisan kell beállítanod két különböző IP-t a prémium és offline játékosokhoz.'
+    - ''
+    - ' &c‼ &eEzzel a funkcióval kapcsolatban további információért látogass el ide: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    enable-restrict-premium-nicknames:
+    - ''
+    - ' &6Korlátozod az offline játékosok regisztrációját, ha prémium becenevet használnak? &e(új fiókoknál)'
+    - ''
+    - ' &c‼ &eAz offline játékosok nem használhatnak &fprémium becenevet (pl. Notch)&e, még akkor sem, ha a név elérhető a regisztrációhoz.'
+    - ''
+    enable-challenge-premium-nicknames:
+    - ''
+    - ' &6Érzékeled, ha a játékosok prémium fiókot használnak? &e(a becenév alapján)'
+    - ''
+    - ' &c‼ &eAz offline játékosok a szerverre való első belépéskor egy nem testreszabható &f"Invalid session" &eüzenetet kaphatnak.'
+    - ''
+    enable-premium-question:
+    - ''
+    - ' &6Érzékeled, ha a játékosok prémium fiókot használnak? &e(interaktív kérdéssel)'
+    - ''
+    - ' &c‼ &eEz az opció akkor ajánlott, ha biztosítani szeretnéd, hogy a prémium játékosok megkapják a Mojang UUID-t.'
+    - ''
+    skip-premium-register:
+    - ''
+    - ' &6Kihagyod a jelszó regisztrációs kérését a &bprémium játékosoknál&6?'
+    - ''
+    - ' &c‼ &eAjánlott kikapcsolni ezt az opciót, ha a játékosok jelszavát webes integrációban (pl. szerver weboldal) használják.'
+    - ''
+    skip-bedrock-register:
+    - ''
+    - ' &6Kihagyod a jelszó regisztrációs kérését a &cBedrock játékosoknál&6?'
+    - ''
+    - ' &c‼ &eAjánlott kikapcsolni ezt az opciót, ha a játékosok jelszavát webes integrációban (pl. szerver weboldal) használják.'
+    - ''
+    nantibot-recommendation:
+    - ''
+    - ' &6Ajánljuk az &fnAntiBot &6telepítését, hogy megakadályozd,'
+    - ' &6hogy a szervert botok támadják meg.'
+    - ''
+    - ' &c‼ &eEzzel a pluginnal kapcsolatban további információért &6kattints ide&e.'
+    - ''
+    nchat-recommendation:
+    - ''
+    - ' &6Ajánljuk az &fnChat &6telepítését,'
+    - ' &6egy chat plugint, amely teljesen felváltja a Legendchatet.'
+    - ''
+    - ' &c‼ &eEzzel a pluginnal kapcsolatban további információért &6kattints ide&e.'
+    - ''
+    recommend-spawn-set:
+    - ''
+    - ' &6A játékosok koordinátái &cNEM LESZNEK &6védve a bejelentkezés előtt.'
+    - ''
+    - ' &c‼ &eÁllíts be egy biztonságos spawn pontot a &f{0} &eparanccsal.'
+    - ''
+    finish-configuration:
+    - ''
+    - ' &6Erősítsd meg a beállítási mód elhagyását és az összes változtatás mentését.'
+    - ''
+    - ' &c‼ &eMinden játékos le lesz csatlakoztatva a megerősítéskor.'
+    - ''
+  update-available-confirmation:
+  - ''
+  - ' &eÚj nLogin verzió érhető el{0} {1}'
+  - ''
+  - ' &6Szeretnéd megerősíteni a frissítést?'
+  - ''
+  update-available-restart:
+  - ''
+  - ' &eÚj nLogin verzió érhető el{0} {1}'
+  - ''
+  - ' &6Indítsd újra a szervered a frissítés alkalmazásához.'
+  - ''
+  premium-fail:
+  - ''
+  - ' &c✖ &cA(z) &fnLogin v{0} &clicenced aktiválása nem sikerült.'
+  - '  &cPróbáld meg újra letölteni a JAR-t a weboldalról:'
+  - '  &b{1}'
+  - ''
+  - ' &c‼ &cHa a probléma továbbra is fennáll, ajánlott felvenni a kapcsolatot a fejlesztővel.'
+  - '  &7A kapcsolatok listázásához használd a {2} parancsot'
+  - ''
+  premium-expired:
+  - ''
+  - ' &c✖ &cA(z) &fnLogin v{0} &clicenced aktiválása nem sikerült.'
+  - '  &cÚjítsd meg a licencedet a weboldalon: &b{1}'
+  - ''
+  premium-recommendation:
+  - ''
+  - ' &7Gyakorlatiassá tennéd a bejelentkezést?'
+  - ' &7Szerezd meg most az nLogin prémium verzióját'
+  - ' &7és engedélyezd az automatikus bejelentkezést felhasználóidnak.'
+  - ''
+  - ' [&aKattints ide további információért.]'
+  - ''
+  button:
+    start-setup:
+      text: '&a[✔ Beállítás indítása]'
+      hover: '&7Kattints ide a plugin beállításának elindításához.'
+    stable:
+      text: '&a[Stabil verzió]'
+      hover: |-
+        &7A &astabil csatorna &7kevesebb hibát, de kevesebb erőforrást is tartalmaz.
+
+        &6Javaslat: &fnyilvánosan elérhető szerverekhez.
+    latest:
+      text: '&6[Legújabb verzió]'
+      hover: |-
+        &7A &6legújabb verziójú csatorna &7tartalmazza a legfrissebb verziókat.
+
+        &6Javaslat: &fazoknak a szervereknek, akik a legújabb funkciókat szeretnék
+    automatic:
+      text: '&a[Automatikus frissítések]'
+      hover: '&7A frissítéshez nem lesz szükség megerősítésre.'
+    manual:
+      text: '&9[Manuális megerősítés]'
+      hover: '&7A frissítést egy ehhez hasonló értesítéssel kell majd megerősítened.'
+    safer:
+      text: '&a[Biztonságosabb]'
+      hover: '&7Egy biztonságosabb algoritmus lesz használva a jelszavak védelmére.'
+    faster:
+      text: '&c[Gyorsabb]'
+      hover: '&7Egy kevésbé biztonságos algoritmus lesz használva a jelszavak védelmére.'
+    pre-login:
+      text: '&a[Megjelenítés előtte]'
+      hover: '&7A dialogok a szerverre &abelépés előtt &7jelennek meg.'
+    after-login:
+      text: '&9[Megjelenítés utána]'
+      hover: '&7A dialogok a szerverre &9belépés után &7jelennek meg.'
+    install:
+      text: '&a[⬇ Telepítés]'
+      hover: '&7Kattints ide a plugin automatikus telepítéséhez.'
+    skip:
+      text: '&7[✖ Kihagyás]'
+      hover: null
+
+title:
+  setup:
+    welcome-message-1:
+      title: '&6Szia, @player!'
+      subtitle: '&eÜdvözlünk az nLoginban!'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-2:
+      title: ''
+      subtitle: '&aKérjük, olvasd el a figyelmeztetést a folytatás előtt.'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-3:
+      title: ''
+      subtitle: '&fKattints a(z) {0} &fgombra a folytatáshoz.'
+      delays:
+        fadeIn: 10
+        stay: 80
+        fadeOut: 10
+  update-available:
+    title: ''
+    subtitle: '&aÚj verzió érhető el.'
+    delays:
+      fadeIn: 10
+      stay: 80
+      fadeOut: 10

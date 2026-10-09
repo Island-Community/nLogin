@@ -1,0 +1,170 @@
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |  Para um melhor entendimento deste arquivo acesse nossa documentação:                        | #
+# |   ==> https://docs.nickuc.com/nlogin/                                                        | #
+# |                                                                                              | #
+# |  Novas opções não são adicionadas automaticamente neste arquivo. Valores padrões são usados  | #
+# |  caso uma opção não seja encontrada.                                                         | #
+# +----------------------------------------------------------------------------------------------+ #
+
+# Define a versão do arquivo.
+language-version: 1
+
+# Define qual será o comportamento ao identificar jogadores com nickname premium
+#
+#  (!) Esta opção só está disponível se a opção "username-appender" estiver desativada.
+#
+# - Opções disponíveis:
+#  |=> DETECT
+#    - Ao escolher essa opção, os jogadores serão registrados como premium automaticamente.
+#
+#    (!) Jogadores offline que estejam usando o nickname de uma conta premium poderão receber
+#        uma mensagem não customizável de "Sessão inválida" na primeira entrada ao servidor.
+#
+#  |=> RESTRICT
+#    - Ao escolher essa opção, os jogadores serão registrados como premium automaticamente, mas um jogador offline não poderá usar um nickname premium.
+#
+#  |=> NONE
+#    - Ao escolher essa opção, nenhuma ação será realizada.
+#
+premium-nickname: DETECT
+
+# Define qual será o comportamento ao identificar jogadores com UUID premium
+#
+#  (!) Este recurso só funciona para versões mais recentes (1.19.1+)
+#
+# - Opções disponíveis:
+#  |=> DETECT
+#    - Ao escolher essa opção, os jogadores serão registrados como premium automaticamente.
+#
+#  |=> RESTRICT
+#    - Ao escolher essa opção, os jogadores serão registrados como premium automaticamente, mas um jogador offline não poderá usar um nickname premium.
+#
+#  |=> NONE
+#    - Ao escolher essa opção, nenhuma ação será realizada.
+#
+premium-id: DETECT
+
+# Define se os jogadores poderão receber uma notificação perguntando se suas contas são premium.
+# - Esta opção é recomendada se você quer garantir que os jogadores premium recebam o UUID da Mojang.
+premium-question: true
+
+#     _        ___      ___      __        __       ___      __      __
+#    /_\      / _ \    / _ \    /__\    /\ \ \     /   \    /__\    /__\
+#   //_\\    / /_)/   / /_)/   /_\     /  \/ /    / /\ /   /_\     / \//
+#  /  _  \  / ___/   / ___/   //__    / /\  /    / /_//   //__    / _  \
+#  \_/ \_/  \/       \/       \__/    \_\ \/    /___,'    \__/    \/ \_/
+
+username-appender:
+  # Define se o plugin deve adicionar um trecho ao nickname.
+  # - Este recurso é recomendado para diferenciar jogadores premium de jogadores offline.
+  #
+  # - Você pode alterar esta opção livremente: dados dos jogadores não serão perdidos.
+  #
+  # - Para mais informações, acesse a documentação:
+  #    * https://docs.nickuc.com/nlogin/username-appender
+  #
+  enable: true
+
+  premium:
+    # Define o prefixo/sufixo adicionado aos nicknames de jogadores premium.
+    username-appendix: ""
+
+    # Define a posição do trecho adicionado aos nicknames de jogadores premium.
+    #
+    # - Opções disponíveis:
+    #  |=> PREFIX (antes do nickname)
+    #  |=> SUFFIX (depois do nickname)
+    #
+    position: "suffix"
+
+    # Define a lista de domínios que serão usados para identificar jogadores premium.
+    # - Expressões regex são aceitas.
+    # - Os domínios verificados estarão sempre em minúsculo.
+    domains:
+    #- "premium.myserver.com"
+
+  offline:
+    # Define o prefixo/sufixo adicionado aos nicknames de contas offline.
+    username-appendix: "+"
+
+    # Define a posição do trecho adicionado aos nicknames de contas offline.
+    #
+    # - Opções disponíveis:
+    #  |=> PREFIX (antes do nickname)
+    #  |=> SUFFIX (depois do nickname)
+    #
+    position: "suffix"
+
+    # Define a lista de domínios que serão usados para identificar contas offline.
+    # - Expressões regex são aceitas.
+    # - Os domínios verificados estarão sempre em minúsculo.
+    domains:
+    #- "myserver.com"
+
+#     _               _____      ___      __      ___      ___     _____        __
+#    /_\     /\ /\   /__   \    /___\    / /     /___\    / _ \    \_   \    /\ \ \
+#   //_\\   / / \ \    / /\/   //  //   / /     //  //   / /_\/     / /\/   /  \/ /
+#  /  _  \  \ \_/ /   / /     / \_//   / /___  / \_//   / /_\\   /\/ /_    / /\  /
+#  \_/ \_/   \___/    \/      \___/    \____/  \___/    \____/   \____/    \_\ \/
+
+autologin:
+  bedrock:
+    # Define se jogadores Bedrock deverão autenticar automaticamente.
+    # - Você pode alterar esta opção livremente: usuários já registrados
+    #   NÃO estarão vulneráveis por esta mudança
+    enable: true
+
+    # Define se jogadores Bedrock deverão pular o registro.
+    # - É recomendado desativar esta opção se você utiliza as
+    #   senhas dos jogadores em uma integração web (ex.: site do servidor).
+    skip-register: true
+
+    # Define se o UUID da database será usado em vez do fornecido pelo Floodgate.
+    use-database-uuid: false
+
+  premium:
+    # Define se jogadores premium deverão autenticar automaticamente.
+    # - Você pode alterar esta opção livremente: usuários já registrados
+    #   NÃO estarão vulneráveis por esta mudança.
+    enable: true
+
+    # Define se os jogadores premium poderão entrar usando a senha registrada se os servidores estiverem offline.
+    # - Usuários premium sem uma senha registrada poderão se registrar e
+    #   NÃO estarão vulneráveis por esta mudança.
+    allow-if-offline: false
+
+    # Define se jogadores premium deverão pular o registro.
+    # - É recomendado desativar esta opção se você utiliza as
+    #   senhas dos jogadores em uma integração web (ex.: site do servidor).
+    skip-register: true
+
+  session:
+    # Define se sessões de login serão utilizadas.
+    # - A autenticação será ignorada se o jogador entrar no servidor no tempo limite
+    #   e continuar usando o mesmo endereço de IP.
+    enable: true
+
+    # Define a duração (em minutos) das sessões de login.
+    # => Tempos de sessões muito longas podem abrir vulnerabilidades se o IP do jogador
+    #    for público (proxies, VPNs públicas, redes compartilhadas)
+    #    ou se alternar muito rapidamente (em ISPs com IP dinâmico).
+    duration: 1
+
+    bypass:
+      # Define quais jogadores deverão ser ignorados das sessões de login.
+      nicknames: []
+
+      # Define quais IPs deverão ser ignorados das sessões de login.
+      ips: []

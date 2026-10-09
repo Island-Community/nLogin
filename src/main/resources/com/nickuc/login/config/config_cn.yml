@@ -1,0 +1,472 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                                  一款实用、安全、友好的身份验证插件                                | #
+# |                                                                                              | #
+# |                                © 2026 - 由 nickuc.com 提供支持                                 | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |  为了更好地理解这个文件,请参阅我们的文档:                                                           | #
+# |   ==> https://docs.nickuc.com/nlogin/                                                        | #
+# |                                                                                              | #
+# |  新选项不会自动添加到此文件中. 如果找不到                                                           | #
+# |  选项则使用默认值.                                                                              | #
+# |                                                                                              | #
+# |  译者:                                                                                        | #
+# |   - jhqwqmc                                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+# 配置文件的版本
+language-version: 11
+
+# 设置插件的语言
+#
+# - 可用翻译:
+#
+#  |=> 阿拉伯语: messages_ar.yml
+#  |=> 保加利亚语: messages_bg.yml
+#  |=> 简体中文: messages_cn.yml
+#  |=> 捷克语: messages_cz.yml
+#  |=> 德语: messages_de.yml
+#  |=> 英语: messages_en.yml
+#  |=> 西班牙语: messages_es.yml
+#  |=> 法语: messages_fr.yml
+#  |=> 匈牙利语: messages_hu.yml
+#  |=> 印度尼西亚语: messages_id.yml
+#  |=> 意大利语: messages_it.yml
+#  |=> 日语：messages_jp.yml
+#  |=> 立陶宛语: messages_lt.yml
+#  |=> 波兰语: messages_pl.yml
+#  |=> 葡萄牙语: messages_br.yml
+#  |=> 罗马尼亚语: messages_ro.yml
+#  |=> 俄语: messages_ru.yml
+#  |=> 土耳其语: messages_tr.yml
+#  |=> 乌克兰: messages_ua.yml
+#  |=> 越南语: messages_vn.yml
+#
+# - 更改语言时，当前文件不会被重置
+language-file: "messages_cn.yml"
+
+#      ___      _      _____      _
+#     /   \    /_\    /__   \    /_\
+#    / /\ /   //_\\     / /\/   //_\\
+#   / /_//   /  _  \   / /     /  _  \
+#  /___,'    \_/ \_/   \/      \_/ \_/
+
+# 数据库设置
+database:
+  # 设置使用的数据库类型
+  #
+  # - 可用选项:
+  #  |=> MariaDB
+  #  |=> MySQL
+  #  |=> SQLite
+  type: SQLite
+
+  remote:
+    # 设置 MariaDB/MySQL 信息
+    # - 安装教程: https://docs.nickuc.com/nlogin/mysql
+    hostname: "localhost:3306"
+    database: "nLogin"
+    username: "root"
+    password: ""
+
+    # 设置连接属性
+    # - 如果你不知道自己在做什么,请勿更改此信息!
+    properties:
+      #useSSL: false
+      #sslMode: disable
+      #verifyServerCertificate: false
+      useUnicode: true
+      characterEncoding: "utf8"
+
+  # 设置连接池设置
+  # - 如果你不知道自己在做什么,请勿更改此信息!
+  pool-settings:
+    maximum-pool-size: 10
+    minimum-idle: 10
+    maximum-lifetime: 1800000 # 30分钟
+    connection-timeout: 5000 # 5秒
+
+  table:
+    account:
+      # 设置 nLogin 账户表的名称
+      # - 如果你不知道自己在做什么,请勿更改此信息!
+      table-name: "nlogin"
+
+      # 设置列的名称.
+      # - 如果你不知道自己在做什么,请勿更改此信息!
+      columns:
+        ai: "ai"
+        last-name: "last_name"
+        unique-id: "unique_id"
+        mojang-id: "mojang_id"
+        bedrock-id: "bedrock_id"
+        password: "password"
+        premium: "premium"
+        last-ip: "last_ip"
+        last-seen: "last_seen"
+        creation-date: "creation_date"
+        email: "email"
+        discord: "discord"
+        settings: "settings"
+
+    data:
+      # 设置 nLogin 数据表的名称
+      # - 如果你不知道自己在做什么,请勿更改此信息!
+      table-name: "nlogin_data"
+
+      # 设置列的名称
+      # - 如果你不知道自己在做什么,请勿更改此信息!
+      columns:
+        id: "id"
+        key: "key"
+        value: "value"
+
+# 信息服务设置
+redis:
+  # 定义 Redis 信息。
+  enable: false
+  hostname: localhost
+  username: ""
+  password: ""
+  ssl: false
+
+#     __      _____                ___      ___
+#    / /      \_   \    /\/\      / __\    /___\
+#   / /        / /\/   /    \    /__\//   //  //
+#  / /___   /\/ /_    / /\/\ \  / \/  \  / \_//
+#  \____/   \____/    \/    \/  \_____/  \___/
+
+# Limbo设置
+# - Limbo是玩家信息保护系统
+# - 如果突然关机(例如电源故障),
+#   limbo文件将生效
+limbo:
+  # 设置等待隐藏玩家信息的时间
+  #
+  # => 提供的值必须以刻度为单位. 要计算所需的价格变动,
+  #    请将值(以秒为单位)乘以20
+  #
+  #   - 例子:
+  #      2秒 X 20 ticks = 40 ticks
+  #
+  delay: 0
+
+  # 设置 Limbo 是否应该隐藏玩家的信息
+  #
+  # => 玩家信息列表:
+  #  - 速度和飞行模式;
+  #  - 步行时的速度;
+  #  - 生命值;
+  #  - 饱食度;
+  #  - [...]
+  #
+  # - 建议禁用此选项,以防与处理这些选项的其他
+  #   插件(例如大厅插件)发生冲突
+  hide-player-stats: true
+
+  # 设置登录前是否应隐藏物品
+  hide-player-inventory: true
+
+  # 设置其他玩家登录前是否应隐藏
+  # - 此选项可以防止服务器玩家列表中的机器人发送垃圾消息
+  hide-unauthenticated-players: true
+
+  # 设置在验证之前是否应锁定移动
+  block-player-movement: true
+
+  # 定义是否在登录前添加致盲效果。
+  use-blindness-effect: false
+
+  # Sets whether the player will be teleported to a safe position upon entering.
+  # - It is recommended to activate the option if no spawn has been set.
+  highest-block-location: false
+
+  unrestricted:
+    # 设置将跳过身份验证过程的用户名
+    #
+    # - 这个选项对于模仿玩家行为的
+    #   模组或插件很有用
+    #
+    #   - 例子:
+    #    - '[ThaumcraftTablet]'
+    #    - '[BuildCraft]'
+    #    - 'ComputerCraft'
+    #
+    # => 使用此功能的风险由你自行承担
+    nicknames:
+    #- '[ThaumcraftTablet]'
+    #- '[BuildCraft]'
+    #- 'ComputerCraft'
+
+    # 设置登录前不锁定的物品栏名称
+    # - 如果你是开发人员，最好为你的物品栏事件
+    #   使用更高的优先级(例如 HIGH 或 HIGHEST),
+    #   然后删除 nLogin 取消 - "Event#setCancelled(false)"
+    inventories:
+    #- 'My Inventory Name'
+
+#   __         __      ___               __      _____    _____
+#  / _\       /__\    / __\   /\ /\     /__\     \_   \  /__   \  /\_/\
+#  \ \       /_\     / /     / / \ \   / \//      / /\/    / /\/  \_ _/
+#  _\ \     //__    / /___   \ \_/ /  / _  \   /\/ /_     / /      / \
+#  \__/     \__/    \____/    \___/   \/ \_/   \____/     \/       \_/
+
+# 常规安全设置
+security:
+  # 设置玩家验证的时间(以秒为单位)
+  auth-timeout: 90
+
+  # 设置是否在游戏中禁用高风险的 nLogin 命令
+  # - 此选项可以防止删除管理员注册的黑客攻击
+  force-console-usage: true
+
+  nickname:
+    # 设置用户名验证的正则表达式
+    validation-regex: '([a-zA-Z0-9_]{3,16})'
+
+    kick-unregistered:
+      # 定义是否应阻止未注册玩家
+      enable: false
+
+      bypass:
+        # 定义是否应忽略高级玩家的限制
+        premium: false
+
+        # 定义是否应忽略基岩版玩家的限制
+        bedrock: false
+
+        # 定义将被限制忽略的IP地址列表
+        ips: []
+
+  ip:
+    # 设置插件是否忽略"此玩家已在线"检查 IP 是否与注册的相同.
+    # - 如果玩家与服务器失去连接并尝试重新登录,此功能非常有用.
+    bypass-online-check-with-same-ip: true
+
+    limit:
+      # 设置是否应限制每个 IP 可以有多少个帐户
+      # - 此选项可以防止虚假帐户
+      enable: true
+
+      # 设置每个 IP 地址的最大记录数
+      max: 3
+
+      # 定义 IP 限制器是否应阻止账户进入服务器。
+      prevent-login: false
+
+      bypass:
+        # 定义 IP 限制是否忽略注册玩家。
+        registered: true
+
+        # 定义 IP 限制是否应忽略高级玩家。
+        premium: true
+
+        # 定义 IP 限制是否应忽略基岩玩家。
+        bedrock: true
+
+        # 设置忽略限制的 IP 列表
+        ips:
+          - '127.0.0.1'
+          - 'localhost'
+
+  passwords:
+    # 设置密码最小长度
+    small: 5
+
+    # 设置密码最大长度
+    large: 32
+
+    secure:
+      # 定义是否应执行密码强度验证
+      enable: false
+
+      # 定义如果注册玩家的密码不符合安全密码模式，是否应要求其更新其密码
+      enforce: false
+
+      # 定义用于将密码分类为安全密码的模式
+      #
+      #  | 默认情况下，它会检查密码是否：
+      #- |=> 1. 包含一个数字
+      #- |=> 2. 包含大写英文字符
+      #- |=> 3. 包含小写英文字符
+      #- |=> 4. 包含一个特殊符号 (!"@#$%^&*?)
+      #
+      secure-regex: '(?=\S*\d)(?=\S*[A-Z])(?=\S*[a-z])(?=\S*[!@#$%^&*?])\S*$'
+
+  bruteforce:
+    # 设置玩家可以尝试的最大错误次数
+    # - 使用值"1"时,玩家一旦犯错就会立即断开连接
+    max-auth-tries: 1
+
+    punish:
+      # 设置是否将自动惩罚暴力破解攻击
+      # - 在错误尝试次数过多后,可疑的 IP 地址将被阻止
+      enable: true
+
+      # 设置对疑似暴力破解攻击的惩罚时间(以分钟为单位)
+      duration: 15
+
+  hashing:
+    # 设置使用的哈希算法
+    #
+    # - 可用选项:
+    #
+    #  | 哈希的计算成本应该从下到上增加(但不一定)
+    #  |=> MD5
+    #  |=> SHA256
+    #  |=> SHA512
+    #  |=> BCRYPT2Y
+    #  |=> BCRYPT2A
+    #  |=> PBKDF2
+    #  |=> ARGON2ID
+    #  |=> ARGON2I
+    #  |=> ARGON2D
+    #
+    algorithm: "BCRYPT2A"
+
+    bcrypt:
+      rounds: 10
+
+    pbkdf2:
+      iterations: 10000
+      algorithm: "HmacSHA512"
+
+    argon2:
+      iterations: 5
+      memory: 32
+      parallelism: 1
+
+#             _____
+#   /\ /\     \_   \
+#  / / \ \     / /\/
+#  \ \_/ /  /\/ /_
+#   \___/   \____/
+
+# 用户界面设置
+ui:
+  # 定义对话框的操作模式。
+  # - 此功能仅适用于1.21.6及更高版本。
+  #
+  # - 可用选项:
+  #  |=> NONE: 禁用对话框。
+  #  |=> PRE_LOGIN: 在登录服务器前发送。
+  #  |=> AFTER_LOGIN: 在登录服务器后发送。
+  #
+  show-dialogs: PRE_LOGIN
+
+  # 设置是否发送屏幕消息
+  use-title-bar: true
+
+  # 设置是否发送动作栏中的消息
+  use-action-bar: true
+
+  # 设置是否发送剩余时间消息
+  use-action-bar-timer: true
+
+  # 设置是否发送音效
+  use-sounds: true
+
+  # 定义是否在身份验证完成之前禁用聊天消息
+  remove-chat-messages: true
+
+  # 设置是否删除加入消息
+  remove-join-message: false
+
+  # 设置 nLogin 语言是否应该适应 Minecraft 语言
+  language-by-client: false
+
+#     ___      ___                          _          __       ___    __
+#    / __\    /___\    /\/\      /\/\      /_\      /\ \ \     /   \  / _\
+#   / /      //  //   /    \    /    \    //_\\    /  \/ /    / /\ /  \ \
+#  / /___   / \_//   / /\/\ \  / /\/\ \  /  _  \  / /\  /    / /_//   _\ \
+#  \____/   \___/    \/    \/  \/    \/  \_/ \_/  \_\ \/    /___,'    \__/
+
+# 命令设置
+commands:
+  # 设置注册后要执行的命令列表
+  #
+  # - 可用选项:
+  #  |=> @console: 在控制台上执行命令
+  #  |=> @delay <时间以tick为单位>: 为命令添加延迟
+  #  |=> @proxy: 在代理服务器上运行该命令(仅当你使用代理服务器时)
+  #  |=> @server <服务器用","分隔>: 只有玩家连接到特定服务器列表时才
+  #      执行命令(仅在使用代理服务器时)
+  #
+  #      例子: @server lobby1,lobby2
+  #
+  after-register:
+  #- "@console tell @player 欢迎来到服务器!" # 在控制台中运行
+  #- "@delay 40 /kit starter" # 等待 40 个tick (2秒)
+
+  # 设置身份验证后要执行的命令列表
+  #
+  # - 可用选项:
+  #  |=> @console: 在控制台上执行命令
+  #  |=> @delay <时间以tick为单位>: 为命令添加延迟
+  #  |=> @proxy: 在代理服务器上运行该命令(仅当你使用代理服务器时)
+  #  |=> @server <服务器用","分隔>: 只有玩家连接到特定服务器列表时才
+  #      执行命令(仅在使用代理服务器时)
+  #
+  #      例子: @server lobby1,lobby2
+  #
+  after-login:
+  #- "@console @proxy send @player lobby" # 在代理控制台中运行(bungee,velocity等)
+
+  # 在身份验证之前设置允许的命令列表
+  allowed-commands:
+  #- "/loginstaff"
+
+  changepass:
+    enable: true
+    commands: [changepass, changepassword]
+    description: 更改注册密码的命令
+    permission: null
+  discord:
+    enable: true
+    commands: [discord]
+    description: 使用 Discord 账户控制 2FA 的命令
+    permission: nlogin.command.discord
+  email:
+    enable: true
+    commands: [email]
+    description: 使用电子邮件账户控制 2FA 的命令
+    permission: nlogin.command.email
+  login:
+    enable: true
+    commands: [login, l, log]
+    description: 登录服务器的命令
+    permission: null
+  offline:
+    enable: true
+    commands: [offline, cracked]
+    description: 将你的账户标记为离线的命令
+    permission: null
+  premium:
+    enable: true
+    commands: [premium]
+    description: 将你的账户标记为正版的命令
+    permission: null
+  recover:
+    enable: true
+    commands: [recover]
+    description: 用于恢复注册账户访问权限的命令
+    permission: null
+  register:
+    enable: true
+    commands: [register, reg]
+    description: 注册账户的命令
+    permission: null
+  unregister:
+    enable: false
+    commands: [unregister]
+    description: 取消注册的命令
+    permission: null

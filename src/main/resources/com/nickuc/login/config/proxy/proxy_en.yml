@@ -1,0 +1,87 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                          __             _                                    | #
+# |                                 _ __   / /  ___   __ _(_)_ __                                | #
+# |                                | '_ \ / /  / _ \ / _` | | '_ \                               | #
+# |                                | | | / /__| (_) | (_| | | | | |                              | #
+# |                                |_| |_\____/\___/ \__, |_|_| |_|                              | #
+# |                                                    |___/                                     | #
+# |                                                                                              | #
+# |                      A practical, secure and friendly authentication plugin                  | #
+# |                                                                                              | #
+# |                                © 2026 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |  For a better understanding of this file see our documentation:                              | #
+# |   ==> https://docs.nickuc.com/nlogin/                                                        | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+# Set the version of the file.
+language-version: 2
+
+#     ___      _        ___               __        __       ___
+#    / __\    /_\      / __\    /\ /\    /__\    /\ \ \     /   \
+#   /__\//   //_\\    / /      / //_/   /_\     /  \/ /    / /\ /
+#  / \/  \  /  _  \  / /___   / __ \   //__    / /\  /    / /_//
+#  \_____/  \_/ \_/  \____/   \/  \/   \__/    \_\ \/    /___,'
+
+# Settings related to the backend servers.
+backend:
+  # Sets the list of authentication servers.
+  # - You must enter this list ALL servers that nLogin is installed on.
+  # - Most servers use either an authentication server or a main lobby.
+  # - For more information, go to the tutorial:
+  #  ==> https://docs.nickuc.com/nlogin/proxy
+  auth-servers:
+    - 'lobby'
+
+  # Defines whether the proxy should check if authentication servers are properly configured.
+  # - If you are using a server without nLogin (e.g. limbo servers not based on Spigot)
+  #   it is recommended to disable this option.
+  check-ack-message: true
+
+#     __      __       ___     _____      __      __      ___    _____
+#    /__\    /__\     /   \    \_   \    /__\    /__\    / __\  /__   \
+#   / \//   /_\      / /\ /     / /\/   / \//   /_\     / /       / /\/
+#  / _  \  //__     / /_//   /\/ /_    / _  \  //__    / /___    / /
+#  \/ \_/  \__/    /___,'    \____/    \/ \_/  \__/    \____/    \/
+
+# Server redirection settings.
+redirect:
+  # Defines whether redirection will be done before connecting to the authentication servers.
+  # - For example, when a player who does not need to authenticate enters the proxy server,
+  #   they will automatically connect to a server that respects the options below.
+  use-fast-redirect: true
+
+  # Defines whether the redirection of the first server should be overwritten by nLogin.
+  # - This option prevents players from bypassing the authentication server
+  #   and restores the first server provided by the proxy.
+  override-first-server: true
+
+  # Sets the waiting time (in milliseconds) when switching the server.
+  connect-delay: 500
+
+  # Sets the waiting time (in milliseconds) to reconnect to the server when the connection fails.
+  retry-delay: 5000
+
+  last-server:
+    # Defines whether the plugin should redirect players to the last connected server.
+    # - If the last connected server no longer exists, a random server from the "after-auth.servers" option will be chosen.
+    enable: false
+
+    # Defines which servers will be ignored by the redirection.
+    ignored: []
+
+  after-auth:
+    # Defines whether players should be automatically forwarded to other servers after authentication.
+    enable: false
+
+    # Defines which servers the players should be forwarded to.
+    # - When entering more than one item, the server will be chosen randomly.
+    servers:
+      - "lobby1"
+      - "lobby2"

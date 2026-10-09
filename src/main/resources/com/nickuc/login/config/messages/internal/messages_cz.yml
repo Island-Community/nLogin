@@ -1,0 +1,269 @@
+update:
+  stable: '&aStabilní'
+  latest: '&bNejnovější'
+
+notification:
+  setup:
+    select-language:
+    - ''
+    - ' &eZjistili jsme, že používáte jazyk &6{0}&e.'
+    - ''
+    - ' &6Chcete tento jazyk používat pro nLogin?'
+    - ''
+    - ' &c‼ &eToto ovlivní jazyk všech hráčů!'
+    - ''
+    permission-required:
+    - ''
+    - ' &ePro konfiguraci nLoginu se musíte stát &cadministrátorem&e.'
+    - ''
+    - ' &6Přidejte oprávnění &f"{0}" &6do svého permission pluginu.'
+    - ''
+    - ' &c‼ &eNastavení bude pokračovat, jakmile bude oprávnění přidáno.'
+    - ''
+    welcome-message:
+    - ''
+    - ' &aDěkujeme, že jste si vybrali nLogin! :)'
+    - ''
+    - ' &6Pro vaši bezpečnost si prosím přečtěte zprávu níže:'
+    - '  &cNikdy nestahujte nLogin z neznámých zdrojů.'
+    - '  &cUpravená verze může obsahovat škodlivý software.'
+    - ''
+    - ' &aDůvěryhodné zdroje:'
+    - '  &7Web: &fnickuc.com'
+    - '  &7GitHub: &fgithub.com/nickuc-com'
+    - '  &7Instalátor OpeNLogin (ze &fSpigotu &7nebo &fGitHubu&7)'
+    - ''
+    - ' &aOficiální podpora:'
+    - '  &7Dokumentace: &fdocs.nickuc.com/nlogin/'
+    - '  &7Discord: &fnickuc.com/discord'
+    - '  &7E-mail: &fsupport@nickuc.com'
+    - ''
+    configure-version-channel:
+    - ''
+    - ' &6Zvolte preferovaný kanál verzí.'
+    - ''
+    - ' &c‼ &eToto můžete později změnit spuštěním &f{0}&e.'
+    - ''
+    configure-auto-or-manual-updates:
+    - ''
+    - ' &6Zvolte preferovaný způsob aktualizace.'
+    - ''
+    - ' &c‼ &eToto můžete později změnit spuštěním &f{0}&e.'
+    - ''
+    configure-password-algorithm:
+    - ''
+    - ' &6Vyberte preferovaný typ šifrování hesel.'
+    - ''
+    - ' &c‼ &eTuto možnost můžete později ručně změnit v &fconfig.yml&e.'
+    - ''
+    enable-dialogs:
+    - ''
+    - ' &6Chcete používat menu (dialogy) jako rozhraní pro přihlášení?'
+    - ''
+    - ' &eDialogy nahrazují ověřování pomocí příkazů přizpůsobitelnými menu.'
+    - ''
+    - ' &c‼ &eTato funkce funguje pouze pro klienty na verzi 1.21.6 nebo vyšší.'
+    - ''
+    configure-dialogs:
+    - ''
+    - ' &6Zvolte preferovaný způsob zobrazování dialogů.'
+    - ''
+    - ' &c‼ &eTuto možnost můžete ručně změnit v &fconfig.yml&e.'
+    - ''
+    configure-bungeeguard:
+    - ''
+    - ' &6Chcete na serveru nakonfigurovat BungeeGuard+?'
+    - ''
+    - ' &c‼ &eDoporučuje se nainstalovat BungeeGuard+ v těchto případech:'
+    - '  &8⋆ &ePoužíváte jakýkoli proxy založený na BungeeCordu.'
+    - '  &8⋆ &ePoužíváte Velocity, ale nelze použít forwarding &f"MODERN"&e.'
+    - ''
+    - ' &c‼ &eBudete muset nainstalovat JAR BungeeGuard+ na všechny servery.'
+    - ''
+    start-premium-configuration:
+    - ''
+    - ' &aGratulujeme k nákupu &6⭐ nLogin Premium'
+    - ''
+    - ' &6Toto jsou nově odemčené funkce:'
+    - ''
+    - '  &8⋆ &eAutomatické přihlášení &7pro uživatele s prémiovým Minecraftem.'
+    - '  &8⋆ &eDvoufázové &7ověřování přes Discord a e-mail.'
+    - '  &8⋆ &ePřihlašovací relace &7při přihlašování podle IP adresy.'
+    - '  &8⋆ &eVyšší priorita &7v podpoře.'
+    - '  &8⋆ &eZákaznický štítek &7ve skupině Discord.'
+    - ''
+    configure-username-appendix:
+    - ''
+    - ' &6Chcete povolit příponu pro prémiové/offline hráče?'
+    - ''
+    - ' &c‼ &ePro více informací o této funkci navštivte: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    configure-username-appendix-legacy-versions:
+    - ''
+    - ' &6Příponu pro prémiové/offline hráče nelze automaticky přidat pro verze 1.18.2 nebo nižší.'
+    - ''
+    - ' &eBudete muset ručně nakonfigurovat dvě různé IP adresy pro prémiové a offline hráče.'
+    - ''
+    - ' &c‼ &ePro více informací o této funkci navštivte: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    enable-restrict-premium-nicknames:
+    - ''
+    - ' &6Omezit registraci offline hráčů používajících prémiové přezdívky? &e(pro nové účty)'
+    - ''
+    - ' &c‼ &eOffline hráči nebudou moci použít &fprémiovou přezdívku (např. Notch)&e, i když je jméno k registraci dostupné.'
+    - ''
+    enable-challenge-premium-nicknames:
+    - ''
+    - ' &6Zjišťovat, zda hráči používají prémiový účet? &e(podle přezdívky)'
+    - ''
+    - ' &c‼ &eOffline hráči mohou při prvním přihlášení na server obdržet nepřizpůsobitelnou zprávu &f"Invalid session"&e.'
+    - ''
+    enable-premium-question:
+    - ''
+    - ' &6Zjišťovat, zda hráči používají prémiový účet? &e(pomocí interaktivní otázky)'
+    - ''
+    - ' &c‼ &eTato možnost je doporučena, pokud chcete zajistit, aby prémioví hráči obdrželi Mojang UUID.'
+    - ''
+    skip-premium-register:
+    - ''
+    - ' &6Přeskočit žádost o registraci hesla pro &bprémiové hráče&6?'
+    - ''
+    - ' &c‼ &eDoporučuje se tuto možnost zakázat, pokud je heslo hráčů používáno ve webové integraci (např. web serveru).'
+    - ''
+    skip-bedrock-register:
+    - ''
+    - ' &6Přeskočit žádost o registraci hesla pro &cBedrock hráče&6?'
+    - ''
+    - ' &c‼ &eDoporučuje se tuto možnost zakázat, pokud je heslo hráčů používáno ve webové integraci (např. web serveru).'
+    - ''
+    nantibot-recommendation:
+    - ''
+    - ' &6Doporučujeme nainstalovat &fnAntiBot&6, aby'
+    - ' &6váš server nebyl napaden boty.'
+    - ''
+    - ' &c‼ &ePro více informací o tomto pluginu &6klikněte sem&e.'
+    - ''
+    nchat-recommendation:
+    - ''
+    - ' &6Doporučujeme nainstalovat &fnChat&6,'
+    - ' &6chatovací plugin, který zcela nahrazuje Legendchat.'
+    - ''
+    - ' &c‼ &ePro více informací o tomto pluginu &6klikněte sem&e.'
+    - ''
+    recommend-spawn-set:
+    - ''
+    - ' &6Souřadnice hráčů &cNEBUDOU &6chráněny před přihlášením.'
+    - ''
+    - ' &c‼ &eNastavte bezpečný spawn bod pomocí příkazu &f{0}&e.'
+    - ''
+    finish-configuration:
+    - ''
+    - ' &6Potvrďte ukončení režimu nastavení a uložení všech změn.'
+    - ''
+    - ' &c‼ &ePo potvrzení budou všichni hráči odpojeni.'
+    - ''
+  update-available-confirmation:
+  - ''
+  - ' &eJe dostupná nová verze nLoginu{0} {1}'
+  - ''
+  - ' &6Chcete potvrdit aktualizaci?'
+  - ''
+  update-available-restart:
+  - ''
+  - ' &eJe dostupná nová verze nLoginu{0} {1}'
+  - ''
+  - ' &6Restartujte server pro použití aktualizace.'
+  - ''
+  premium-fail:
+  - ''
+  - ' &c✖ &cVaše licence &fnLogin v{0} &cnebyla úspěšně aktivována.'
+  - '  &cZkuste znovu stáhnout JAR na webu:'
+  - '  &b{1}'
+  - ''
+  - ' &c‼ &cPokud problém přetrvává, doporučujeme kontaktovat vývojáře.'
+  - '  &7Pro zobrazení kontaktů použijte příkaz {2}'
+  - ''
+  premium-expired:
+  - ''
+  - ' &c✖ &cVaše licence &fnLogin v{0} &cnebyla úspěšně aktivována.'
+  - '  &cObnovte svou licenci na webu: &b{1}'
+  - ''
+  premium-recommendation:
+  - ''
+  - ' &7Chcete své přihlášení zpříjemnit?'
+  - ' &7Získejte nyní prémiovou verzi nLoginu'
+  - ' &7a povolte automatické přihlášení pro své uživatele.'
+  - ''
+  - ' [&aKlikněte sem pro více informací.]'
+  - ''
+  button:
+    start-setup:
+      text: '&a[✔ Spustit nastavení]'
+      hover: '&7Klikněte sem pro spuštění nastavení pluginu.'
+    stable:
+      text: '&a[Stabilní verze]'
+      hover: |-
+        &7&aStabilní kanál &7má méně chyb, ale také méně funkcí.
+
+        &6Doporučení: &fpro servery zpřístupněné veřejnosti.
+    latest:
+      text: '&6[Nejnovější verze]'
+      hover: |-
+        &7Kanál &6nejnovějších verzí &7obsahuje nejnovější verze.
+
+        &6Doporučení: &fpro servery, které chtějí nejnovější funkce
+    automatic:
+      text: '&a[Automatické aktualizace]'
+      hover: '&7Pro aktualizaci nebude vyžadováno žádné potvrzení.'
+    manual:
+      text: '&9[Ruční potvrzení]'
+      hover: '&7Aktualizaci budete muset potvrdit oznámením podobným tomuto.'
+    safer:
+      text: '&a[Bezpečnější]'
+      hover: '&7Pro ochranu hesel bude použit bezpečnější algoritmus.'
+    faster:
+      text: '&c[Rychlejší]'
+      hover: '&7Pro ochranu hesel bude použit méně bezpečný algoritmus.'
+    pre-login:
+      text: '&a[Zobrazit před]'
+      hover: '&7Dialogy budou zobrazeny &apřed vstupem &7na server.'
+    after-login:
+      text: '&9[Zobrazit po]'
+      hover: '&7Dialogy budou zobrazeny &9po vstupu &7na server.'
+    install:
+      text: '&a[⬇ Instalovat]'
+      hover: '&7Klikněte sem pro automatickou instalaci pluginu.'
+    skip:
+      text: '&7[✖ Přeskočit]'
+      hover: null
+
+title:
+  setup:
+    welcome-message-1:
+      title: '&6Ahoj, @player!'
+      subtitle: '&eVítej v nLoginu!'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-2:
+      title: ''
+      subtitle: '&aPřed pokračováním si prosím přečti upozornění.'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-3:
+      title: ''
+      subtitle: '&fPro pokračování klikni na tlačítko {0}&f.'
+      delays:
+        fadeIn: 10
+        stay: 80
+        fadeOut: 10
+  update-available:
+    title: ''
+    subtitle: '&aJe dostupná nová verze.'
+    delays:
+      fadeIn: 10
+      stay: 80
+      fadeOut: 10

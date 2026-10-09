@@ -1,0 +1,269 @@
+update:
+  stable: '&aStabili'
+  latest: '&bNaujausia'
+
+notification:
+  setup:
+    select-language:
+    - ''
+    - ' &eMes nustatėme, kad naudojate &6{0} &ekalbą.'
+    - ''
+    - ' &6Ar norite naudoti šią kalbą nLogin?'
+    - ''
+    - ' &c‼ &eTai paveiks visų žaidėjų kalbą!'
+    - ''
+    permission-required:
+    - ''
+    - ' &eKad sukonfigūruotumėte nLogin, turite tapti &cadministratoriumi&e.'
+    - ''
+    - ' &6Pridėkite leidimą &f"{0}" &6prie savo leidimų plugin''o.'
+    - ''
+    - ' &c‼ &eSąranka tęsis, kai tik bus pridėtas leidimas.'
+    - ''
+    welcome-message:
+    - ''
+    - ' &aLabai ačiū, kad pasirinkote nLogin! :)'
+    - ''
+    - ' &6Dėl jūsų saugumo, perskaitykite žemiau esantį pranešimą:'
+    - '  &cNiekada neatsisiųskite nLogin iš nežinomų šaltinių.'
+    - '  &cModifikuota versija gali turėti kenkėjišką programinę įrangą.'
+    - ''
+    - ' &aPatikimi šaltiniai:'
+    - '  &7Svetainė: &fnickuc.com'
+    - '  &7GitHub: &fgithub.com/nickuc-com'
+    - '  &7OpeNLogin diegimo programa (iš &fSpigot &7arba &fGitHub&7)'
+    - ''
+    - ' &aOficiali pagalba:'
+    - '  &7Dokumentacija: &fdocs.nickuc.com/nlogin/'
+    - '  &7Discord: &fnickuc.com/discord'
+    - '  &7El. paštas: &fsupport@nickuc.com'
+    - ''
+    configure-version-channel:
+    - ''
+    - ' &6Pasirinkite pageidaujamą versijos kanalą.'
+    - ''
+    - ' &c‼ &eGalėsite tai pakeisti vėliau, paleidę &f{0}&e.'
+    - ''
+    configure-auto-or-manual-updates:
+    - ''
+    - ' &6Pasirinkite pageidaujamą atnaujinimo metodą.'
+    - ''
+    - ' &c‼ &eGalėsite tai pakeisti vėliau, paleidę &f{0}&e.'
+    - ''
+    configure-password-algorithm:
+    - ''
+    - ' &6Pasirinkite pageidaujamą slaptažodžių šifravimo tipą.'
+    - ''
+    - ' &c‼ &eGalėsite pakeisti šią parinktį rankiniu būdu vėliau &fconfig.yml&e faile.'
+    - ''
+    enable-dialogs:
+    - ''
+    - ' &6Ar norite naudoti meniu (dialogs) kaip autentifikavimo sąsają?'
+    - ''
+    - ' &eDialogs pakeičia komandomis pagrįstą autentifikavimą pritaikomais meniu.'
+    - ''
+    - ' &c‼ &eŠi funkcija veikia tik klientams, naudojantiems 1.21.6 ar naujesnę versiją.'
+    - ''
+    configure-dialogs:
+    - ''
+    - ' &6Pasirinkite pageidaujamą būdą rodyti dialogs.'
+    - ''
+    - ' &c‼ &eGalite pakeisti šią parinktį rankiniu būdu &fconfig.yml&e faile.'
+    - ''
+    configure-bungeeguard:
+    - ''
+    - ' &6Ar norite sukonfigūruoti BungeeGuard+ serveryje?'
+    - ''
+    - ' &c‼ &eRekomenduojama įdiegti BungeeGuard+ šiais atvejais:'
+    - '  &8⋆ &eNaudojate bet kokį BungeeCord pagrįstą proxy.'
+    - '  &8⋆ &eNaudojate Velocity, tačiau &f"MODERN" &eperadresavimas negali būti naudojamas.'
+    - ''
+    - ' &c‼ &eJums reikės įdiegti BungeeGuard+ JAR failą visuose serveriuose.'
+    - ''
+    start-premium-configuration:
+    - ''
+    - ' &aSveikiname įsigijus &6⭐ nLogin Premium'
+    - ''
+    - ' &6Štai naujai atrakintos funkcijos:'
+    - ''
+    - '  &8⋆ &eAutomatinis prisijungimas &7vartotojams su premium Minecraft.'
+    - '  &8⋆ &eDviejų žingsnių &7autentifikavimas per Discord ir el. paštą.'
+    - '  &8⋆ &ePrisijungimo sesijos &7jungiantis pagal IP adresą.'
+    - '  &8⋆ &eAukštesnio prioriteto &7pagalba.'
+    - '  &8⋆ &eKliento žymė &7Discord grupėje.'
+    - ''
+    configure-username-appendix:
+    - ''
+    - ' &6Ar norite įjungti priedą premium/offline žaidėjams?'
+    - ''
+    - ' &c‼ &eDaugiau informacijos apie šią funkciją rasite: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    configure-username-appendix-legacy-versions:
+    - ''
+    - ' &6Priedas premium/offline žaidėjams negali būti automatiškai pridėtas 1.18.2 ar žemesnėms versijoms.'
+    - ''
+    - ' &eJums reikės rankiniu būdu sukonfigūruoti du skirtingus IP adresus premium ir offline žaidėjams.'
+    - ''
+    - ' &c‼ &eDaugiau informacijos apie šią funkciją rasite: &bdocs.nickuc.com/nlogin/username-appender'
+    - ''
+    enable-restrict-premium-nicknames:
+    - ''
+    - ' &6Apriboti offline žaidėjų, naudojančių premium slapyvardžius, registraciją? &e(naujoms paskyroms)'
+    - ''
+    - ' &c‼ &eOffline žaidėjai negalės naudoti &fpremium slapyvardžio (pvz., Notch)&e, net jei vardas yra prieinamas registracijai.'
+    - ''
+    enable-challenge-premium-nicknames:
+    - ''
+    - ' &6Nustatyti, ar žaidėjai naudoja premium paskyrą? &e(pagal slapyvardį)'
+    - ''
+    - ' &c‼ &eOffline žaidėjai gali gauti nepritaikomą pranešimą &f"Invalid session" &epirmą kartą prisijungdami prie serverio.'
+    - ''
+    enable-premium-question:
+    - ''
+    - ' &6Nustatyti, ar žaidėjai naudoja premium paskyrą? &e(su interaktyviu klausimu)'
+    - ''
+    - ' &c‼ &eŠi parinktis rekomenduojama, jei norite užtikrinti, kad premium žaidėjai gautų Mojang UUID.'
+    - ''
+    skip-premium-register:
+    - ''
+    - ' &6Praleisti slaptažodžio registracijos užklausą &bpremium žaidėjams&6?'
+    - ''
+    - ' &c‼ &eRekomenduojama išjungti šią parinktį, jei žaidėjų slaptažodis naudojamas žiniatinklio integracijoje (pvz., serverio svetainėje).'
+    - ''
+    skip-bedrock-register:
+    - ''
+    - ' &6Praleisti slaptažodžio registracijos užklausą &cBedrock žaidėjams&6?'
+    - ''
+    - ' &c‼ &eRekomenduojama išjungti šią parinktį, jei žaidėjų slaptažodis naudojamas žiniatinklio integracijoje (pvz., serverio svetainėje).'
+    - ''
+    nantibot-recommendation:
+    - ''
+    - ' &6Rekomenduojame įdiegti &fnAntiBot&6, kad apsaugotumėte'
+    - ' &6savo serverį nuo botų atakų.'
+    - ''
+    - ' &c‼ &eDaugiau informacijos apie šį plugin''ą &6spustelėkite čia&e.'
+    - ''
+    nchat-recommendation:
+    - ''
+    - ' &6Rekomenduojame įdiegti &fnChat&6,'
+    - ' &6pokalbių plugin''ą, kuris visiškai pakeičia Legendchat.'
+    - ''
+    - ' &c‼ &eDaugiau informacijos apie šį plugin''ą &6spustelėkite čia&e.'
+    - ''
+    recommend-spawn-set:
+    - ''
+    - ' &6Žaidėjų koordinatės &cNEBUS &6apsaugotos prieš prisijungimą.'
+    - ''
+    - ' &c‼ &eNustatykite saugų atsiradimo tašką naudodami komandą &f{0}&e.'
+    - ''
+    finish-configuration:
+    - ''
+    - ' &6Patvirtinkite, kad išeitumėte iš sąrankos režimo ir išsaugotumėte visus pakeitimus.'
+    - ''
+    - ' &c‼ &eVisi žaidėjai bus atjungti po patvirtinimo.'
+    - ''
+  update-available-confirmation:
+  - ''
+  - ' &eYra nauja nLogin versija{0} {1}'
+  - ''
+  - ' &6Ar norite patvirtinti atnaujinimą?'
+  - ''
+  update-available-restart:
+  - ''
+  - ' &eYra nauja nLogin versija{0} {1}'
+  - ''
+  - ' &6Paleiskite serverį iš naujo, kad pritaikytumėte atnaujinimą.'
+  - ''
+  premium-fail:
+  - ''
+  - ' &c✖ &cJūsų &fnLogin v{0} &clicencija nebuvo sėkmingai aktyvuota.'
+  - '  &cPabandykite dar kartą atsisiųsti JAR svetainėje:'
+  - '  &b{1}'
+  - ''
+  - ' &c‼ &cJei problema išlieka, rekomenduojame susisiekti su kūrėju.'
+  - '  &7Norėdami peržiūrėti kontaktus, naudokite komandą {2}'
+  - ''
+  premium-expired:
+  - ''
+  - ' &c✖ &cJūsų &fnLogin v{0} &clicencija nebuvo sėkmingai aktyvuota.'
+  - '  &cAtnaujinkite licenciją per svetainę: &b{1}'
+  - ''
+  premium-recommendation:
+  - ''
+  - ' &7Norite, kad prisijungimas būtų patogus?'
+  - ' &7Įsigykite nLogin premium versiją dabar'
+  - ' &7ir įjunkite automatinį prisijungimą savo vartotojams.'
+  - ''
+  - ' [&aSpustelėkite čia, kad sužinotumėte daugiau.]'
+  - ''
+  button:
+    start-setup:
+      text: '&a[✔ Pradėti sąranką]'
+      hover: '&7Spustelėkite čia, kad pradėtumėte plugin''o sąranką.'
+    stable:
+      text: '&a[Stabili versija]'
+      hover: |-
+        &7&aStabilus kanalas &7turi mažiau klaidų, bet ir mažiau funkcijų.
+
+        &6Rekomendacija: &fviešai pasiekiamiems serveriams.
+    latest:
+      text: '&6[Naujausia versija]'
+      hover: |-
+        &7&6Naujausios versijos kanalas &7turi naujausias versijas.
+
+        &6Rekomendacija: &fserveriams, norintiems naujausių funkcijų
+    automatic:
+      text: '&a[Automatiniai atnaujinimai]'
+      hover: '&7Atnaujinimui nereikės jokio patvirtinimo.'
+    manual:
+      text: '&9[Rankinis patvirtinimas]'
+      hover: '&7Jums reikės patvirtinti atnaujinimą pranešimu, panašiu į šį.'
+    safer:
+      text: '&a[Saugesnis]'
+      hover: '&7Slaptažodžiams apsaugoti bus naudojamas saugesnis algoritmas.'
+    faster:
+      text: '&c[Greitesnis]'
+      hover: '&7Slaptažodžiams apsaugoti bus naudojamas mažiau saugus algoritmas.'
+    pre-login:
+      text: '&a[Rodyti prieš]'
+      hover: '&7Dialogs bus rodomi &aprieš &7prisijungiant prie serverio.'
+    after-login:
+      text: '&9[Rodyti po]'
+      hover: '&7Dialogs bus rodomi &9prisijungus &7prie serverio.'
+    install:
+      text: '&a[⬇ Diegti]'
+      hover: '&7Spustelėkite čia, kad automatiškai įdiegtumėte plugin''ą.'
+    skip:
+      text: '&7[✖ Praleisti]'
+      hover: null
+
+title:
+  setup:
+    welcome-message-1:
+      title: '&6Sveiki, @player!'
+      subtitle: '&eSveiki atvykę į nLogin!'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-2:
+      title: ''
+      subtitle: '&aPrieš tęsdami, perskaitykite įspėjimą.'
+      delays:
+        fadeIn: 10
+        stay: 60
+        fadeOut: 10
+    welcome-message-3:
+      title: ''
+      subtitle: '&fSpustelėkite mygtuką {0}&f, kad tęstumėte.'
+      delays:
+        fadeIn: 10
+        stay: 80
+        fadeOut: 10
+  update-available:
+    title: ''
+    subtitle: '&aYra nauja versija.'
+    delays:
+      fadeIn: 10
+      stay: 80
+      fadeOut: 10
